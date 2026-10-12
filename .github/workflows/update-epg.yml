@@ -1,0 +1,22 @@
+name: Update EPG
+on:
+  schedule:
+    - cron: "30 3 * * *"   # every day 03:30 UTC
+  workflow_dispatch:        # lets you run it by hand
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python filter_epg.py
+      - run: |
+          git config user.name "epg-bot"
+          git config user.email "epg-bot@users.noreply.github.com"
+          git add epg.xml.gz
+          git commit -m "update epg" || echo "no changes"
+          git push
