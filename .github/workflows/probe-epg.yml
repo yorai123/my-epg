@@ -1,0 +1,21 @@
+name: Probe EPG sources
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python probe_sources.py
+      - run: |
+          git config user.name "epg-bot"
+          git config user.email "epg-bot@users.noreply.github.com"
+          git add probe.txt
+          git commit -m "probe epg sources" || echo "no changes"
+          git push
