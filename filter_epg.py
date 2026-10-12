@@ -1,20 +1,41 @@
 """Build my small EPG: primary source + extra sources that extend the days ahead.
 Writes epg.xml.gz, report.txt and extra_channels.txt"""
-import gzip, re, shutil, sys, tempfile, urllib.request, datetime as dt
+import copy, difflib, gzip, re, shutil, sys, tempfile, urllib.request, datetime as dt
 import xml.etree.ElementTree as ET
 from collections import defaultdict
 
 PRIMARY = "https://epg.team/3.1.xml"
-EXTRAS = ["https://iptv-epg.org/files/epg-il.xml"]   # sources used only to extend the days ahead
+# sources used only to extend the days ahead (a source that fails is skipped and shown in report.txt)
+EXTRAS = ["https://iptv-epg.org/files/epg-il.xml",
+          "https://iptv-epg.org/files/epg-uk.xml",
+          "https://iptv-epg.org/files/epg-us.xml",
+          "https://iptv-epg.org/files/epg-ca.xml"]
 OUT, REPORT, EXTRA_LIST = "epg.xml.gz", "report.txt", "extra_channels.txt"
 KEEP_PAST_HOURS = 3
-MAX_DAYS_AHEAD = 4
+MAX_DAYS_AHEAD = 5
+WANT_DAYS = 3.5          # channels that end earlier than this are listed as SHORT in report.txt
 MERGE_GAP_SECONDS = 120
 
-# our channel name (normalised) -> name used in the extra sources (normalised)
-ALIAS = {"sport5": "5sport", "sport5plus": "5plus", "sport5live": "5live", "sport5gold": "5gold",
-         "sport5stars": "5stars", "sport5max": "5max", "sport54k": "5sport4k"}
-DROP = {"hd", "fhd", "il", "channel", "tv", "the", "uk", "us", "ca", "cz"}
+# our channel name -> possible names in the extra sources (compared after normalising, word order ignored)
+ALIAS_RAW = {
+    "Sport 5": ["5sport"], "Sport 5 Plus": ["5plus"], "Sport 5 Live": ["5live"], "Sport 5 Gold": ["5gold"],
+    "Sport 5 Stars": ["5stars"], "Sport 5 MAX": ["5max"], "Sport 5 4K": ["5sport 4k"],
+    "Sport 1": ["ספורט 1"], "Sport 2": ["ספורט 2"], "Sport 3": ["ספורט 3"], "Sport 4": ["ספורט 4"],
+    "Channel 12": ["קשת", "קשת 12", "ערוץ 12"], "Channel 13": ["רשת", "רשת 13", "ערוץ 13"],
+    "Channel 11": ["כאן 11", "כאן"], "Channel 14": ["ערוץ 14"],
+    "Channel 24": ["ערוץ החדשות 24", "חדשות 24"], "Kan Chinuchit 23": ["ערוץ חינוכית 23", "חינוכית 23"],
+    "Humor Channel": ["ערוץ ההומור"], "Health Channel": ["ערוץ הבריאות"],
+    "History": ["היסטוריה", "ערוץ ההיסטוריה"], "Travel Channel": ["ערוץ הטיולים"], "Food Channel": ["ערוץ האוכל"],
+    "Good Life TV": ["החיים הטובים"], "Reality": ["ערוץ הריאליטי"], "Disney Channel": ["דיסני"],
+    "Discovery Channel": ["דיסקברי"], "Nick": ["ניקלודיאון"], "Baby TV": ["בייבי"], "Hop": ["הופ!"],
+    "Yam Tihoni": ["ים תיכוני"], "Yam Tihoni Plus": ["הערוץ הים תיכוני+"],
+    "Turkish Drama Plus": ["ערוץ הדרמות הטורקיות+"], "Turkish Drama 2": ["2 ערוץ הדרמות הטורקיות"],
+    "Turkish Drama 3": ["3 ערוץ הדרמות הטורקיות"], "Wiz": ["ערוץ WiZ"], "Nat Geo": ["National Geographic"],
+    "Nat Geo Wild": ["NG WILD"], "Eurosport 1": ["EUROSPORT"], "Eurosport 2": ["EUROSPORT 2"],
+    "YES Docu": ["yes דוקו"], "YES Israeli Cinema": ["yes קולנוע ישראלי"], "Bollywood": ["yesBollywood", "BollyShow"],
+    "Luli": ["HOT Luli"],
+}
+DROP = {"hd", "fhd", "sd", "il", "channel", "tv", "the", "uk", "us", "ca", "cz"}
 
 def load_ids(path="channels.txt"):
     return {l.strip() for l in open(path, encoding="utf-8") if l.strip()}
@@ -37,7 +58,12 @@ def norm_key(name):
     s = re.sub(r"\[.*?\]|\(.*?\)", " ", name.lower().replace("+", " plus "))
     s = re.sub(r"^\s*(il|uk|us|ca|cz)\s*:", "", s)
     words = [w for w in re.sub(r"[^a-z0-9\u0590-\u05ff]+", " ", s).split() if w not in DROP]
-    return "".join(words)
+    return "".join(sorted(words))
+
+ALIAS = {}
+def _build_alias():
+    for k, vs in ALIAS_RAW.items():
+        ALIAS.setdefault(norm_key(k), []).extend(norm_key(v) for v in vs)
 
 def to_file(src):
     """download (or copy) a source into a temp file and return its path (handles .gz)"""
@@ -121,34 +147,44 @@ def main(src=PRIMARY, out=OUT, ids_file="channels.txt", now=None, report=REPORT,
     names = {cid: (channels[cid][0][0] if cid in channels and channels[cid][0] else "") for cid in ids}
     lines = [f"built: {now:%Y-%m-%d %H:%M} UTC | primary programmes seen: {seen}"]
     # ---- extra sources: extend the days ahead
+    _build_alias()
     our_keys = {cid: norm_key(names[cid]) for cid in ids if names[cid]}
-    ext_note, listing, extended = [], [], 0
+    ext_note, listing, extended_ids, extra_keys = [], [], set(), set()
     for ex in extras:
         try:
             epath = to_file(ex)
-            ech, eprog, _ = read_source(epath, lambda c, n: True, lambda c: True, lo, hi)
+            ech, _, _ = read_source(epath, lambda c, n: True, lambda c: False, lo, hi)   # pass 1: channel names only
+            by_key = {}
+            for ecid, (enames, _) in ech.items():
+                listing.append(f"{ecid} | {' / '.join(enames)}")
+                for k in {norm_key(n) for n in enames if n} | {norm_key(ecid.split('.')[0])}:
+                    if k: by_key.setdefault(k, []).append(ecid); extra_keys.add(k)
+            plan = {}   # our id -> candidate extra ids (best guesses first)
+            for cid, k in our_keys.items():
+                cands = []
+                for kk in [k] + ALIAS.get(k, []):
+                    cands += [e for e in by_key.get(kk, []) if e not in cands]
+                if cands: plan[cid] = cands
+            wanted = {e for c in plan.values() for e in c}
+            _, eprog, _ = read_source(epath, lambda c, n: False, lambda c: c in wanted, lo, hi)   # pass 2: only matched channels
         except Exception as e:
             ext_note.append(f"extra source FAILED: {ex} ({type(e).__name__}: {str(e)[:80]})"); continue
-        by_key = {}
-        for ecid, (enames, _) in ech.items():
-            listing.append(f"{ecid} | {' / '.join(enames)}")
-            for k in {norm_key(n) for n in enames if n} | {norm_key(ecid.split('.')[0])}:
-                if k: by_key.setdefault(k, ecid)
         matched = 0
-        for cid, k in our_keys.items():
-            ecid = by_key.get(ALIAS.get(k, k))
-            if not ecid or not eprog.get(ecid):
-                continue
+        for cid, cands in plan.items():
+            cands = [e for e in cands if eprog.get(e)]
+            if not cands: continue
+            ecid = max(cands, key=lambda e: max(x[1] for x in eprog[e]))   # the candidate that reaches furthest
             last = max((m[1] for m in merged[cid]), default=None)
             add = []
             for s, e, el in eprog[ecid]:
+                el = copy.deepcopy(el)
                 if last is not None:
                     if e <= last: continue
                     if s < last: s = last
                 if e > s:
                     el.set("channel", cid); add.append((s, e, el))
             if add:
-                merged[cid] = merge_programmes(merged[cid] + add); matched += 1; extended += 1
+                merged[cid] = merge_programmes(merged[cid] + add); matched += 1; extended_ids.add(cid)
         ext_note.append(f"extra source ok: {ex} | channels in it: {len(ech)} | my channels extended: {matched}")
     lines += ext_note
     lines.append(f"{'channel':10} {'name':32} {'progs':>5}  coverage")
@@ -166,6 +202,11 @@ def main(src=PRIMARY, out=OUT, ids_file="channels.txt", now=None, report=REPORT,
             cov = f"{items[0][0]:%m-%d %H:%M} -> {items[-1][1]:%m-%d %H:%M}" if items else "NO PROGRAMMES"
             lines.append(f"{cid:10} {names[cid][:32]:32} {len(items):5}  {cov}")
         f.write("</tv>\n")
+    short = [(cid, merged[cid][-1][1] if merged[cid] else now) for cid in ids if not merged[cid] or merged[cid][-1][1] < now + dt.timedelta(days=WANT_DAYS)]
+    lines.append(f"SHORT (< {WANT_DAYS} days ahead): {len(short)} of {len(ids)} channels")
+    for cid, end in sorted(short, key=lambda x: x[1]):
+        hint = difflib.get_close_matches(our_keys.get(cid, ""), list(extra_keys), n=2, cutoff=0.6) if extra_keys else []
+        lines.append(f"  short {cid:8} {names[cid][:30]:30} ends {end:%m-%d %H:%M}" + (f" | similar in extras: {hint}" if hint else ""))
     lines.append(f"total: {kept} kept from primary, {after} after merging/extending")
     open(report, "w", encoding="utf-8").write("\n".join(lines) + "\n")
     if listing:
