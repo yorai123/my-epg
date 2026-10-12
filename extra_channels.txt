@@ -1,0 +1,154 @@
+1+1.il | IL - 1+1
+5GOLD.il | IL - 5GOLD
+5LIVEHD.il | IL - 5LIVE HD
+5PLUSHD.il | IL - 5PLUS HD
+5SPORT4K.il | IL - 5SPORT 4K
+5STARS.il | IL - 5STARS
+5sportHD.il | IL - 5sport HD
+ALJAZEERAENGLISH.il | IL - ALJAZEERA ENGLISH
+ARTE.il | IL - ARTE
+AnimalPlanet.il | IL - Animal Planet
+BOBER.il | IL - BOBER
+BabyRUS.il | IL - Baby (RUS)
+BollyShow.il | IL - BollyShow
+CAROUSEL.il | IL - CAROUSEL
+CBSreality.il | IL - CBS reality
+CCTVNEWS.il | IL - CCTV NEWS
+CGTNDOCUMENTARY.il | IL - CGTN DOCUMENTARY
+CHANNEL1RUS.il | IL - CHANNEL 1 RUS
+CLASSICA.il | IL - CLASSICA
+CNN.il | IL - CNN
+CTC.il | IL - CTC
+ClubMTV.il | IL - Club MTV
+CurrentTime.il | IL - Current Time
+DOMKINO.il | IL - DOM KINO
+Daystar.il | IL - Daystar
+DiscoveryScience.il | IL - Discovery Science
+DisneyJuniorRUS.il | IL - Disney Junior RUS
+E!.il | IL - E!
+EUROSPORT.il | IL - EUROSPORT
+EUROSPORT2.il | IL - EUROSPORT 2
+Eurostar.il | IL - Eurostar
+FOXNEWS.il | IL - FOX NEWS
+FRANCE2.il | IL - FRANCE2
+FRANCE24.il | IL - FRANCE 24
+FRANCE3.il | IL - FRANCE 3
+FTV.il | IL - FTV
+GTV.il | IL - GTV
+HOT3.il | IL - HOT 3
+HOT8.il | IL - HOT 8
+HOTCinema1.il | IL - HOT Cinema 1
+HOTCinema2.il | IL - HOT Cinema 2
+HOTCinema3.il | IL - HOT Cinema 3
+HOTCinema4.il | IL - HOT Cinema 4
+HOTComedyCentral.il | IL - HOT Comedy Central
+HOTEntertainment.il | IL - HOT Entertainment
+HOTHBO.il | IL - HOT HBO
+HOTLuli.il | IL - HOT Luli
+HOTReal.il | IL - HOT Real
+HOTZone.il | IL - HOT Zone
+HalaTV.il | IL - Hala TV
+IETV.il | IL - I.E.T.V.
+InvestigationDiscovery.il | IL - Investigation Discovery
+JimJam.il | IL - Jim Jam
+JimJamRUS.il | IL - Jim Jam RUS
+LBC.il | IL - LBC
+METV.il | IL - METV
+MTV.il | IL - MTV
+MTV80s.il | IL - MTV 80s
+MTVHD.il | IL - MTV HD
+MTVHITS.il | IL - MTV HITS
+MUTV.il | IL - MUTV
+Mediaset.il | IL - Mediaset
+NASHEKINO.il | IL - NASHE KINO
+NGWILD.il | IL - NG WILD
+NTVMIR.il | IL - NTV MIR
+NationalGeographic.il | IL - National Geographic
+ONE.il | IL - ONE
+ONE2.il | IL - ONE2
+PROTVINTERNATIONAL.il | IL - PROTV INTERNATIONAL
+RENTV.il | IL - REN TV
+ROTANA.il | IL - ROTANA
+ROTANACINEMA.il | IL - ROTANA CINEMA
+RTL.il | IL - RTL
+RTM.il | IL - RTM
+RTRPLANETA.il | IL - RTR PLANETA
+RTVINTERNATIONAL.il | IL - RTV INTERNATIONAL
+RussianMusicBox.il | IL - Russian Music Box
+SHANSONTV.il | IL - SHANSON TV
+SKYNEWS.il | IL - SKY NEWS
+TLC.il | IL - TLC
+TV1000RussianKino.il | IL - TV1000 Russian Kino
+TVCI.il | IL - TVCI
+TVE.il | IL - TVE
+TVRinternational.il | IL - TVR international
+Teennick.il | IL - Teennick
+Telecafe.il | IL - Telecafe
+VivaPremium.il | IL - Viva Premium
+Vremya.il | IL - Vremya
+YesPOPUP.il | IL - Yes POP UP
+ZEETV.il | IL - ZEE TV
+ZOOMTOON.il | IL - ZOOM TOON
+Zoom.il | IL - Zoom
+blueHUSTLER.il | IL - blue HUSTLER
+yesBollywood.il | IL - yesBollywood
+yesMOVIESACTION.il | IL - yes MOVIES ACTION
+yesMOVIESCOMEDY.il | IL - yes MOVIES COMEDY
+yesMOVIESDRAMA.il | IL - yes MOVIES DRAMA
+yesMOVIESKIDS.il | IL - yes MOVIES KIDS
+yesTVACTION.il | IL - yes TV ACTION
+yesTVCOMEDY.il | IL - yes TV COMEDY
+yesTVDRAMA.il | IL - yes TV DRAMA
+yesדוקו.il | IL - yes דוקו
+yesקולנועישראלי.il | IL - yes קולנוע ישראלי
+אלגאזירה.il | IL - אלגאזירה
+בייבי.il | IL - בייבי
+בית+.il | IL - בית+
+בלומברג.il | IL - בלומברג
+גרמניהSAT1.il | IL - גרמניה SAT1
+גרמניהSAT3.il | IL - גרמניה SAT3
+דיסניHD.il | IL - דיסני HD
+דיסקבריHD.il | IL - דיסקברי HD
+האחהגדול.il | IL - האח הגדול
+הופ!.il | IL - הופ!
+החייםהטובים.il | IL - החיים הטובים
+היסטוריהHD.il | IL - היסטוריה HD
+הערוץהיםתיכוני+.il | IL - הערוץ הים תיכוני+
+ויוה+.il | IL - ויוה+
+ויוה.il | IL - ויוה
+ילדותישראלית.il | IL - ילדות ישראלית
+יםתיכוני.il | IL - ים תיכוני
+ישראלפלוס.il | IL - ישראל פלוס
+כאן11.il | IL - כאן 11
+מכאן.il | IL - מכאן
+ניקלודיאון.il | IL - ניקלודיאון
+ספורט1HD.il | IL - ספורט 1 HD
+ספורט1SD.il | IL - ספורט 1 SD
+ספורט2HD.il | IL - ספורט 2 HD
+ספורט3HD.il | IL - ספורט 3 HD
+ספורט4HD.il | IL - ספורט 4 HD
+ערוץ14.il | IL - ערוץ 14
+ערוץ23חינוכית.il | IL - ערוץ 23 חינוכית
+ערוץ24החדש.il | IL - ערוץ 24 החדש
+ערוץ98.il | IL - ערוץ 98
+ערוץWiZ.il | IL - ערוץ WiZ
+ערוץאגו.il | IL - ערוץ אגו
+ערוץבריאות.il | IL - ערוץ בריאות
+ערוץהאוכל.il | IL - ערוץ האוכל
+ערוץהדרמותהטורקיות+.il | IL - ערוץ הדרמות הטורקיות+
+ערוץהדרמותהטורקיות2.il | IL - ערוץ הדרמות הטורקיות 2
+ערוץהדרמותהטורקיות3.il | IL - ערוץ הדרמות הטורקיות 3
+ערוץההומור.il | IL - ערוץ ההומור
+ערוץההיסטוריה.il | IL - ערוץ ההיסטוריה
+ערוץהטיולים.il | IL - ערוץ הטיולים
+ערוץהידברות.il | IL - ערוץ הידברות
+ערוץהכוכבים.il | IL - ערוץ הכוכבים
+ערוץהכנסת.il | IL - ערוץ הכנסת
+ערוץהנופש.il | IL - ערוץ הנופש
+ערוץהסטייל.il | IL - ערוץ הסטייל
+ערוץהעיצוב.il | IL - ערוץ העיצוב
+ערוץהקניות.il | IL - ערוץ הקניות
+ערוץהריאליטי.il | IL - ערוץ הריאליטי
+ערוץהשעשועונים.il | IL - ערוץ השעשועונים
+קשת.il | IL - קשת
+רשת.il | IL - רשת

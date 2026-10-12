@@ -1,161 +1,162 @@
-built: 2026-10-12 08:56 UTC | source programmes seen: 426751
-channel    name                             progs distinct titles  coverage (UTC offset as in source)
-ch149      Sky Sport 1 HD                       4               3  10-12 03:00 -> 10-13 15:00
-ch150      Sky Sport 2 HD                       2               2  10-11 21:00 -> 10-13 08:00
-ch233      UK: TNT Sport 3 HD                  32              14  10-12 05:00 -> 10-13 08:00
-ch236      UK: TNT Sport 1 HD                  25              15  10-12 05:30 -> 10-13 08:45
-ch237      Deluxe Music HD                     15              11  10-12 04:00 -> 10-13 08:00
-ch334      UK: TNT Sport 2 HD                  23              11  10-12 05:00 -> 10-13 08:00
-ch335      UK: Sky Sports Main Event HD        11               7  10-12 05:00 -> 10-13 15:30
-ch427      IL: Channel 9 HD                    36              22  10-12 05:30 -> 10-13 08:00
-ch428      IL: Channel 11 HD                   29              25  10-12 05:00 -> 10-13 09:00
-ch429      IL: Channel 12 HD                   31              26  10-12 04:08 -> 10-13 08:00
-ch430      IL: Channel 13 HD                   38              22  10-12 04:00 -> 10-13 08:00
-ch1025     UK: Zee TV HD                       43              10  10-12 05:30 -> 10-13 08:00
-ch1118     IL: Baby TV                        297             231  10-12 05:55 -> 10-13 07:53
-ch1119     IL: Channel 14 HD                   30              18  10-12 04:05 -> 10-13 08:00
-ch1120     IL: Discovery Channel HD            38              36  10-12 05:30 -> 10-13 07:50
-ch1121     IL: Disney Channel HD               72              60  10-12 05:40 -> 10-13 07:57
-ch1122     IL: E!                              40              27  10-12 05:25 -> 10-13 08:14
-ch1124     IL: Food Channel HD                 42              36  10-12 05:42 -> 10-13 07:53
-ch1126     IL: Nat Geo HD                      38              24  10-12 05:40 -> 10-13 07:53
-ch1128     IL: Sport 1 HD                      25              13  10-12 05:15 -> 10-13 09:45
-ch1129     IL: Sport 2 HD                      22              17  10-12 05:20 -> 10-13 08:20
-ch1130     IL: Sport 3 HD                      10               8  10-12 03:00 -> 10-13 09:00
-ch1131     IL: Sport 4 HD                      15              12  10-12 04:00 -> 10-13 08:00
-ch1132     IL: Sport 5 HD                      29              11  10-12 05:15 -> 10-13 08:40
-ch1133     IL: HOT Cinema Israeli HD           23              19  10-12 04:31 -> 10-13 08:16
-ch1134     IL: Sport 5 Plus                    18              16  10-12 05:30 -> 10-13 08:10
-ch1135     IL: Sport 5 Gold                    22              17  10-12 04:30 -> 10-13 09:00
-ch1136     IL: Travel Channel HD               33              27  10-12 05:46 -> 10-13 07:51
-ch1137     IL: YES Docu HD                     21              15  10-12 05:35 -> 10-13 08:20
-ch1138     IL: Nat Geo Wild HD                 37              17  10-12 05:27 -> 10-13 08:30
-ch1139     IL: HOT Zone HD                     37              13  10-12 05:40 -> 10-13 07:49
-ch1140     IL: HOT Cinema 3 HD                 17              17  10-12 04:25 -> 10-13 08:59
-ch1141     IL: Good Life TV HD                 39              31  10-12 05:55 -> 10-13 08:37
-ch1142     IL: Channel 24                      47              43  10-12 05:56 -> 10-13 08:04
-ch1143     IL: History HD                      40              22  10-12 05:28 -> 10-13 08:37
-ch1144     IL: HOT 8 HD                        29              12  10-12 05:19 -> 10-13 08:25
-ch1145     IL: ONE 2 HD                        21              11  10-12 03:56 -> 10-13 08:20
-ch1146     IL: Viva Vintage                    31              15  10-12 05:35 -> 10-13 07:57
-ch1147     IL: HOT 3 HD                        40              21  10-12 05:42 -> 10-13 07:59
-ch1152     IL: Yam Tihoni Plus                 34              13  10-12 05:30 -> 10-13 08:05
-ch1153     IL: HOT Cinema Family HD            13              12  10-12 05:55 -> 10-13 09:00
-ch1154     IL: Hop                            110              64  10-12 05:46 -> 10-13 07:57
-ch1155     IL: Sport 5 Livе                    16              15  10-12 03:50 -> 10-13 10:20
-ch1156     IL: Sport 5 Stars                   16              14  10-12 05:10 -> 10-13 08:15
-ch1161     IL: HOT Cinema 1 HD                 15              15  10-12 03:22 -> 10-13 09:03
-ch1162     IL: Disney Jr.                      87              74  10-12 05:41 -> 10-13 08:02
-ch1163     IL: HOT Bidur HD                    42              18  10-12 05:25 -> 10-13 08:21
-ch1164     IL: Yam Tihoni 2                    36              16  10-12 05:19 -> 10-13 08:23
-ch1167     IL: Star Channel                    83              60  10-12 05:12 -> 10-13 08:50
-ch1170     IL: Luli                           217             151  10-12 05:55 -> 10-13 07:54
-ch1171     IL: Kan Chinuchit 23                73              61  10-12 05:50 -> 10-13 08:03
-ch1172     IL: HOT Cinema 2 HD                 16              16  10-12 05:33 -> 10-13 08:28
-ch1173     IL: HOT Real HD                     51              20  10-12 05:47 -> 10-13 08:09
-ch1174     IL: HOT Comedy Central HD           73              59  10-12 05:36 -> 10-13 08:06
-ch1175     IL: HOT HBO HD                      27              15  10-12 05:50 -> 10-13 07:53
-ch1176     IL: Health Channel HD               40              37  10-12 05:51 -> 10-13 08:15
-ch1178     IL: Humor Channel                   59              50  10-12 05:33 -> 10-13 07:58
-ch1181     IL: Makan 33 HD                     32              27  10-12 05:00 -> 10-13 09:00
-ch1182     IL: Reality HD                      34              17  10-12 05:29 -> 10-13 08:32
-ch1183     IL: Free Tv Сomedy 2 HD             47              41  10-12 05:37 -> 10-13 08:03
-ch1184     IL: Junior                          79              56  10-12 05:42 -> 10-13 07:55
-ch1185     IL: Nick HD                         68              61  10-12 05:46 -> 10-13 08:11
-ch1186     IL: ONE 1 HD                        20              18  10-12 05:40 -> 10-13 09:15
-ch1188     IL: Viva Premium HD                 39              19  10-12 05:19 -> 10-13 08:09
-ch1189     IL: Viva                            34              17  10-12 05:55 -> 10-13 08:23
-ch1190     IL: Viva+                           36              16  10-12 05:34 -> 10-13 08:00
-ch1191     IL: Yam Tihoni HD                   32               8  10-12 05:16 -> 10-13 08:22
-ch1192     IL: HOT Cinema 4 HD                 16              16  10-12 04:46 -> 10-13 07:54
-ch1193     IL: Free Movies Comedy HD           17              17  10-12 05:20 -> 10-13 08:52
-ch1194     IL: Cellcom Movies Kids HD          18              17  10-12 05:17 -> 10-13 08:16
-ch1195     IL: ONE Doco                        39              34  10-12 05:17 -> 10-13 08:09
-ch1436     CA: TSN 5 HD                        13              10  10-12 04:00 -> 10-13 08:00
-ch1498     UK: Sky Sports Tennis HD            20              10  10-12 04:00 -> 10-13 14:00
-ch1549     CA: TSN 4 HD                        13               9  10-12 05:00 -> 10-13 08:00
-ch1624     US: Tennis Channel 2 HD              0               0  NO PROGRAMMES
-ch1625     US: ESPN HD                         16              13  10-12 05:00 -> 10-13 08:00
-ch1626     US: ESPN 2 HD                       18              16  10-12 04:00 -> 10-13 08:00
-ch2002     UK: TNT Sport 4 HD                  22              17  10-12 05:30 -> 10-13 08:30
-ch2003     IL: Hop Pele HD                    149              64  10-12 05:53 -> 10-13 07:55
-ch2028     IL: Turkish Drama Plus              36              13  10-12 05:25 -> 10-13 08:18
-ch2029     IL: Turkish Drama 2                 37              16  10-12 05:23 -> 10-13 08:44
-ch2030     IL: YES Israeli Cinema HD           29              24  10-12 05:41 -> 10-13 08:36
-ch2031     IL: Wiz                             93              75  10-12 05:52 -> 10-13 08:07
-ch2032     IL: Big                              1               1  10-12 05:00 -> 10-13 09:00
-ch2086     IL: Free Tv Karaoke HD              10               5  10-12 03:00 -> 10-13 09:00
-ch2087     IL: Free Tv Teva HD                 35              20  10-12 05:32 -> 10-13 08:22
-ch2138     IL: Hop Israeli Childhood           13              10  10-12 04:30 -> 10-13 08:00
-ch2211     IL: Sport 5 4K                      19               3  10-12 05:25 -> 10-13 08:35
-ch2494     IL: Cellcom Movies Drama HD         15              15  10-12 05:27 -> 10-13 07:57
-ch2495     IL: Cellcom Movies Action HD        16              16  10-12 05:34 -> 10-13 07:53
-ch2496     IL: Eurosport 1 HD                  17               9  10-12 05:00 -> 10-13 09:00
-ch2497     IL: Eurosport 2 HD                  15               6  10-12 05:00 -> 10-13 09:00
-ch2498     IL: Ego Total                       37              35  10-12 05:36 -> 10-13 08:24
-ch2499     IL: Cellcom Israel                  23              19  10-12 04:42 -> 10-13 08:13
-ch2500     IL: TeenNick                        69              67  10-12 05:36 -> 10-13 08:07
-ch2533     IL: Free Series Global HD           38              21  10-12 05:50 -> 10-13 07:49
-ch2534     IL: Free Movies Drama HD            16              16  10-12 03:29 -> 10-13 08:20
-ch2535     IL: Free Movies Horror HD            7               6  10-12 02:36 -> 10-13 18:30
-ch2536     IL: Free Movies Romantic HD         17              17  10-12 05:55 -> 10-13 09:30
-ch2537     IL: Free Movies Action HD           17              17  10-12 05:36 -> 10-13 09:48
-ch2538     IL: Free Israeli Movies HD          18              18  10-12 05:28 -> 10-13 09:03
-ch2539     IL: Free Tv Drama HD                41              24  10-12 05:22 -> 10-13 08:11
-ch2540     IL: Free Tv Comedy HD               50              42  10-12 05:43 -> 10-13 08:00
-ch2541     IL: Free Tv Lifestyle HD            50              30  10-12 05:46 -> 10-13 08:12
-ch2542     IL: Free Tv Cooking HD              48              30  10-12 05:34 -> 10-13 08:22
-ch2543     IL: Free Tv Doco HD                 32              25  10-12 05:30 -> 10-13 07:49
-ch2544     IL: Erez Nehederet HD               34              28  10-12 05:47 -> 10-13 07:52
-ch2545     IL: Savri HD                        64              53  10-12 05:42 -> 10-13 08:02
-ch2611     IL: Turkish Drama 3                 36              17  10-12 05:37 -> 10-13 08:35
-ch2613     IL: HOT Senior HD                   22              18  10-12 04:52 -> 10-13 09:38
-ch2614     IL: HOT Buzz HD                     80              57  10-12 05:50 -> 10-13 08:00
-ch2616     IL: Bollywood                       11              11  10-12 04:45 -> 10-13 08:55
-ch2617     IL: Free Movies Family HD           18              18  10-12 04:29 -> 10-13 08:06
-ch2618     IL: MTV HD                          10               2  10-12 04:05 -> 10-13 08:00
-ch2619     IL: MTV 00s                          1               1  10-12 03:00 -> 10-13 09:00
-ch2623     IL: Sport 5 MAX                     15              13  10-12 05:15 -> 10-13 08:40
-ch2624     IL: Animal Planet HD                33              32  10-12 05:40 -> 10-13 07:53
-ch2625     IL: YoYo                           138              68  10-12 05:48 -> 10-13 07:51
-ch2626     IL: Logi                            68              14  10-12 05:45 -> 10-13 07:55
-ch2627     IL: Fomo                            60              10  10-12 05:56 -> 10-13 07:54
-ch2628     IL: Sport 6 HD                      13               8  10-12 04:50 -> 10-13 11:30
-ch2629     IL: Edge Sport HD                   32              10  10-12 05:47 -> 10-13 08:19
-ch2630     IL: Foody HD                        49              27  10-12 05:39 -> 10-13 08:15
-ch2631     IL: Home Plus                       40              17  10-12 05:22 -> 10-13 07:56
-ch2632     IL: TLC HD                           0               0  NO PROGRAMMES
-ch2633     IL: HOT Cinema 1 HD (ru)             0               0  NO PROGRAMMES
-ch2634     IL: HOT Cinema 2 HD (ru)             0               0  NO PROGRAMMES
-ch2635     IL: HOT Cinema 3 HD (ru)             0               0  NO PROGRAMMES
-ch2636     IL: HOT Cinema 4 HD (ru)             0               0  NO PROGRAMMES
-ch2637     IL: Nick Jr HD                      77              62  10-12 05:52 -> 10-13 08:05
-ch2638     IL: HOT Zone HD (ru)                37              13  10-12 05:40 -> 10-13 07:49
-ch2639     IL: Cellcom TV Shows HD             48              30  10-12 04:23 -> 10-13 08:24
-ch2640     IL: Cellcom Doco HD                 15              14  10-12 04:55 -> 10-13 08:01
-ch2641     IL: Spanish Drama Channel 1 HD      33              14  10-12 05:52 -> 10-13 08:09
-ch2642     IL: Fashion                         65              49  10-12 05:24 -> 10-13 07:57
-ch2643     IL: Zoom                            69              58  10-12 05:55 -> 10-13 08:02
-ch2644     IL: Zoom Toon HD                    92              86  10-12 05:52 -> 10-13 07:55
-ch2645     IL: Jim Jam                        147             142  10-12 05:50 -> 10-13 07:55
-ch2646     IL: Yalduti                         27              27  10-12 05:38 -> 10-13 09:04
-ch2738                                          0               0  NO PROGRAMMES
-ch2750     UK: Now 70s                          7               4  10-12 04:00 -> 10-13 16:00
-ch2751     UK: Now 80s                          9               6  10-12 05:00 -> 10-13 11:00
-ch2824     IL: i24 News                        35              14  10-12 05:10 -> 10-13 08:00
-ch2884     CA: TSN 2 HD                        17               9  10-12 03:00 -> 10-13 09:00
-ch2886     CA: TSN 1 HD                         9               8  10-12 05:00 -> 10-13 08:30
-ch2934     IL: Aruch Sdarot Hahodiot           56              19  10-12 05:36 -> 10-13 08:06
-ch2935     IL: Aruch Sdarot Hahodiot 2         65              19  10-12 05:48 -> 10-13 07:59
-ch3036     IL: Free Tv Feel Good               17              17  10-12 04:37 -> 10-13 07:52
-ch3133     IL: Spanish Drama Channel 2 HD      34              13  10-12 05:13 -> 10-13 08:38
-ch3134     IL: Kalkala 10 HD                   20              12  10-12 05:00 -> 10-13 09:00
-ch3172     CA: TSN 3 HD                         9               8  10-12 05:00 -> 10-13 08:30
-ch3224     IL: Free Movies 10 Stars HD         16              16  10-12 04:28 -> 10-13 08:03
-ch3908     IL: Dramot Youmiyout HD             33               7  10-12 05:55 -> 10-13 08:05
-ch4011     CZ: Retro Music TV                  17              12  10-12 02:59 -> 10-13 08:00
-ch4035     IL: Beautyz HD                      50              10  10-12 05:31 -> 10-13 07:53
-ch4036     IL: Bama Israelit HD                18              14  10-12 04:00 -> 10-13 09:00
-ch4051     IL: Arutz Hagiborim HD               1               1  10-12 05:00 -> 10-13 08:00
-ch4054     IL: Arutz Pesha Amiti HD             1               1  10-12 05:00 -> 10-13 08:00
-total: 5932 kept, 5719 after merging
+built: 2026-10-12 15:10 UTC | primary programmes seen: 425168
+extra source ok: https://iptv-epg.org/files/epg-il.xml | channels in it: 154 | my channels extended: 33
+channel    name                             progs  coverage
+ch149      Sky Sport 1 HD                       4  10-12 03:00 -> 10-13 15:00
+ch150      Sky Sport 2 HD                       1  10-12 12:00 -> 10-13 16:00
+ch233      UK: TNT Sport 3 HD                  33  10-12 11:30 -> 10-13 14:45
+ch236      UK: TNT Sport 1 HD                  26  10-12 12:00 -> 10-13 16:00
+ch237      Deluxe Music HD                     15  10-12 12:00 -> 10-13 15:00
+ch334      UK: TNT Sport 2 HD                  16  10-12 12:00 -> 10-13 15:00
+ch335      UK: Sky Sports Main Event HD        10  10-12 07:00 -> 10-13 15:30
+ch427      IL: Channel 9 HD                    37  10-12 11:25 -> 10-13 15:00
+ch428      IL: Channel 11 HD                   29  10-12 12:00 -> 10-13 14:55
+ch429      IL: Channel 12 HD                   31  10-12 12:00 -> 10-13 14:55
+ch430      IL: Channel 13 HD                   34  10-12 12:00 -> 10-13 14:55
+ch1025     UK: Zee TV HD                      174  10-12 11:00 -> 10-16 15:30
+ch1118     IL: Baby TV                        304  10-12 12:08 -> 10-15 14:00
+ch1119     IL: Channel 14 HD                   29  10-12 12:00 -> 10-13 15:00
+ch1120     IL: Discovery Channel HD            41  10-12 11:35 -> 10-13 15:25
+ch1121     IL: Disney Channel HD               73  10-12 12:08 -> 10-13 14:46
+ch1122     IL: E!                             158  10-12 11:52 -> 10-16 15:26
+ch1124     IL: Food Channel HD                 42  10-12 11:46 -> 10-13 14:47
+ch1126     IL: Nat Geo HD                      38  10-12 11:52 -> 10-13 14:54
+ch1128     IL: Sport 1 HD                      27  10-12 10:40 -> 10-13 15:00
+ch1129     IL: Sport 2 HD                      24  10-12 11:50 -> 10-13 15:00
+ch1130     IL: Sport 3 HD                      10  10-12 12:00 -> 10-13 15:00
+ch1131     IL: Sport 4 HD                      22  10-12 10:00 -> 10-13 15:10
+ch1132     IL: Sport 5 HD                      91  10-12 11:00 -> 10-16 15:30
+ch1133     IL: HOT Cinema Israeli HD           23  10-12 11:31 -> 10-13 15:38
+ch1134     IL: Sport 5 Plus                    92  10-12 12:00 -> 10-16 15:30
+ch1135     IL: Sport 5 Gold                    98  10-12 10:55 -> 10-16 16:10
+ch1136     IL: Travel Channel HD               33  10-12 11:49 -> 10-13 14:47
+ch1137     IL: YES Docu HD                     21  10-12 12:00 -> 10-13 15:05
+ch1138     IL: Nat Geo Wild HD                 38  10-12 11:32 -> 10-13 15:16
+ch1139     IL: HOT Zone HD                    114  10-12 12:00 -> 10-15 20:28
+ch1140     IL: HOT Cinema 3 HD                 50  10-12 12:06 -> 10-15 20:30
+ch1141     IL: Good Life TV HD                 38  10-12 11:50 -> 10-13 15:04
+ch1142     IL: Channel 24                      48  10-12 12:09 -> 10-13 14:47
+ch1143     IL: History HD                      40  10-12 12:07 -> 10-13 14:52
+ch1144     IL: HOT 8 HD                        84  10-12 11:37 -> 10-15 20:50
+ch1145     IL: ONE 2 HD                        91  10-12 11:20 -> 10-16 16:31
+ch1146     IL: Viva Vintage                    32  10-12 11:47 -> 10-13 14:44
+ch1147     IL: HOT 3 HD                       116  10-12 12:07 -> 10-15 20:33
+ch1152     IL: Yam Tihoni Plus                 35  10-12 12:03 -> 10-13 15:14
+ch1153     IL: HOT Cinema Family HD            15  10-12 11:10 -> 10-13 15:24
+ch1154     IL: Hop                            114  10-12 12:07 -> 10-13 14:46
+ch1155     IL: Sport 5 Livе                    14  10-12 12:05 -> 10-13 16:10
+ch1156     IL: Sport 5 Stars                   60  10-12 10:05 -> 10-16 15:20
+ch1161     IL: HOT Cinema 1 HD                 41  10-12 11:22 -> 10-15 19:00
+ch1162     IL: Disney Jr.                      89  10-12 11:55 -> 10-13 15:05
+ch1163     IL: HOT Bidur HD                    42  10-12 11:40 -> 10-13 14:51
+ch1164     IL: Yam Tihoni 2                    36  10-12 12:03 -> 10-13 15:09
+ch1167     IL: Star Channel                    92  10-12 12:09 -> 10-13 14:48
+ch1170     IL: Luli                           226  10-12 12:05 -> 10-13 14:43
+ch1171     IL: Kan Chinuchit 23                73  10-12 12:03 -> 10-13 14:42
+ch1172     IL: HOT Cinema 2 HD                 47  10-12 10:45 -> 10-15 20:36
+ch1173     IL: HOT Real HD                     72  10-12 11:49 -> 10-14 00:08
+ch1174     IL: HOT Comedy Central HD          153  10-12 12:08 -> 10-15 20:50
+ch1175     IL: HOT HBO HD                      85  10-12 12:03 -> 10-15 20:37
+ch1176     IL: Health Channel HD               42  10-12 11:47 -> 10-13 14:57
+ch1178     IL: Humor Channel                   59  10-12 12:04 -> 10-13 15:10
+ch1181     IL: Makan 33 HD                     35  10-12 11:45 -> 10-13 15:29
+ch1182     IL: Reality HD                      36  10-12 11:51 -> 10-13 15:33
+ch1183     IL: Free Tv Сomedy 2 HD             46  10-12 11:39 -> 10-13 14:46
+ch1184     IL: Junior                          81  10-12 11:57 -> 10-13 14:44
+ch1185     IL: Nick HD                         70  10-12 11:59 -> 10-13 15:00
+ch1186     IL: ONE 1 HD                        22  10-12 12:05 -> 10-13 16:00
+ch1188     IL: Viva Premium HD                128  10-12 11:40 -> 10-16 21:00
+ch1189     IL: Viva                            35  10-12 12:07 -> 10-13 15:16
+ch1190     IL: Viva+                           37  10-12 11:39 -> 10-13 14:42
+ch1191     IL: Yam Tihoni HD                   32  10-12 12:03 -> 10-13 15:05
+ch1192     IL: HOT Cinema 4 HD                 46  10-12 12:00 -> 10-15 20:46
+ch1193     IL: Free Movies Comedy HD           17  10-12 12:06 -> 10-13 15:30
+ch1194     IL: Cellcom Movies Kids HD          19  10-12 11:05 -> 10-13 15:34
+ch1195     IL: ONE Doco                        39  10-12 11:52 -> 10-13 15:13
+ch1436     CA: TSN 5 HD                        16  10-12 04:00 -> 10-13 15:00
+ch1498     UK: Sky Sports Tennis HD            21  10-12 04:00 -> 10-13 15:00
+ch1549     CA: TSN 4 HD                        12  10-12 12:00 -> 10-13 15:00
+ch1624     US: Tennis Channel 2 HD              0  NO PROGRAMMES
+ch1625     US: ESPN HD                         15  10-12 12:00 -> 10-13 16:00
+ch1626     US: ESPN 2 HD                       18  10-12 12:00 -> 10-13 16:00
+ch2002     UK: TNT Sport 4 HD                  25  10-12 12:00 -> 10-13 14:45
+ch2003     IL: Hop Pele HD                    151  10-12 12:09 -> 10-13 14:46
+ch2028     IL: Turkish Drama Plus              37  10-12 11:28 -> 10-13 15:15
+ch2029     IL: Turkish Drama 2                 38  10-12 11:43 -> 10-13 15:17
+ch2030     IL: YES Israeli Cinema HD           29  10-12 10:58 -> 10-13 14:44
+ch2031     IL: Wiz                             96  10-12 12:10 -> 10-13 14:44
+ch2032     IL: Big                              1  10-12 09:00 -> 10-13 17:00
+ch2086     IL: Free Tv Karaoke HD               9  10-12 12:00 -> 10-13 15:00
+ch2087     IL: Free Tv Teva HD                 35  10-12 11:48 -> 10-13 15:25
+ch2138     IL: Hop Israeli Childhood           14  10-12 11:00 -> 10-13 15:30
+ch2211     IL: Sport 5 4K                      71  10-12 12:05 -> 10-16 17:15
+ch2494     IL: Cellcom Movies Drama HD         17  10-12 11:24 -> 10-13 16:28
+ch2495     IL: Cellcom Movies Action HD        18  10-12 10:44 -> 10-13 16:06
+ch2496     IL: Eurosport 1 HD                  17  10-12 11:05 -> 10-13 15:00
+ch2497     IL: Eurosport 2 HD                  59  10-12 10:59 -> 10-16 16:00
+ch2498     IL: Ego Total                       37  10-12 12:07 -> 10-13 15:19
+ch2499     IL: Cellcom Israel                  23  10-12 11:45 -> 10-13 15:39
+ch2500     IL: TeenNick                       256  10-12 11:54 -> 10-16 15:22
+ch2533     IL: Free Series Global HD           37  10-12 11:46 -> 10-13 14:46
+ch2534     IL: Free Movies Drama HD            16  10-12 11:06 -> 10-13 15:23
+ch2535     IL: Free Movies Horror HD            7  10-12 02:36 -> 10-13 18:30
+ch2536     IL: Free Movies Romantic HD         17  10-12 12:09 -> 10-13 15:38
+ch2537     IL: Free Movies Action HD           16  10-12 11:53 -> 10-13 14:49
+ch2538     IL: Free Israeli Movies HD          19  10-12 10:45 -> 10-13 15:34
+ch2539     IL: Free Tv Drama HD                41  10-12 11:46 -> 10-13 14:52
+ch2540     IL: Free Tv Comedy HD               52  10-12 11:59 -> 10-13 14:47
+ch2541     IL: Free Tv Lifestyle HD            51  10-12 11:47 -> 10-13 14:54
+ch2542     IL: Free Tv Cooking HD              47  10-12 12:06 -> 10-13 15:02
+ch2543     IL: Free Tv Doco HD                 32  10-12 12:04 -> 10-13 15:00
+ch2544     IL: Erez Nehederet HD               35  10-12 12:06 -> 10-13 15:25
+ch2545     IL: Savri HD                        65  10-12 12:04 -> 10-13 14:44
+ch2611     IL: Turkish Drama 3                 37  10-12 11:40 -> 10-13 15:24
+ch2613     IL: HOT Senior HD                   21  10-12 11:52 -> 10-13 15:09
+ch2614     IL: HOT Buzz HD                     82  10-12 12:00 -> 10-13 14:55
+ch2616     IL: Bollywood                       12  10-12 10:20 -> 10-13 15:50
+ch2617     IL: Free Movies Family HD           18  10-12 11:44 -> 10-13 15:17
+ch2618     IL: MTV HD                          38  10-12 12:05 -> 10-16 16:00
+ch2619     IL: MTV 00s                          1  10-12 12:00 -> 10-13 15:00
+ch2623     IL: Sport 5 MAX                     15  10-12 10:10 -> 10-13 15:15
+ch2624     IL: Animal Planet HD               116  10-12 12:00 -> 10-16 16:00
+ch2625     IL: YoYo                           140  10-12 12:09 -> 10-13 14:51
+ch2626     IL: Logi                            70  10-12 12:05 -> 10-13 15:00
+ch2627     IL: Fomo                            62  10-12 12:09 -> 10-13 14:49
+ch2628     IL: Sport 6 HD                      11  10-12 11:00 -> 10-13 15:30
+ch2629     IL: Edge Sport HD                   32  10-12 11:24 -> 10-13 14:58
+ch2630     IL: Foody HD                        49  10-12 12:02 -> 10-13 15:00
+ch2631     IL: Home Plus                       40  10-12 12:08 -> 10-13 14:49
+ch2632     IL: TLC HD                         142  10-12 11:48 -> 10-16 15:19
+ch2633     IL: HOT Cinema 1 HD (ru)            41  10-12 11:22 -> 10-15 19:00
+ch2634     IL: HOT Cinema 2 HD (ru)            47  10-12 10:45 -> 10-15 20:36
+ch2635     IL: HOT Cinema 3 HD (ru)            50  10-12 12:06 -> 10-15 20:30
+ch2636     IL: HOT Cinema 4 HD (ru)            46  10-12 12:00 -> 10-15 20:46
+ch2637     IL: Nick Jr HD                      80  10-12 12:01 -> 10-13 14:43
+ch2638     IL: HOT Zone HD (ru)               114  10-12 12:00 -> 10-15 20:28
+ch2639     IL: Cellcom TV Shows HD             51  10-12 11:55 -> 10-13 15:13
+ch2640     IL: Cellcom Doco HD                 18  10-12 11:45 -> 10-13 15:32
+ch2641     IL: Spanish Drama Channel 1 HD      35  10-12 11:28 -> 10-13 15:23
+ch2642     IL: Fashion                         69  10-12 12:05 -> 10-13 15:10
+ch2643     IL: Zoom                           261  10-12 12:09 -> 10-16 15:41
+ch2644     IL: Zoom Toon HD                   340  10-12 12:02 -> 10-16 15:20
+ch2645     IL: Jim Jam                        555  10-12 12:03 -> 10-16 15:14
+ch2646     IL: Yalduti                         26  10-12 11:14 -> 10-13 15:07
+ch2738                                          0  NO PROGRAMMES
+ch2750     UK: Now 70s                          6  10-12 07:00 -> 10-13 16:00
+ch2751     UK: Now 80s                          8  10-12 12:00 -> 10-13 17:00
+ch2824     IL: i24 News                        30  10-12 12:00 -> 10-13 14:53
+ch2884     CA: TSN 2 HD                        20  10-12 11:30 -> 10-13 15:00
+ch2886     CA: TSN 1 HD                         9  10-12 11:30 -> 10-13 15:30
+ch2934     IL: Aruch Sdarot Hahodiot           55  10-12 12:01 -> 10-13 14:57
+ch2935     IL: Aruch Sdarot Hahodiot 2         67  10-12 11:50 -> 10-13 15:21
+ch3036     IL: Free Tv Feel Good               17  10-12 11:04 -> 10-13 14:53
+ch3133     IL: Spanish Drama Channel 2 HD      34  10-12 12:00 -> 10-13 15:24
+ch3134     IL: Kalkala 10 HD                   21  10-12 11:00 -> 10-13 16:00
+ch3172     CA: TSN 3 HD                         9  10-12 11:30 -> 10-13 15:30
+ch3224     IL: Free Movies 10 Stars HD         16  10-12 11:30 -> 10-13 16:08
+ch3908     IL: Dramot Youmiyout HD             35  10-12 11:35 -> 10-13 15:15
+ch4011     CZ: Retro Music TV                  17  10-12 11:00 -> 10-13 14:59
+ch4035     IL: Beautyz HD                      50  10-12 11:49 -> 10-13 15:00
+ch4036     IL: Bama Israelit HD                17  10-12 12:00 -> 10-13 16:00
+ch4051     IL: Arutz Hagiborim HD               1  10-12 12:00 -> 10-13 15:00
+ch4054     IL: Arutz Pesha Amiti HD             1  10-12 12:00 -> 10-13 15:00
+total: 6056 kept from primary, 8607 after merging/extending
