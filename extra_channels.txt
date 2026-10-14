@@ -1548,7 +1548,6 @@ CWIAT.us | US - CW WIAT Birmingham AL
 CWKALBDT3.us | US - CW KALB-DT3 Alexandria LA
 CWKARDDT2.us | US - CW KARD-DT2 MONROE LA
 CWKASN.us | US - CW KASN Little Rock AR
-CWKASW.us | US - CW KASW Phoenix AZ
 CWKCBA.us | US - CW KCBA Salinas CA
 CWKCLO.us | US - CW KCLO Rapid City SD
 CWKCOYDT3.us | US - CW KCOY-DT3 Santa Maria San Luis Obispo CA
