@@ -1583,7 +1583,6 @@ CWKPLR.us | US - CW KPLR St. Louis MO
 CWKPTMDT3.us | US - CW KPTM-DT3 Omaha NE
 CWKPXJ.us | US - CW KPXJ Shreveport LA
 CWKQCA.us | US - CW KQCA Sacramento CA
-CWKQCW.us | US - CW KQCW Tulsa OK
 CWKRCW.us | US - CW KRCW Portland OR
 CWKRON.us | US - CW KRON San Francisco CA
 CWKSCCDT3.us | US - CW KSCC-DT3 Corpus Christi TX
