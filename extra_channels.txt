@@ -7046,7 +7046,6 @@ MyKZJO.us | US - My KZJO Seatle Tacoma WA
 MyNetKARZ.us | US - MyNet KARZ Little Rock AR
 MyNetKBVO.us | US - MyNet KBVO AUSTIN TX
 MyNetKCRGDT2.US | US - MyNet KCRG-DT2 Cedar Rapids IA
-MyNetKGBT.us | US - MyNet KGBT McAllen Harlingen Brownsville Weslaco TX
 MyNetKJBO.us | US - MyNet KJBO Wichita Falls TX
 MyNetKMYT.us | US - MyNetwork KMYT Tulsa OK
 MyNetKMYU.us | US - MyNet KMYU KUTVDT2 Salt Lake City UT
