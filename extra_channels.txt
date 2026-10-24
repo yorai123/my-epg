@@ -432,6 +432,7 @@ AlabamaCrimsonTide.ncaasb | NCAASB - Alabama Crimson Tide
 AlabamaCrimsonTide.ncaaw | NCAAW - Alabama Crimson Tide
 AlabamaStateHornets.ncaaf | NCAAF - Alabama State Hornets
 AlarmClockRadio.sxm | SXM - Alarm Clock Radio
+AlbertaLegislature.ca | CA - Alberta Legislature
 AlcornStateBraves.ncaaf | NCAAF - Alcorn State Braves
 Alegra.sxm | SXM - Alegría
 AlertsfromTheWeatherChannel.sxm | SXM - Alerts from The Weather Channel
@@ -914,6 +915,7 @@ BrazilCampeonatoBrasileiraoSerieA.paramount+ | PARAMOUNT+ - Brazil Campeonato Br
 Brewery.sxm | SXM - Brewery
 BridgeportIslanders.ahl | AHL - Bridgeport Islanders
 BritBoxMysteries.pluto | PLUTO - BritBox Mysteries
+BritishColumbiaLegislature.ca | CA - British Columbia Legislature
 BroadwayClassics.sxm | SXM - Broadway Classics
 BrooklynNets.nba | NBA - Brooklyn Nets
 BrooklynNets.sxm | SXM - Brooklyn Nets
@@ -1029,6 +1031,7 @@ CBSKBMYDT2.us | US - CBS KBMY-DT2 Bismarck ND
 CBSKBNZ.us | US - CBS KBNZ Bend OR
 CBSKBOI.us | US - CBS KBOI Boise ID
 CBSKBTX.us | US - CBS KBTX Bryan College Station TX
+CBSKBZK.us | US - CBS KBZK Butte MT
 CBSKCBS.us | US - CBS KCBS Los Angeles CA
 CBSKCCI.us | US - CBS KCCI Des Moines-Ames IA
 CBSKCJO.us | US - CBS KCJO St. Joseph MO
@@ -1067,6 +1070,7 @@ CBSKLAS.us | US - CBS KLAS Las Vegas NV
 CBSKLBK.us | US - CBS KLBK Lubbock TX
 CBSKLFY.us | US - CBS KLFY Lafayette LA
 CBSKLST.us | US - CBS KLST San Angelo TX
+CBSKMCYDT2.us | US - CBS KMCY-DT2 Minot ND
 CBSKMOV.us | US - CBS KMOV St. Louis MO
 CBSKMTV.us | US - CBS KMTV Omaha NE
 CBSKMVT.us | US - CBS KMVT Twin Falls ID
@@ -1268,6 +1272,7 @@ CCTV-4.us | US - CCTV-4
 CCTV-Entertainment.us | US - CCTV-Entertainment
 CCTV-Opera.us | US - CCTV-Opera
 CCTVNEWS.il | IL - CCTV NEWS
+CFJCTV.ca | CA - CFJC TV
 CFMontreal.mls | MLS - CF Montréal
 CGTN.ca | CA - CGTN
 CGTN9.us | US - CGTN9
@@ -1451,7 +1456,9 @@ CHL9.v | V - CHL9
 CHL9.v3 | V3 - CHL 9
 CINEVAULTClassics.us | US - CINEVAULT Classics
 CINEVAULTWesterns.us | US - CINEVAULT Westerns
+CJDCTV.ca | CA - CJDC TV
 CJON-NTV.ca | CA - NTV
+CKPGTV.ca | CA - CKPG TV
 CLASSICA.il | IL - CLASSICA
 CMC.us | US - CMC CHANNEL
 CMT.ca | CA - CMT
@@ -1561,10 +1568,12 @@ CWKDAF.us | US - CW KDAF Dallas FORT WORTH TX
 CWKDLH.us | US - CW KDLH Duluth MN
 CWKECA.us | US - CW KECA Eureka CA
 CWKECYDT3.us | US - CW KECYDT3 KECY EL CENTRO CA
+CWKELODT4.us | US - CW KELO-DT4 Sioux Falls SD
 CWKESQDT7.us | US - CW KESQDT7 KESQ Palm Springs CA
 CWKFDMDT2.us | US - CW KFDM-DT2 Beaumont TX
 CWKFRE.us | US - CW KFRE Fresno CA
 CWKFVSDT2.us | US - CW KFVS-DT2 Cape Girardeau MO
+CWKGBT.us | US - CW KGBT McAllen Harlingen Brownsville Weslaco TX
 CWKGCW.us | US - CW KGCW Davenport IA
 CWKHBSDT2.us | US - CW KHBS-DT2 Fort Smith AR
 CWKHONDT2.us | US - CW KHON-DT2 Honolulu HI
@@ -1583,6 +1592,8 @@ CWKPLR.us | US - CW KPLR St. Louis MO
 CWKPTMDT3.us | US - CW KPTM-DT3 Omaha NE
 CWKPXJ.us | US - CW KPXJ Shreveport LA
 CWKQCA.us | US - CW KQCA Sacramento CA
+CWKQCW_DTVFeed.us | US - CW KQCW Tulsa OK (DTV Feed)
+CWKQCW_OTAFeed.us | US - CW KQCW Tulsa OK (OTA Feed)
 CWKRCW.us | US - CW KRCW Portland OR
 CWKRON.us | US - CW KRON San Francisco CA
 CWKSCCDT3.us | US - CW KSCC-DT3 Corpus Christi TX
@@ -1593,6 +1604,7 @@ CWKTTCDT2.us | US - CW KTTC-DT2 Rochester MN
 CWKTTU.us | US - CW KTTU Tucson AZ
 CWKTVLDT2.us | US - CW KTVL-DT2 Medford OR
 CWKTXELD2.us | US - CW KTXE-LD2 San Angelo TX
+CWKTXSDT2.us | US - CW KTXS-DT2 Abilene TX
 CWKUCW.us | US - CW KUCW Salt Lake City UT
 CWKUNS.us | US - CW KUNS Seatle Tacoma WA
 CWKUSI.us | US - CW KUSI San Diego CA
@@ -1612,12 +1624,14 @@ CWWBSF.us | US - CW WBSF Bay City MI
 CWWBUI.us | US - CW WBUI Peoria Springfield Bloomington Champaign Decatur IL
 CWWBXX.us | US - CW WBXX Knoxville TN
 CWWCCT.us | US - CW WCCT New Haven Hartford CT
+CWWCJBDT2.us | US - CW WCJB-DT2 Gainesville FL
 CWWCWF.us | US - CW WCWF Green Bay WI
 CWWCWG.us | US - CW WCWG Greensboro NC
 CWWCWJ.us | US - CW WCWJ Jacksonville FL
 CWWCWN.us | US - CW WCWN Albany NY
 CWWCWW.us | US - CW WCWW South Bend IN
 CWWDCW.us | US - CW WDCW Washington DC
+CWWECX.us | US - CW WECX Eau Claire WI
 CWWEEKDT3.us | US - CW WEEK-DT3 Peoria Springfield Bloomington Champaign Decatur IL
 CWWFLI.us | US - CW WFLI Chattanooga Cleveland TV
 CWWFMJDT2.us | US - CW WFMJDT2 Youngstown OH
@@ -1643,6 +1657,7 @@ CWWLVI.us | US - CW WLVI Boston MA
 CWWMDTDT2.us | US - CW WMDT-DT2 Salisbury MD
 CWWMTVDT2.us | US - CW WMTV-DT2 Madison WI
 CWWMYT.us | US - CW WMYT Charlotte NC
+CWWNACDT2.us | US - CW WNAC-DT2 Providence RI
 CWWNLO.us | US - CW WNLO Buffalo NY
 CWWNNE.us | US - CW WNNE Plattsburgh NY
 CWWNOL.us | US - CW WNOL New Orleans LA
@@ -1655,6 +1670,7 @@ CWWPHL.us | US - CW WPHL Philadelphia PA
 CWWPIX.us | US - CW WPIX NYC NY
 CWWPXT.us | US - CW WPXT Portland Agusta Waterville Bangor ME
 CWWQCW.us | US - CW WQCW Portsmouth OH
+CWWSAWDT4.us | US - CW WSAW-DT4 Wausau WI
 CWWSEEDT2.us | US - CW WSEE-DT2 ERIE PA
 CWWSFL.us | US - CW WSFL Miami FL
 CWWSPA.us | US - CW WSPA Greenville Spartanburg SC
@@ -1667,7 +1683,10 @@ CWWTVW.us | US - CW WTVW Evansville IN
 CWWTVX.us | US - CW WTVX West Palm Beach FL
 CWWUCW.us | US - CW WUCW Minneapolis Saint Paul MN
 CWWUPV.us | US - CW WUPV Richmond VA
+CWWVFXDT2.us | US - CW WVFX-DT2 Clarksburg WV
+CWWVIRDT3.us | US - CW WVIR-DT3 Charlottesville VA
 CWWVTV.us | US - CW WVTV Milwaukee WI
+CWWVVADT2.us | US - CW WVVA-DT2 Bluefield WV
 CWWWCW.us | US - CW WWCW Roanoke Lynchburg VA
 CWWWHO.us | US - CW WWHO Columbus OH
 CWWWLPDT2.us | US - CW WWLP-DT2 Springfield MA
@@ -1790,6 +1809,7 @@ CineNostalgia.us | US - Cine Nostalgia
 CinePop.ca | CA - CINEPOP
 CinePremiere.pluto | PLUTO - Cine Premiere
 CineSONY.us | US - CINE SONY
+CineWestern.ca | CA - Ciné Western
 Cineadrenalina.pluto | PLUTO - Cine adrenalina
 Cineaventura.pluto | PLUTO - Cine aventura
 Cinecomedia.pluto | PLUTO - Cine comedia
@@ -1945,8 +1965,11 @@ CoziWZTS.us | US - Cozi TV WZTS Bluefield WV
 Crave1.ca | CA - CRAVE 1
 Crave1West.ca | CA - CRAVE 1 WEST
 Crave2.ca | CA - CRAVE 2
+Crave2Pacific.ca | CA - CRAVE 2 West
 Crave3.ca | CA - CRAVE 3
+Crave3Pacific.ca | CA - CRAVE 3 West
 Crave4.ca | CA - CRAVE 4
+Crave4Pacific.ca | CA - CRAVE 4 West
 CreateKCETDT2.us | US - Create KCET-DT2 Los Angeles CA
 CreateMPTDT2.us | US - Create MPT2 MPT-DT2 Baltimore MD
 CreateWBIQDT3.us | US - Create WBIQ-DT3 Birmingham AL
@@ -4543,6 +4566,7 @@ EastCarolinaPirates.ncaabb | NCAABB - East Carolina Pirates
 EastCarolinaPirates.ncaaf | NCAAF - East Carolina Pirates
 EastCarolinaPirates.ncaasb | NCAASB - East Carolina Pirates
 EasternConference.ProspectLeague | PROSPECTLEAGUE - Eastern Conference
+EasternIllinoisPanthers.ncaaf | NCAAF - Eastern Illinois Panthers
 EasternIllinoisPanthers.ncabb | NCABB - Eastern Illinois Panthers
 EasternKentuckyColonels.ncaaf | NCAAF - Eastern Kentucky Colonels
 EasternMichiganEagles.ncaaf | NCAAF - Eastern Michigan Eagles
@@ -4893,6 +4917,7 @@ FOXKXLT.us | US - FOX KXLT Rochester MN
 FOXKXOF.us | US - FOX KXOF Laredo TX
 FOXKXRM.us | US - FOX KXRM Colorado Springs CO
 FOXKXVA.us | US - FOX KXVA Abilene TX
+FOXKYOU.us | US - FOX KYOU Ottumwa IA
 FOXLOCALHouston.pluto | PLUTO - FOX LOCAL Houston
 FOXNEWS.il | IL - FOX NEWS
 FOXNet.us | US - FOXNet
@@ -5612,6 +5637,7 @@ FreedomKAUT.us | US - Freedom KAUT Oklahoma City OK
 Freeform.us | US - FREEFORM
 FreeformPacific.us | US - Freeform West
 FreestyleDance.sxm | SXM - Freestyle Dance
+FreshMovies.ca | CA - Fresh Movies
 FresnoStateBulldogs.ncaaf | NCAAF - Fresno State Bulldogs
 FrissonsTV.ca | CA - FRISSOSTV
 FuboMovies.us | US - Fubo Movies
@@ -5675,6 +5701,7 @@ GeorgiaTechYellowJackets.ncaabb | NCAABB - Georgia Tech Yellow Jackets
 GeorgiaTechYellowJackets.ncaaf | NCAAF - Georgia Tech Yellow Jackets
 GeorgiaTechYellowJackets.ncaasb | NCAASB - Georgia Tech Yellow Jackets
 GeorgiaTechYellowJackets.ncaaw | NCAAW - Georgia Tech Yellow Jackets
+GetFactual.us | US - Get.Factual
 GhostHunters.pluto | PLUTO - Ghost Hunters
 GhostsAreReal.us | US - Ghosts Are Real
 GlobalBC-CHAN.ca | CA - GLOBAL VANCOUVER
@@ -5714,6 +5741,7 @@ GramblingTigers.ncaaf | NCAAF - Grambling Tigers
 GrandRapidsGriffins.ahl | AHL - Grand Rapids Griffins
 GratefulDeadChannel.sxm | SXM - Grateful Dead Channel
 GravitasMovies.us | US - Gravitas Movies
+GravitasMovies_Plex.us | US - Gravitas Movies [Plex]
 GreatAmericanFamily.us | US - Great American Family
 GreatAmericanLiving.us | US - Great American Living
 GreatAmericanRomComs.us | US - Great American RomComs
@@ -5978,8 +6006,10 @@ ICIOntario-CBLFT.ca | CA - ICI Radio-Canada Télé Toronto
 ICIOttawa-Gatineau-CBOFT.ca | CA - Ici Radio-Canada Télé OTTAWA
 ICIPremiere.sxm | SXM - ICI Première
 ICIQuebecCity-CBVT.ca | CA - ICI Radio-Canada Télé Quebec City
+ICIRimouskiCJBR.ca | CA - ICI Télé Rimouski CJBR
 ICISaguenay-LacSaintJean.ca | CA - ICI Radio-Canada Télé Saguenay
 ICISaskatchewan-CBKFT.ca | CA - ICI Radio-Canada Télé Saskatchewan
+ICITeleCKSH.ca | CA - ICI Télé - CKSH
 ICITeleMaurice-CKTM.ca | CA - ICI Radio-Canada Télé Mauricie
 ICITeleVancouver-CBUFT.ca | CA - ICI Radio-Canada Télé Vancouver
 IETV.il | IL - I.E.T.V.
@@ -6106,6 +6136,7 @@ IowaStateCyclones.ncaaf | NCAAF - Iowa State Cyclones
 IowaStateCyclones.ncaasb | NCAASB - Iowa State Cyclones
 IowaStateCyclones.ncaaw | NCAAW - Iowa State Cyclones
 IowaWild.ahl | AHL - Iowa Wild
+Iron Chef | Iron Chef
 JBS.us | US - Jewish Broadcasting Service
 JLTV.ca | CA - JLTV
 JacksonRockabillys.ProspectLeague | PROSPECTLEAGUE - Jackson Rockabillys
@@ -6211,7 +6242,6 @@ LatinVault.sxm | SXM - Latin Vault
 LatinasinMusic.sxm | SXM - Latinas in Music
 LavalRocket.ahl | AHL - Laval Rocket
 Law&Order.pluto | PLUTO - Law & Order
-LawAndCrime.sxm | SXM - Law&Crime
 LawAndCrime.us | US - Law & Crime
 LawAndCrimeNetwork.peacocktv | PEACOCKTV - Law & Crime Network
 LawandCrimeRewind.us | US - Law and Crime Rewind
@@ -6426,6 +6456,17 @@ MLB7.us | US - MLB 7
 MLB8.us | US - MLB 8
 MLB9.us | US - MLB 9
 MLBBigInning.us | US - MLB Big Inning
+MLBExtraInnings1.ca | CA - MLB Extra Innings 1
+MLBExtraInnings10.ca | CA - MLB Extra Innings 10
+MLBExtraInnings11.ca | CA - MLB Extra Innings 11
+MLBExtraInnings2.ca | CA - MLB Extra Innings 2
+MLBExtraInnings3.ca | CA - MLB Extra Innings 3
+MLBExtraInnings4.ca | CA - MLB Extra Innings 4
+MLBExtraInnings5.ca | CA - MLB Extra Innings 5
+MLBExtraInnings6.ca | CA - MLB Extra Innings 6
+MLBExtraInnings7.ca | CA - MLB Extra Innings 7
+MLBExtraInnings8.ca | CA - MLB Extra Innings 8
+MLBExtraInnings9.ca | CA - MLB Extra Innings 9
 MLBGAME1.v3 | V3 - MLB GAME 1
 MLBGAME10.v3 | V3 - MLB GAME 10
 MLBGAME11.v3 | V3 - MLB GAME 11
@@ -6564,6 +6605,9 @@ MOLA30.rtv | RTV - MOLA 30
 MORWMOR.us | US - MOR WMOR Tampa FL
 MOVIESPHERE.us | US - MOVIESPHERE
 MSG2.us | US - MSG 2
+MSGAlt-1.us | US - MSG Alt-1
+MSGAlt-2.us | US - MSG Alt-2
+MSGAlt-3.us | US - MSG Alt-3
 MSGSN2Zone1.us | US - MSG SN2
 MSGSNZone1.us | US - MSG SN
 MSGSNZone2.us | US - MSG SN Zone 2
@@ -6651,12 +6695,14 @@ Mazaa.sxm | SXM - Mazaa
 MeTV+.us | US - METV Plus
 MeTV.us | US - MeTV
 MeTVKITVDT2.us | US - MeTV KITV-DT2 Honolulu HI
+MeTVKVOS.ca | CA - MeTV KVOS
 MeTVKYAZ.us | US - MeTV KYAZ HOUSTON TX
 MeTVWBBZ.us | US - MeTV WBBZ Buffalo NY
 MeTVWCVBDT2.us | US - MeTV WCVB-DT2 Boston MA
 MeTVWDIVDT3.us | US - MeTV WDIV-DT3 Detroit MI
 MeTVWest.us | US - ME TV West
 MeToonsKIKUDT2.us | US - MeToons KIKU-DT2 Honolulu HI
+MeToonsKPRCDT5.us | US - MeToons KPRC-DT5
 MeTvToons.us | US - MeTV Toons
 MeatEater.us | US - MeatEater
 MediaSetItalia.ca | CA - Mediaset Italia
@@ -6929,6 +6975,7 @@ MorganWallenRadio.sxm | SXM - Morgan Wallen Radio
 MorningSlaylist.sxm | SXM - Morning Slaylist
 Mosaic.sxm | SXM - Mosaic
 MotoAmericaTV.us | US - MotoAmerica TV
+MotoGPChannel.us | US - MotoGP Channel
 MotorvisionTV.us | US - Motorvision TV
 MoviePlex.us | US - MoviePlex
 MoviePlexPacific.us | US - MoviePlex West
@@ -6949,6 +6996,7 @@ MurrayStateRacers.ncaab | NCAAB - Murray State Racers
 MurrayStateRacers.ncaabb | NCAABB - Murray State Racers
 MurrayStateRacers.ncaaf | NCAAF - Murray State Racers
 MurrayStateRacers.ncaasb | NCAASB - Murray State Racers
+Museum.ca | CA - Museum
 MusicChoice60sAnd70sMellowHits.us | US - Music Choice &apos;60s & &apos;70s Mellow Hits
 MusicChoice60sGeneration.us | US - Music Choice &apos;60s Generation
 MusicChoice70s.us | US - Music Choice 70s
@@ -7046,10 +7094,13 @@ MyKZJO.us | US - My KZJO Seatle Tacoma WA
 MyNetKARZ.us | US - MyNet KARZ Little Rock AR
 MyNetKBVO.us | US - MyNet KBVO AUSTIN TX
 MyNetKCRGDT2.US | US - MyNet KCRG-DT2 Cedar Rapids IA
+MyNetKGBTDT2.us | US - MyNet-DT2 KGBT McAllen Harlingen Brownsville Weslaco TX
 MyNetKJBO.us | US - MyNet KJBO Wichita Falls TX
 MyNetKMYT.us | US - MyNetwork KMYT Tulsa OK
 MyNetKMYU.us | US - MyNet KMYU KUTVDT2 Salt Lake City UT
 MyNetKOZL.us | US - MyNet KOZL Springfield Osage Beach MO
+MyNetKSBI_DTVFeed.us | US - MyNetwork KSBI Oklahoma City OK (DTV Feed)
+MyNetKSBI_OTAFeed.us | US - MyNetwork KSBI Oklahoma City OK (OTA Feed)
 MyNetKTXH.us | US - MyNet KTXH HOUSTON TX
 MyNetKXNW.us | US - MyNet KXNW Fort Smith AR
 MyNetKYLE.us | US - MyNetwork KYLE Waco Bryan TX
@@ -7154,15 +7205,24 @@ NBAALT12.v3 | V3 - NBA ALT 12
 NBAALT13.v3 | V3 - NBA ALT 13
 NBAALT14.v3 | V3 - NBA ALT 14
 NBAALT15.v3 | V3 - NBA ALT 15
+NBALeaguePass1.ca | CA - NBA League Pass 1
 NBALeaguePass1.us | US - NBA League Pass 1
 NBALeaguePass10.us | US - NBA League Pass 10
+NBALeaguePass2.ca | CA - NBA League Pass 2
 NBALeaguePass2.us | US - NBA League Pass 2
+NBALeaguePass3.ca | CA - NBA League Pass 3
 NBALeaguePass3.us | US - NBA League Pass 3
+NBALeaguePass4.ca | CA - NBA League Pass 4
 NBALeaguePass4.us | US - NBA League Pass 4
+NBALeaguePass5.ca | CA - NBA League Pass 5
 NBALeaguePass5.us | US - NBA League Pass 5
+NBALeaguePass6.ca | CA - NBA League Pass 6
 NBALeaguePass6.us | US - NBA League Pass 6
+NBALeaguePass7.ca | CA - NBA League Pass 7
 NBALeaguePass7.us | US - NBA League Pass 7
+NBALeaguePass8.ca | CA - NBA League Pass 8
 NBALeaguePass8.us | US - NBA League Pass 8
+NBALeaguePass9.ca | CA - NBA League Pass 9
 NBALeaguePass9.us | US - NBA League Pass 9
 NBAPlay-by-Play212.sxm | SXM - NBA Play-by-Play 212
 NBAPlay-by-Play213.sxm | SXM - NBA Play-by-Play 213
@@ -8521,6 +8581,22 @@ NFLPlay-by-Play232.sxm | SXM - NFL Play-by-Play 232
 NFLPlay-by-Play233.sxm | SXM - NFL Play-by-Play 233
 NFLPlay-by-Play234.sxm | SXM - NFL Play-by-Play 234
 NFLRedZone.us | US - NFL RED ZONE
+NFLSundayTicket1.ca | CA - NFL Sunday Ticket 1
+NFLSundayTicket10.ca | CA - NFL Sunday Ticket 10
+NFLSundayTicket11.ca | CA - NFL Sunday Ticket 11
+NFLSundayTicket12.ca | CA - NFL Sunday Ticket 12
+NFLSundayTicket13.ca | CA - NFL Sunday Ticket 13
+NFLSundayTicket14.ca | CA - NFL Sunday Ticket 14
+NFLSundayTicket15.ca | CA - NFL Sunday Ticket 15
+NFLSundayTicket16.ca | CA - NFL Sunday Ticket 16
+NFLSundayTicket2.ca | CA - NFL Sunday Ticket 2
+NFLSundayTicket3.ca | CA - NFL Sunday Ticket 3
+NFLSundayTicket4.ca | CA - NFL Sunday Ticket 4
+NFLSundayTicket5.ca | CA - NFL Sunday Ticket 5
+NFLSundayTicket6.ca | CA - NFL Sunday Ticket 6
+NFLSundayTicket7.ca | CA - NFL Sunday Ticket 7
+NFLSundayTicket8.ca | CA - NFL Sunday Ticket 8
+NFLSundayTicket9.ca | CA - NFL Sunday Ticket 9
 NFLenEspanol832.sxm | SXM - NFL en Español 832
 NGWILD.il | IL - NG WILD
 NHKWorld.us | US - NHK World
@@ -8732,6 +8808,10 @@ NightNoise.sxm | SXM - Night Noise
 Nitro.sxm | SXM - Nitro
 NoReservations.pluto | PLUTO - No Reservations
 NoShoesRadio.sxm | SXM - No Shoes Radio
+NoovoGatineau_OttawaCFGS.ca | CA - Noovo CFGS Gatineau/Ottawa
+NoovoRimouskiCFTF.ca | CA - Noovo CFTF Rimouski
+NoovoSherbrookeCFKS.ca | CA - Noovo Sherbrooke CFKS
+NoovoTroisRivieresCFKM.ca | CA - Noovo Trois-Rivières CFKM
 NormalCornBelters.ProspectLeague | PROSPECTLEAGUE - Normal CornBelters
 NorthAlabamaLions.ncaaf | NCAAF - North Alabama Lions
 NorthAmericana.sxm | SXM - North Americana
@@ -8775,8 +8855,10 @@ NotreDameFightingIrish.ncaaw | NCAAW - Notre Dame Fighting Irish
 NuestraTeleInt.us | US - Nuestra Tele
 OANPlus.pluto | PLUTO - OAN Plus
 OANPlus.us | US - OAN Plus
+OMNICalgary.ca | CA - OMNI Calgary
 OMNIEdmonton.ca | CA - OMNI Edmonton
 OMNIPrairies.ca | CA - OMNI Prairies
+OMNITelevisionCalgaryCJCO.ca | CA - OMNI Television Calgary CJCO
 ONE.il | IL - ONE
 ONE2.il | IL - ONE2
 ONEChampionshipTV.pluto | PLUTO - ONE Championship TV
@@ -8821,6 +8903,7 @@ OleMissRebels.ncaaf | NCAAF - Ole Miss Rebels
 OleMissRebels.ncaasb | NCAASB - Ole Miss Rebels
 OleMissRebels.ncaaw | NCAAW - Ole Miss Rebels
 OlympicChannel.ca | CA - Olympic Channel
+OlympicsTV.us | US - Olympics TV
 Omni1-CFMT.ca | CA - OMNI 1
 Omni2-CJMT.ca | CA - OMNI 2
 OmniBC.ca | CA - OMNI BC
@@ -8862,6 +8945,7 @@ OttawaSenators.sxm | SXM - Ottawa Senators
 OutdoorAmerica.us | US - Outdoor America
 OutdoorChannel.us | US - OUTDOOR CHANNEL
 OuterSphereByLionsgate.us | US - OuterSphere by Lionsgate
+OutflixMovies.us | US - Outflix Movies
 Outlaw.us | US - Outlaw
 OutlawCountry.sxm | SXM - Outlaw Country
 OutlawKGMBDT2.us | US - Outlaw KGMB-DT2 Honolulu HI
@@ -8874,6 +8958,8 @@ OxygenPacific.us | US - OXYGEN WEST
 OxygenTrueCrime.ca | CA - Oxygen True Crime
 OxygenTrueCrime.us | US - Oxygen True Crime
 OxygenTrueCrimeArchives.pluto | PLUTO - Oxygen True Crime Archives
+OxygenTrueCrimeArchives.us | US - Oxygen True Crime Archives
+OxygenTrueCrimeKTMDDT5.us | US - Oxygen True Crime KTMD-DT5 HOUSTON TX
 P+AFCChampionsLeague1.us | US - P+AFC Champions League 1
 P+AFCChampionsLeague10.us | US - P+AFC Champions League 10
 P+AFCChampionsLeague11.us | US - P+AFC Champions League 11
@@ -9328,6 +9414,7 @@ PBSKDIN.us | US - PBS KDIN Des Moines IA
 PBSKEDT.us | US - PBS KEDT Corpus Christi TX
 PBSKEET.us | US - PBS KEET Eureka CA
 PBSKERA.us | US - PBS KERA Dallas FORT WORTH TX
+PBSKETA.us | US - PBS KETA Oklahoma City OK
 PBSKETC.us | US - PBS KETC St. Louis MO
 PBSKETS.us | US - PBS KETS Little Rock AR
 PBSKFME.us | US - PBS KFME Fargo ND
@@ -9394,6 +9481,7 @@ PBSNetworkPacific.us | US - PBS Network Pacific
 PBSPlusKQEDDT2.us | US - PBS Plus KQED-DT2 San Francisco San Jose CA
 PBSPlusWETKDT2.us | US - PBSPlus WETK-DT2 Colchester VT
 PBSPlusWNMUDT3.us | US - PBSPlus WNMU-DT3 Marquette MI
+PBSRetro.us | US - PBS Retro
 PBSWABE.us | US - PBS WABE Atlanta GA
 PBSWBGU.us | US - PBS WBGU Toledo Bowling Green OH
 PBSWBIQ.us | US - PBS WBIQ Birmingham AL
@@ -9429,6 +9517,7 @@ PBSWGVU.us | US - PBS WGVU Grand Rapids Battle Creek MI
 PBSWHA.us | US - PBS WHA Madison WI
 PBSWHADT2.us | US - PBS WHA-DT2 Madison WI
 PBSWHIQ.us | US - PBS WHIQ Huntsville AL
+PBSWHRM.us | US - PBS WHRM Wausau WI
 PBSWHRO.us | US - PBS WHRO Virginia Beach Portsmouth Norfolk Hampton Roads VA
 PBSWHUT.us | US - PBS WHUT Washington DC
 PBSWHYY.us | US - PBS WHYY Philadelphia PA
@@ -9448,6 +9537,7 @@ PBSWLIW.us | US - PBS WLIW NYC NY
 PBSWLPB.us | US - PBS WLPB Baton Rouge LA
 PBSWLRN.us | US - PBS WLRN Miami FL
 PBSWLVT.us | US - PBS WLVT Allentown Bethleham Easton PA
+PBSWMAH.us | US - PBS WMAH Biloxi Gulfport MS
 PBSWMAW.us | US - PBS WMAW Meridian MS
 PBSWMEM.us | US - PBS PRESQUE ISLE ME
 PBSWMHT.us | US - PBS WMHT TROY Albany NY
@@ -9980,6 +10070,7 @@ ParamountPlus_event9.p13 | P13 - ParamountPlus: event9
 Pasiones.us | US - Pasiones
 PawPatrol.paramount+ | PARAMOUNT+ - Paw Patrol
 PeachtreeSportsNetworkWPCHDT2.us | US - Peachtree Sports Network WPCH-DT2 Atlanta GA
+PeachtreeTVWPCH.ca | CA - Peachtree TV WPCH
 Peacock1.peacock | PEACOCK - Peacock 1
 Peacock10.peacock | PEACOCK - Peacock 10
 Peacock11.peacock | PEACOCK - Peacock 11
@@ -10338,6 +10429,7 @@ REELZ.peacocktv | PEACOCKTV - REELZ
 RENTV.il | IL - REN TV
 REVTV.ca | CA - Rev TV
 RFDTV.us | US - RFD TV
+RFDTVCanada.ca | CA - RFD TV Canada
 RNNWRNN.us | US - RNN WRNN NYC NY
 ROOTSportsNorthwestAlt1.us | US - ROOT Sports Northwest Alt 1
 ROTANA.il | IL - ROTANA
@@ -10395,6 +10487,7 @@ Revry.us | US - Revry
 RevryNews.us | US - RevryNews
 RewindKHONDT4.us | US - Rewind KHON-DT4 Honolulu HI
 RewindTV.us | US - Rewind TV
+RialtoClassicMovies.ca | CA - Rialto Classic Movies
 RiceOwls.ncaab | NCAAB - Rice Owls
 RiceOwls.ncaabb | NCAABB - Rice Owls
 RiceOwls.ncaaf | NCAAF - Rice Owls
@@ -10404,6 +10497,7 @@ Ridiculousness.pluto | PLUTO - Ridiculousness
 RiffTrax.pluto | PLUTO - RiffTrax
 RigTV.us | US - Rig TV
 RimouskiOceanic.qmjhl | QMJHL - Rimouski Océanic
+RiverMonsters.ca | CA - River Monsters
 RoadDogTrucking.sxm | SXM - Road Dog Trucking
 RoadTripRadio.sxm | SXM - Road Trip Radio
 Roar.us | US - Roar
@@ -10505,6 +10599,7 @@ SN+8.ca | CA - SN+ 8
 SN+9.ca | CA - SN+ 9
 SNLVault.peacocktv | PEACOCKTV - SNL Vault
 SNY.us | US - SPORTSNET NY
+SPEEDSPORT1.us | US - SPEED SPORT 1
 SPEEDVISION.us | US - SPEEDVISION
 SPFL01.rtv | RTV - SPFL 01
 SPFL02.rtv | RTV - SPFL 02
@@ -10515,7 +10610,9 @@ SPFL06.rtv | RTV - SPFL 06
 SPIN.us | US - SPIN
 SSTV.ca | CA - SSTV
 STARZ1.ca | CA - STARZ 1
+STARZ1Pacific.ca | CA - STARZ 1 West
 STARZ2.ca | CA - STARZ2
+STARZ2Pacific.ca | CA - STARZ 2 West
 SURPeru.us | US - SUR PERU
 SacramentoKings.nba | NBA - Sacramento Kings
 SacramentoKings.sxm | SXM - Sacramento Kings
@@ -10643,7 +10740,6 @@ SiriusXMPatriot.sxm | SXM - SiriusXM Patriot
 SiriusXMPops.sxm | SXM - SiriusXM Pops
 SiriusXMProgress.sxm | SXM - SiriusXM Progress
 SiriusXMSECRadio.sxm | SXM - SiriusXM SEC Radio
-SiriusXMScoreboard.sxm | SXM - SiriusXM Scoreboard
 SiriusXMSilk330.sxm | SXM - SiriusXM Silk 330
 SiriusXMSouthernRock.sxm | SXM - SiriusXM Southern Rock
 SiriusXMTurbo.sxm | SXM - SiriusXM Turbo
@@ -10886,6 +10982,8 @@ SportsmanChannel.ca | CA - SPORTSMAN CANADA
 SportsmanChannel.us | US - SPORTSMAN CHANNEL
 Sportsnet360.ca | CA - SPORTSNET 360
 SportsnetEast.ca | CA - SPORTSNET EAST
+SportsnetFlames.ca | CA - Sportsnet Flames
+SportsnetOilers.ca | CA - Sportsnet Oilers
 SportsnetOne.ca | CA - SPORTSNET 1
 SportsnetOntario.ca | CA - SPORTSNET ONTARIO
 SportsnetPacific.ca | CA - SPORTSNET PACIFIC
@@ -11290,6 +11388,7 @@ TVA-GatineauOttawa-CHOT.ca | CA - TVA HULL
 TVA-Montreal-CFTM.ca | CA - TVA MONTREAL
 TVA-QuebecCity-CFCM.ca | CA - TVA QUÉBEC CITY
 TVA-RiviereDuLoup-CIMT.ca | CA - TVA RIVIERE DU LOUP
+TVASherbrookeCHLT.ca | CA - TVA Sherbrooke CHLT
 TVASports.ca | CA - TVA SPORTS
 TVASports2.ca | CA - TVA SPORTS 2
 TVATroisRivieres-CHEM.ca | CA - TVA TROIS RIVIERES
@@ -11485,9 +11584,11 @@ TexasTechRedRaiders.ncaabb | NCAABB - Texas Tech Red Raiders
 TexasTechRedRaiders.ncaaf | NCAAF - Texas Tech Red Raiders
 TexasTechRedRaiders.ncaasb | NCAASB - Texas Tech Red Raiders
 That70sShow.peacocktv | PEACOCKTV - That 70s Show
+The Graham Norton Show | The Graham Norton Show
 The10sSpot.sxm | SXM - The 10s Spot
 The365.us | US - The 365
 TheAddamsFamily.pluto | PLUTO - The Addams Family
+TheAddamsFamily.us | US - The Addams Family
 TheAmazingRace.pluto | PLUTO - The Amazing Race
 TheAndyGriffithShow.pluto | PLUTO - The Andy Griffith Show
 TheArchive.us | US - The Archive
@@ -11562,6 +11663,7 @@ ThePetCollective.pluto | PLUTO - The Pet Collective
 ThePetCollective.us | US - The Pet Collective
 ThePointWATCDT2.us | US - The Point WATC-DT2 Atlanta GA
 ThePriceIsRight.pluto | PLUTO - The Price Is Right
+ThePriceIsRight.us | US - The Price is Right
 ThePriceIsRight:TheBarkerEra.pluto | PLUTO - The Price Is Right: The Barker Era
 ThePriceIsRight_Drew_Carey.ca | CA - The Price is Right (Drew Carey)
 ThePulse.sxm | SXM - The Pulse
@@ -11572,6 +11674,8 @@ TheSherlockHolmesChannel.us | US - The Sherlock Holmes Channel
 TheSleepChannel.sxm | SXM - The Sleep Channel
 TheSpectrum.sxm | SXM - The Spectrum
 TheSpotArizona58KWBA.us | US - The Spot – Arizona 58 KWBA Tucson AZ
+TheSpotKASW.us | US - The Spot KASW Phoenix AZ
+TheSpotWXPX.us | US - The Spot WXPX Tampa FL
 TheStandUpChannel.us | US - The Stand-Up Channel
 TheT.us | US - The T
 TheThreeStooges+.us | US - The Three Stooges+
@@ -11593,6 +11697,7 @@ TheX-Files.pluto | PLUTO - The X-Files
 The_MWMLW.us | US - The_M WMLW Milwaukee WI
 ThisOldHouse.pluto | PLUTO - This Old House
 ThisOldHouse.us | US - This Old House
+ThisOldHouseMakersChannel.us | US - This Old House Makers Channel
 ThisTVKTRKDT3.us | US - ThisTV KTRK-DT3 HOUSTON TX
 ThisTVWBXZD12.us | US - ThisTV 56.12 Buffalo NY
 ThrillvilleThrillbillies.ProspectLeague | PROSPECTLEAGUE - Thrillville Thrillbillies
@@ -11629,6 +11734,7 @@ Tosh.0.pluto | 0 - Tosh.0
 TotalCrime.us | US - Total Crime
 ToughJobs.pluto | PLUTO - Tough Jobs
 TowsonTigers.ncaab | NCAAB - Towson Tigers
+TraceUK.ca | CA - Trace UK
 TrailerParkBoysTheSwearNetShow.us | US - Trailer Park Boys: The SwearNet Show
 Tranquil.sxm | SXM - Tranquil
 TransformersTV.pluto | PLUTO - Transformers TV
@@ -12073,6 +12179,7 @@ WFTVOrlando.pluto | PLUTO - WFTV Orlando
 WGNWGN9.us | US - WGN 9 CHI
 WILDTV.ca | CA - WILD TV
 WILLOW.ca | CA - Willow
+WION.us | US - WION
 WIPR.pr | PR - WIPR
 WLIIUnivision.pr | PR - Univision Puerto Rico
 WLNYWLNY.us | US - WLNY Riverhead NYC NY
