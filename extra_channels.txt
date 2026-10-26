@@ -2263,7 +2263,6 @@ DEFYWPXNDT4.us | US - DEFY WPXNDT4 NYC NY
 DOMKINO.il | IL - DOM KINO
 DTOUR.ca | CA - DTOUR
 DUCKTV.us | US - Duck Tv
-DWEnglish.us | US - DW English
 Dabl.us | US - DABL
 DablKMYS.us | US - Dabl KMYS SAN ANTONIO TX
 DablKUBEDT2.us | US - Dabl KUBE-DT2 HOUSTON TX
@@ -5097,13 +5096,10 @@ FanDuelSportsNetworkOklahoma.us | US - FanDuel Sports Network Oklahoma
 FanDuelSportsNetworkOklahomaExtra.us | US - FanDuel Sports Network Oklahoma Extra
 FanDuelSportsNetworkSanAntonio.us | US - FanDuel Sports Network San Antonio
 FanDuelSportsNetworkSoCal.us | US - FanDuel Sports Network SoCal
-FanDuelSportsNetworkSoCalExtra.us | US - FanDuel Sports Network SoCal Extra
 FanDuelSportsNetworkSouth.us | US - FanDuel Sports Network South
 FanDuelSportsNetworkSouthCarolina.us | US - FanDuel Sports Network South Carolina
-FanDuelSportsNetworkSouthPlus.us | US - FanDuel Sports Network South Plus
 FanDuelSportsNetworkSoutheast.us | US - FanDuel Sports Network Southeast
 FanDuelSportsNetworkSouthwest.us | US - FanDuel Sports Network Southwest
-FanDuelSportsNetworkSouthwestPlus.us | US - FanDuel Sports Network Southwest Plus
 FanDuelSportsNetworkStLouis.us | US - FanDuel Sports Network St. Louis
 FanDuelSportsNetworkStLouisExtra.us | US - FanDuel Sports Network St. Louis Extra
 FanDuelSportsNetworkSun.us | US - FanDuel Sports Network Sun
@@ -6966,7 +6962,6 @@ MontrealCanadiens.nhl | NHL - Montréal Canadiens
 MontrealCanadiens.sxm | SXM - Montreal Canadiens
 MonumentalSportsNetwork.us | US - Monumental Sports Network
 MonumentalSportsNetwork2.us | US - Monumental Sports Network 2
-MonumentalSportsNetworkAlternate.us | US - Monumental Sports Network Alternate
 MooseJawWarriors.whl | WHL - Moose Jaw Warriors
 MoreTVDrama.pluto | PLUTO - More TV Drama
 MoreTVSitcoms.pluto | PLUTO - More TV Sitcoms
@@ -10431,7 +10426,6 @@ REVTV.ca | CA - Rev TV
 RFDTV.us | US - RFD TV
 RFDTVCanada.ca | CA - RFD TV Canada
 RNNWRNN.us | US - RNN WRNN NYC NY
-ROOTSportsNorthwestAlt1.us | US - ROOT Sports Northwest Alt 1
 ROTANA.il | IL - ROTANA
 ROTANACINEMA.il | IL - ROTANA CINEMA
 RTL.il | IL - RTL
