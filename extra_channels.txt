@@ -1276,7 +1276,6 @@ CFJCTV.ca | CA - CFJC TV
 CFMontreal.mls | MLS - CF Montréal
 CGTN.ca | CA - CGTN
 CGTN9.us | US - CGTN9
-CGTNCCTVNews.us | US - CGTN CCTV News
 CGTNDOCUMENTARY.ca | CA - CGTN9
 CGTNDOCUMENTARY.il | IL - CGTN DOCUMENTARY
 CGTNEspanol.us | US - CGTN Español
@@ -1882,7 +1881,6 @@ ClevelandMonsters.ahl | AHL - Cleveland Monsters
 ClevelandStateVikings.ncaab | NCAAB - Cleveland State Vikings
 ClevelandStateVikings.ncaabb | NCAABB - Cleveland State Vikings
 ClevelandStateVikings.ncaasb | NCAASB - Cleveland State Vikings
-Clic.us | US - Clic
 ClintonLumberKings.ProspectLeague | PROSPECTLEAGUE - Clinton LumberKings
 ClosedCaptionTest3.pluto | PLUTO - Closed Caption Test 3
 ClubMTV.il | IL - Club MTV
@@ -1910,7 +1908,6 @@ ColoradoStateRams.ncaaf | NCAAF - Colorado State Rams
 ColorsBangla.ca | CA - Colors Bangla
 ColorsCineplex.us | US - Colors Cineplex
 ColorsMarathi.ca | CA - Colors Marathi
-ColorsMarathi.us | US - Colors Marathi
 ColorsRishtey.ca | CA - Color Rishtey
 ColorsRishtey.us | US - Colors Rishtey
 ColumbusBlueJackets.nhl | NHL - Columbus Blue Jackets
@@ -1939,7 +1936,6 @@ ConnecticutSun.wnba | WNBA - Connecticut Sun
 ConstruccionesAsombrosas.pluto | PLUTO - Construcciones Asombrosas
 CookingChannel.us | US - COOKING CHANNEL
 CookingChannelPacific.us | US - Cooking Channel West
-Corazon.us | US - Corazón
 CornerstoneTV.us | US - Cornerstone
 CosmicFrontiers.us | US - Cosmic Frontiers
 CottageLife.ca | CA - COTTAGE LIFE
@@ -1993,11 +1989,9 @@ CrossCountry.sxm | SXM - Cross Country
 Crunchyroll.pluto | PLUTO - Crunchyroll
 Crunchyroll.us | US - Crunchyroll
 Crímenesimperfectos.pluto | PLUTO - Crímenes imperfectos
-CubaMax.us | US - Cuba Max
 CuriosityNOW.us | US - Curiosity NOW
 CuriousityStream.us | US - Curiuosity Stream
 CurrentTime.il | IL - Current Time
-Cyclonestv.us | US - Cyclones.tv
 D+001.uk | UK - D+ 001
 D+002.uk | UK - D+ 002
 D+003.uk | UK - D+ 003
@@ -2714,7 +2708,6 @@ DenverBroncos.nfl | NFL - Denver Broncos
 DenverBroncos.sxm | SXM - Denver Broncos
 DenverNuggets.nba | NBA - Denver Nuggets
 DenverNuggets.sxm | SXM - Denver Nuggets
-DesiChannel.us | US - Desi Channel
 DestinationAmerica.us | US - Destination America
 DestinationAmericaPacific.us | US - Destination America West
 DetroitLions.nfl | NFL - Detroit Lions
@@ -4580,7 +4573,6 @@ ElReinoInfantil.pluto | PLUTO - El Reino Infantil
 ElReyNetwork.us | US - El Rey Network
 ElReyRebel.pluto | PLUTO - El Rey Rebel
 ElReyRebel.us | US - El Rey Rebel
-ElTreceInternacional.us | US - El Trece Internacional
 ElectricNow.us | US - Electric Now
 Elevations.sxm | SXM - Elevations
 ElevationsPop.sxm | SXM - Elevations Pop
@@ -6105,7 +6097,6 @@ IndiePlexPacific.us | US - IndiePlex West
 IndieSleep.sxm | SXM - Indie Sleep
 InfluenceFranco.sxm | SXM - Influence Franco
 InfoWars.us | US - InfoWars
-InglesParaTodos.us | US - Inglés Para Todos
 InkMaster.pluto | PLUTO - Ink Master
 InspPacific.us | US - Insp West
 InterMiamiCF.mls | MLS - Inter Miami CF
@@ -6705,7 +6696,6 @@ MediaSetItalia.ca | CA - Mediaset Italia
 Mediaset.il | IL - Mediaset
 MedicineHatTigers.whl | WHL - Medicine Hat Tigers
 MegaCosmos.ca | CA - Mega Cosmos
-MegaCosmos.us | US - Mega Cosmos
 MemphisGrizzlies.nba | NBA - Memphis Grizzlies
 MemphisGrizzlies.sxm | SXM - Memphis Grizzlies
 MemphisTigers.ncaab | NCAAB - Memphis Tigers
@@ -8910,7 +8900,6 @@ OnePiece.pluto | PLUTO - One Piece
 OneSoccer.ca | CA - OneSoccer
 OneTV.ca | CA - One TV
 OneWorldRadio.sxm | SXM - One World Radio
-OnlyMusic.us | US - Only Music
 OntarioLegislativeAssembly.ca | CA - Ontario Legislative Assembly
 OntarioReign.ahl | AHL - Ontario Reign
 OptusSport1.prmtv | PRMTV - Optus Sport 1 PrimeTV
@@ -10233,7 +10222,6 @@ PlutoTVWesterns.pluto | PLUTO - Pluto TV Westerns
 PokerGO.pluto | PLUTO - PokerGO
 PokerGO.us | US - PokerGO
 Pokémon.pluto | PLUTO - Pokémon
-PolSat1.us | US - PolSat 1
 PolSatNews.us | US - PolSat News
 Pop2K.sxm | SXM - Pop2K
 Pop2KJustMusic.sxm | SXM - Pop2K Just Music
@@ -10523,7 +10511,6 @@ RogersTVOwenSound.ca | CA - Rogers TV Owen Sound
 RogersTVStThomas.ca | CA - Rogers TV St Thomas
 RogersTVWaterloo.ca | CA - Rogers TV Waterloo
 RollerRink.sxm | SXM - Roller Rink
-RotanaMusic.us | US - Rotana Music
 Rouyn-NorandaHuskies.qmjhl | QMJHL - Rouyn-Noranda Huskies
 Rumbon.sxm | SXM - Rumbón
 Running.sxm | SXM - Running
@@ -10547,8 +10534,6 @@ SECPlay-by-Play960.sxm | SXM - SEC Play-by-Play 960
 SECPlay-by-Play961.sxm | SXM - SEC Play-by-Play 961
 SECPlay-by-Play962.sxm | SXM - SEC Play-by-Play 962
 SET.us | US - SET
-SETInternational.us | US - SET International
-SETMAX.us | US - SET MAX
 SETMax.ca | CA - SET Max
 SHANSONTV.il | IL - SHANSON TV
 SHOxBET.us | US - SHO*BET
@@ -10821,8 +10806,6 @@ SoccerStadium.sxm | SXM - Soccer Stadium
 SomosNovelas.us | US - Somos Novelas
 SonyAath.ca | CA - Sony Aath
 SonyCanalEscapePerfecto.pluto | PLUTO - Sony Canal Escape Perfecto
-SonyMarathi.us | US - Sony Marathi
-SonyMax2.us | US - Sony Max 2
 SonyMovieChannel.us | US - SONY MOVIE CHANNEL
 SooGreyhounds.ohl | OHL - Soo Greyhounds
 Soothe.sxm | SXM - Soothe
@@ -11229,7 +11212,6 @@ SuperEcran.ca | CA - SUPER ECRAN 1
 SuperEcran2.ca | CA - SUPER ECRAN 2
 SuperEcran3.ca | CA - SUPER ECRAN 3
 SuperEcran4.ca | CA - SUPER ECRAN 4
-SupercanalCaribe.us | US - Super Canal Caribe
 Supermarket.sxm | SXM - Supermarket
 SupermarketSweep.ca | CA - Supermarket Sweep
 SupermarketSweep.pluto | PLUTO - Supermarket Sweep
@@ -11242,7 +11224,6 @@ SurferTV.us | US - Surfer TV
 Survivor.paramount+ | PARAMOUNT+ - Survivor
 Survivor.pluto | PLUTO - Survivor
 SurvivorNet.us | US - SurvivorNet
-SuryaTV.us | US - Surya TV
 Sweat.sxm | SXM - Sweat
 SweetEscapes.us | US - Sweet Escapes
 SwerveCombat.us | US - Swerve Combat
@@ -11391,9 +11372,7 @@ TVAsia.us | US - TV Asia
 TVB1.us | US - TVB1
 TVBDrama.us | US - TVB Drama
 TVBE.us | US - TVBE
-TVBJ-1.us | US - TVBJ-1
 TVBNews.us | US - TVB News
-TVBS.us | US - TVBS
 TVCI.il | IL - TVCI
 TVChile.us | US - TVCHILE
 TVClassics.paramount+ | PARAMOUNT+ - TV Classics
@@ -11413,8 +11392,6 @@ TVN24.us | US - TVN 24
 TVOne.us | US - TV ONE
 TVOneGlobal.us | US - TVOne Global
 TVOntario-CICA.ca | CA - TVO
-TVPInfo.us | US - TVP Info
-TVPPolonia.us | US - TVP Polonia
 TVQuisqueya.us | US - TV Quisqueya
 TVRepublika.us | US - TV Republika
 TVRinternational.il | IL - TVR international
@@ -11703,7 +11680,6 @@ TimesNow.ca | CA - Times Now
 TinyHouseNation.pluto | PLUTO - Tiny House Nation
 TinyHouseNation.us | US - Tiny House Nation
 TodaysShoppingChoice.ca | CA - Todays Shopping Choice
-TodoNoticias.us | US - Todo Noticias
 ToledoRockets.ncaaf | NCAAF - Toledo Rockets
 ToledoWalleye.echl | ECHL - Toledo Walleye
 TomPettyRadio.sxm | SXM - Tom Petty Radio
