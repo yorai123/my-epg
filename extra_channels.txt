@@ -305,10 +305,6 @@ ABCWest_KABC.us | US - ABC West KABC
 ACCAlternate.us | US - ACC Alternate
 ACCDigitalNetwork.us | US - ACC Digital Network
 ACCNetwork.us | US - ACC NETWORK
-ACCPlay-by-Play193.sxm | SXM - ACC Play-by-Play 193
-ACCPlay-by-Play194.sxm | SXM - ACC Play-by-Play 194
-ACCPlay-by-Play955.sxm | SXM - ACC Play-by-Play 955
-ACCPlay-by-Play956.sxm | SXM - ACC Play-by-Play 956
 ACEWACPDT7.us | US - ACE WACP-DT7 Philadelphia PA
 ACEtv.us | US - ACE TV
 ACKTV.us | US - AKC TV
@@ -408,7 +404,6 @@ Acadie-BathurstTitan.qmjhl | QMJHL - Acadie-Bathurst Titan
 AcapulcoShore.pluto | PLUTO - Acapulco Shore
 Accuweather.us | US - Accuweather
 AceTVWBXZD10.us | US - AceTV WBXZ-D10 Buffalo NY
-AcousticGuitarInstrumentals.sxm | SXM - Acoustic Guitar Instrumentals
 ActionHollywoodMovies.us | US - Action Hollywood Movies
 ActionPlus.us | US - Action Plus
 AdultAnimation.paramount+ | PARAMOUNT+ - Adult Animation
@@ -434,8 +429,6 @@ AlabamaStateHornets.ncaaf | NCAAF - Alabama State Hornets
 AlarmClockRadio.sxm | SXM - Alarm Clock Radio
 AlbertaLegislature.ca | CA - Alberta Legislature
 AlcornStateBraves.ncaaf | NCAAF - Alcorn State Braves
-Alegra.sxm | SXM - Alegría
-AlertsfromTheWeatherChannel.sxm | SXM - Alerts from The Weather Channel
 AlienNationByDUST.us | US - Alien Nation by DUST
 AllArts.us | US - All Arts
 AllDayDrama.paramount+ | PARAMOUNT+ - All Day Drama
@@ -828,12 +821,6 @@ Big10+Rutgers.us | US - Big10+ Rutgers
 Big10+UCLA.us | US - Big10+ UCLA
 Big10+USC.us | US - Big10+ USC
 Big10+Washington.us | US - Big10+ Washington
-Big12Play-by-Play198.sxm | SXM - Big 12 Play-by-Play 198
-Big12Play-by-Play199.sxm | SXM - Big 12 Play-by-Play 199
-Big12Play-by-Play200.sxm | SXM - Big 12 Play-by-Play 200
-Big12Play-by-Play952.sxm | SXM - Big 12 Play-by-Play 952
-Big12Play-by-Play953.sxm | SXM - Big 12 Play-by-Play 953
-Big12Play-by-Play954.sxm | SXM - Big 12 Play-by-Play 954
 Big12Studios.us | US - Big 12 Studios
 BigBrother.pluto | PLUTO - Big Brother
 BigBrotherCamera1.us | US - Big Brother Camera 1
@@ -846,12 +833,6 @@ BigTen1.us | US - Big Ten Network 1
 BigTen2.us | US - Big Ten Network 2
 BigTen3.us | US - Big Ten Network 3
 BigTen4.us | US - Big Ten Network 4
-BigTenPlay-by-Play195.sxm | SXM - Big Ten Play-by-Play 195
-BigTenPlay-by-Play196.sxm | SXM - Big Ten Play-by-Play 196
-BigTenPlay-by-Play197.sxm | SXM - Big Ten Play-by-Play 197
-BigTenPlay-by-Play957.sxm | SXM - Big Ten Play-by-Play 957
-BigTenPlay-by-Play958.sxm | SXM - Big Ten Play-by-Play 958
-BigTenPlay-by-Play959.sxm | SXM - Big Ten Play-by-Play 959
 BillboardTop500SummerHits.sxm | SXM - Billboard Top 500 Summer Hits
 BilliardTV.us | US - Billiard TV
 BingeTV.us | US - Binge TV
@@ -934,7 +915,6 @@ ButlerBulldogs.ncaabb | NCAABB - Butler Bulldogs
 ButlerBulldogs.ncaasb | NCAASB - Butler Bulldogs
 BuzzrKTXHDT4.us | US - Buzzr KTXH-DT4 HOUSTON TX
 BuzzrTV.us | US - Buzzr TV
-C-SPANRadio.sxm | SXM - C-SPAN Radio
 CAROUSEL.il | IL - CAROUSEL
 CARRIESCOUNTRY.sxm | SXM - CARRIE’S COUNTRY
 CASA.ca | CA - CASATV
@@ -1693,7 +1673,6 @@ CWWXCW.us | US - CW WXCW Fort Myers FL
 CWWYCW.us | US - CW WYCW Asheville NC
 CWWZTVDT2.us | US - CW WZTVDT2 Nashville TN
 Cable14.ca | CA - Cable 14
-CafyRitmo.sxm | SXM - Café y Ritmo
 CalgaryFlames.nhl | NHL - Calgary Flames
 CalgaryFlames.sxm | SXM - Calgary Flames
 CalgaryHitmen.whl | WHL - Calgary Hitmen
@@ -1849,7 +1828,6 @@ ClassicMoviesChannel.pluto | PLUTO - Classic Movies Channel
 ClassicPunk.sxm | SXM - Classic Punk
 ClassicRewind.sxm | SXM - Classic Rewind
 ClassicRewindDeepCuts.sxm | SXM - Classic Rewind Deep Cuts
-ClassicRewindJustMusic.sxm | SXM - Classic Rewind Just Music
 ClassicRewindTop100.sxm | SXM - Classic Rewind Top 100
 ClassicRockBBQ.sxm | SXM - Classic Rock BBQ
 ClassicRockParty.sxm | SXM - Classic Rock Party
@@ -1920,10 +1898,8 @@ ComedyCentralPacific.us | US - Comedy Central West
 ComedyCentralPlutoTV.pluto | PLUTO - Comedy Central Pluto TV
 ComedyCentralRadio.sxm | SXM - Comedy Central Radio
 ComedyCentralenespañol.pluto | PLUTO - Comedy Central en español
-ComedyClassics.sxm | SXM - Comedy Classics
 ComedyDynamics.us | US - Comedy Dynamics
 ComedyGreats.sxm | SXM - Comedy Greats
-ComedyInFull.sxm | SXM - Comedy In Full
 ComedyTV.us | US - COMEDY.TV
 Comet.us | US - COMET
 CometKIAHDT3.us | US - Comet KIAH-DT3 HOUSTON TX
@@ -2274,7 +2250,6 @@ DangerTV.us | US - Danger TV
 DanvilleDans.ProspectLeague | PROSPECTLEAGUE - Danville Dans
 DarkShadows.pluto | PLUTO - Dark Shadows
 Dateline24/7.pluto | PLUTO - Dateline 24/7
-Dateline24/7.sxm | SXM - Dateline 24/7
 Dateline24_7.peacocktv | PEACOCKTV - Dateline 24/7
 DatelineenEspanol.peacocktv | PEACOCKTV - Dateline en Español
 DatingDisasters.pluto | PLUTO - Dating Disasters
@@ -4913,7 +4888,6 @@ FOXLOCALHouston.pluto | PLUTO - FOX LOCAL Houston
 FOXNEWS.il | IL - FOX NEWS
 FOXNet.us | US - FOXNet
 FOXNewsChannel.sxm | SXM - FOX News Channel
-FOXNewsHeadlines24/7.sxm | SXM - FOX News Headlines 24/7
 FOXSOUL.us | US - FOX SOUL
 FOXSports.pluto | PLUTO - FOX Sports
 FOXSportsonSiriusXM.sxm | SXM - FOX Sports on SiriusXM
@@ -5076,7 +5050,6 @@ FanDuelSportsNetworkKansasCityExtra.us | US - FanDuel Sports Network Kansas City
 FanDuelSportsNetworkMidwest.us | US - FanDuel Sports Network Midwest
 FanDuelSportsNetworkMidwestPlus.us | US - FanDuel Sports Network Midwest Plus
 FanDuelSportsNetworkNashville.us | US - FanDuel Sports Network Nashville
-FanDuelSportsNetworkNetbase.us | US - FanDuel Sports Network Netbase
 FanDuelSportsNetworkNewOrleans.us | US - FanDuel Sports Network New Orleans
 FanDuelSportsNetworkNewOrleansExtra.us | US - FanDuel Sports Network New Orleans Extra
 FanDuelSportsNetworkNorth.us | US - FanDuel Sports Network North
@@ -5918,13 +5891,10 @@ HighPointPanthers.ncaaw | NCAAW - High Point Panthers
 HighwayJustMusic.sxm | SXM - Highway Just Music
 HighwayOnTheHorizon.sxm | SXM - Highway On The Horizon
 HighwayTopHits.sxm | SXM - Highway Top Hits
-Hip-HopChronicles.sxm | SXM - Hip-Hop Chronicles
-Hip-HopNation.sxm | SXM - Hip-Hop Nation
 HipHopNationDiscovery.sxm | SXM - Hip-Hop Nation Discovery
 HipHopNationTopHits.sxm | SXM - Hip-Hop Nation Top Hits
 HipHopNationWorkout.sxm | SXM - Hip-Hop Nation Workout
 HipHopNewAndClassic.sxm | SXM - Hip-Hop New & Classic
-HipHopRAndB.sxm | SXM - Hip-Hop/R&B
 Historia.ca | CA - HISTORIA
 History.ca | CA - HISTORY
 History.us | US - HISTORY
@@ -5976,7 +5946,6 @@ HoustonTexans.nfl | NFL - Houston Texans
 HoustonTexans.sxm | SXM - Houston Texans
 HowTo.us | US - How To
 Howard100.sxm | SXM - Howard 100
-Howard101.sxm | SXM - Howard 101
 HumTV.us | US - Hum TV
 HuntChannel.us | US - Hunt Channel
 IAlmostGotAwayWithIt.us | US - I (Almost) Got Away With It
@@ -6258,7 +6227,6 @@ LimitedEdition11.sxm | SXM - Limited Edition 11
 LimitedEdition12.sxm | SXM - Limited Edition 12
 LimitedEdition3.sxm | SXM - Limited Edition 3
 LimitedEdition4.sxm | SXM - Limited Edition 4
-LimitedEdition5.sxm | SXM - Limited Edition 5
 LimitedEdition6.sxm | SXM - Limited Edition 6
 LimitedEdition7.sxm | SXM - Limited Edition 7
 LimitedEdition8.sxm | SXM - Limited Edition 8
@@ -6310,7 +6278,6 @@ LiveNOWfromFOX.us | US - Live NOW from FOX
 LivePDPresents.pluto | PLUTO - Live PD Presents
 LiveXLive.us | US - LIVEXLIVE
 LivingWithEvil.pluto | PLUTO - Living With Evil
-LoFiCaf.sxm | SXM - Lo-Fi Café
 LoFiSleep.sxm | SXM - Lo-Fi Sleep
 LoFiStudy.sxm | SXM - Lo-Fi Study
 Local10WPLG.us | US - Local 10 WPLG Miami FL
@@ -6475,20 +6442,6 @@ MLBNetwork.ca | CA - MLBNC
 MLBNetwork.us | US - MLB NETWORK
 MLBNetwork4K.us | US - MLB Network 4K
 MLBNetworkRadio.sxm | SXM - MLB Network Radio
-MLBPlay-By-Play175.sxm | SXM - MLB Play-By-Play 175
-MLBPlay-by-Play176.sxm | SXM - MLB Play-by-Play 176
-MLBPlay-by-Play177.sxm | SXM - MLB Play-by-Play 177
-MLBPlay-by-Play179.sxm | SXM - MLB Play-by-Play 179
-MLBPlay-by-Play180.sxm | SXM - MLB Play-by-Play 180
-MLBPlay-by-Play181.sxm | SXM - MLB Play-by-Play 181
-MLBPlay-by-Play182.sxm | SXM - MLB Play-by-Play 182
-MLBPlay-by-Play183.sxm | SXM - MLB Play-by-Play 183
-MLBPlay-by-Play184.sxm | SXM - MLB Play-by-Play 184
-MLBPlay-by-Play185.sxm | SXM - MLB Play-by-Play 185
-MLBPlay-by-Play186.sxm | SXM - MLB Play-by-Play 186
-MLBPlay-by-Play187.sxm | SXM - MLB Play-by-Play 187
-MLBPlay-by-Play188.sxm | SXM - MLB Play-by-Play 188
-MLBPlay-by-Play189.sxm | SXM - MLB Play-by-Play 189
 MLBStrikeZone.us | US - MLB Strike Zone
 MLBenEspanol870.sxm | SXM - MLB en Español 870
 MLBenEspanol871.sxm | SXM - MLB en Español 871
@@ -6942,7 +6895,6 @@ MissouriTigers.ncaasb | NCAASB - Missouri Tigers
 MissouriTigers.ncaaw | NCAAW - Missouri Tigers
 Misteriossinresolver.pluto | PLUTO - Misterios sin resolver
 Mixible.paramount+ | PARAMOUNT+ - Mixible
-Mixtape:North.sxm | SXM - Mixtape: North
 ModernMarvelsbyHISTORY.pluto | PLUTO - Modern Marvels by HISTORY
 MomJeans.sxm | SXM - Mom Jeans
 Monarch.us | US - Monarch
@@ -6975,7 +6927,6 @@ Movies.paramount+ | PARAMOUNT+ - Movies
 MoviesforGamers.pluto | PLUTO - Movies for Gamers
 MrBeanLiveAction.us | US - Mr. Bean Live Action
 MuchMusic.ca | CA - MUCHHD
-MumfordAndSonsRadio.sxm | SXM - Mumford & Sons Radio
 Murder,SheWrote.pluto | PLUTO - Murder She Wrote
 MurrayStateRacers.ncaab | NCAAB - Murray State Racers
 MurrayStateRacers.ncaabb | NCAABB - Murray State Racers
@@ -7209,12 +7160,6 @@ NBALeaguePass8.ca | CA - NBA League Pass 8
 NBALeaguePass8.us | US - NBA League Pass 8
 NBALeaguePass9.ca | CA - NBA League Pass 9
 NBALeaguePass9.us | US - NBA League Pass 9
-NBAPlay-by-Play212.sxm | SXM - NBA Play-by-Play 212
-NBAPlay-by-Play213.sxm | SXM - NBA Play-by-Play 213
-NBAPlay-by-Play214.sxm | SXM - NBA Play-by-Play 214
-NBAPlay-by-Play215.sxm | SXM - NBA Play-by-Play 215
-NBAPlay-by-Play216.sxm | SXM - NBA Play-by-Play 216
-NBAPlay-by-Play217.sxm | SXM - NBA Play-by-Play 217
 NBATV.ca | CA - NBA TV
 NBATV4K.us | US - NBA TV 4K
 NBA_TV_event1.p13 | P13 - NBA_TV: event1
@@ -8555,16 +8500,6 @@ NFLGAME8.v3 | V3 - NFL GAME 8
 NFLGAME9.v3 | V3 - NFL GAME 9
 NFLNetwork.ca | CA - NFL Network
 NFLNetwork.us | US - NFL Network
-NFLPlay-by-Play225.sxm | SXM - NFL Play-by-Play 225
-NFLPlay-by-Play226.sxm | SXM - NFL Play-by-Play 226
-NFLPlay-by-Play227.sxm | SXM - NFL Play-by-Play 227
-NFLPlay-by-Play228.sxm | SXM - NFL Play-by-Play 228
-NFLPlay-by-Play229.sxm | SXM - NFL Play-by-Play 229
-NFLPlay-by-Play230.sxm | SXM - NFL Play-by-Play 230
-NFLPlay-by-Play231.sxm | SXM - NFL Play-by-Play 231
-NFLPlay-by-Play232.sxm | SXM - NFL Play-by-Play 232
-NFLPlay-by-Play233.sxm | SXM - NFL Play-by-Play 233
-NFLPlay-by-Play234.sxm | SXM - NFL Play-by-Play 234
 NFLRedZone.us | US - NFL RED ZONE
 NFLSundayTicket1.ca | CA - NFL Sunday Ticket 1
 NFLSundayTicket10.ca | CA - NFL Sunday Ticket 10
@@ -8670,11 +8605,6 @@ NHLCenterIce8.us | US - NHL Center Ice 8
 NHLCenterIce9.us | US - NHL Center Ice 9
 NHLNetwork.us | US - NHL NETWORK
 NHLNetworkRadio.sxm | SXM - NHL Network Radio
-NHLPlay-by-Play219.sxm | SXM - NHL Play-by-Play 219
-NHLPlay-by-Play220.sxm | SXM - NHL Play-by-Play 220
-NHLPlay-by-Play221.sxm | SXM - NHL Play-by-Play 221
-NHLPlay-by-Play222.sxm | SXM - NHL Play-by-Play 222
-NHLPlay-by-Play223.sxm | SXM - NHL Play-by-Play 223
 NHPBSExploreWENHDT2.us | US - NH PBS Explore WENH-DT2 NEW HAMPSHIRE NH
 NHRATV.us | US - NHRA TV
 NIPremiershipFixtures00.rtv | RTV - NI Premiership Fixtures 00
@@ -8895,7 +8825,6 @@ OmniBC.ca | CA - OMNI BC
 OmniVancouver.ca | CA - Omni Vancouver
 OnBroadway.sxm | SXM - On Broadway
 OneAmericaNewsNetwork.us | US - One America News Network OAN
-OneManRevolution.sxm | SXM - One Man Revolution
 OnePiece.pluto | PLUTO - One Piece
 OneSoccer.ca | CA - OneSoccer
 OneTV.ca | CA - One TV
@@ -10177,7 +10106,6 @@ PittsburghPanthers.ncaaw | NCAAW - Pittsburgh Panthers
 PittsburghPenguins.nhl | NHL - Pittsburgh Penguins
 PittsburghPenguins.sxm | SXM - Pittsburgh Penguins
 PittsburghPirates.mlb | MLB - Pittsburgh Pirates
-PittsburghPirates.sxm | SXM - Pittsburgh Pirates
 PittsburghSteelers.nfl | NFL - Pittsburgh Steelers
 PittsburghSteelers.sxm | SXM - Pittsburgh Steelers
 PixL.us | US - PIXL
@@ -10233,7 +10161,6 @@ PopAndDanceMix.sxm | SXM - Pop & Dance Mix
 PopHipHopCountry.sxm | SXM - Pop/Hip-Hop/Country
 PopRocks.sxm | SXM - PopRocks
 PopTop500.sxm | SXM - Pop Top 500
-Poplandia.sxm | SXM - Poplandia
 Popstar!TV.us | US - Popstar! TV
 PopularScience.us | US - Popular Science
 PortlandFire.wnba | WNBA - Portland Fire
@@ -10495,7 +10422,6 @@ RockBar.sxm | SXM - RockBar
 RockTheBellsRadio.sxm | SXM - Rock The Bells Radio
 RockfordIceHogs.ahl | AHL - Rockford IceHogs
 RockingCountryBBQ.sxm | SXM - Rocking Country BBQ
-RockvilleRadio.sxm | SXM - Rockville Radio
 Rockwall.sxm | SXM - Rockwall
 RogersTV-Ottawa.ca | CA - RogersTV Ottawa
 RogersTVBarrie.ca | CA - Rogers TV Barrie
@@ -10527,12 +10453,6 @@ SABTV.ca | CA - SAB TV
 SALTLIGHT.ca | CA - SALT LIGHT
 SBNtv.us | US - SBN
 SECNetwork.us | US - SEC NETWORK
-SECPlay-by-Play190.sxm | SXM - SEC Play-by-Play 190
-SECPlay-by-Play191.sxm | SXM - SEC Play-by-Play 191
-SECPlay-by-Play192.sxm | SXM - SEC Play-by-Play 192
-SECPlay-by-Play960.sxm | SXM - SEC Play-by-Play 960
-SECPlay-by-Play961.sxm | SXM - SEC Play-by-Play 961
-SECPlay-by-Play962.sxm | SXM - SEC Play-by-Play 962
 SET.us | US - SET
 SETMax.ca | CA - SET Max
 SHANSONTV.il | IL - SHANSON TV
@@ -10692,8 +10612,6 @@ ShowtimeWomen.us | US - SHOWTIME WOMEN
 ShowtimeWomenPacific.us | US - SHOWTIME WOMEN WEST
 SilverScreenClassics.ca | CA - SILVER SCREEN CLASSICS
 SilverStateSportsAndEntertainmentNetwork.us | US - Silver State Sports & Entertainment Network (SSSEN)
-SiriusXM300.sxm | SXM - SiriusXM 300
-SiriusXM79.sxm | SXM - SiriusXM 79
 SiriusXMACCRadio.sxm | SXM - SiriusXM ACC Radio
 SiriusXMAppOriginals.sxm | SXM - SiriusXM App Originals
 SiriusXMBigTenRadio.sxm | SXM - SiriusXM Big Ten Radio
@@ -10702,14 +10620,11 @@ SiriusXMCollegeSportsRadio.sxm | SXM - SiriusXM College Sports Radio
 SiriusXMComedyClub.sxm | SXM - SiriusXM Comedy Club
 SiriusXMComesAlive.sxm | SXM - SiriusXM Comes Alive!
 SiriusXMDhamaka.sxm | SXM - SiriusXM Dhamaka
-SiriusXMF1Radio.sxm | SXM - SiriusXM F1 Radio
 SiriusXMFC.sxm | SXM - SiriusXM FC
 SiriusXMFLY.sxm | SXM - SiriusXM FLY
 SiriusXMGuitarGreats.sxm | SXM - SiriusXM Guitar Greats
 SiriusXMHits1.sxm | SXM - SiriusXM Hits 1
 SiriusXMINDYCARNation.sxm | SXM - SiriusXM INDYCAR Nation
-SiriusXMK-Pop.sxm | SXM - SiriusXM K-Pop
-SiriusXMLimitedEdition2.sxm | SXM - SiriusXM Limited Edition 2
 SiriusXMLove.sxm | SXM - SiriusXM Love
 SiriusXMNASCARRadio.sxm | SXM - SiriusXM NASCAR Radio
 SiriusXMNBARadio.sxm | SXM - SiriusXM NBA Radio
@@ -10801,7 +10716,6 @@ SmithsonianChannelSelects.pluto | PLUTO - Smithsonian Channel Selects
 SmithsonianNetwork.us | US - Smithsonian Network
 SmithsonianNetworkPacific.us | US - Smithsonian Network West
 SoYummy.us | US - So Yummy!
-SoccerPlay-by-PlayenEspanol.sxm | SXM - Soccer Play-by-Play en Español
 SoccerStadium.sxm | SXM - Soccer Stadium
 SomosNovelas.us | US - Somos Novelas
 SonyAath.ca | CA - Sony Aath
@@ -10809,7 +10723,6 @@ SonyCanalEscapePerfecto.pluto | PLUTO - Sony Canal Escape Perfecto
 SonyMovieChannel.us | US - SONY MOVIE CHANNEL
 SooGreyhounds.ohl | OHL - Soo Greyhounds
 Soothe.sxm | SXM - Soothe
-SoulCycleRadio.sxm | SXM - SoulCycle Radio
 SoundCloudRadio.sxm | SXM - SoundCloud Radio
 SoundsofIbiza.sxm | SXM - Sounds of Ibiza
 SouthAlabamaJaguars.ncaaf | NCAAF - South Alabama Jaguars
@@ -10888,73 +10801,6 @@ SportsNetWorld2.ca | CA - SportsNet World Plus 2
 SportsNetWorld3.ca | CA - SportsNet World Plus 3
 SportsNetWorld4.ca | CA - SportsNet World Plus 4
 SportsNewsHighlights.us | US - Sports News Highlights
-SportsPlay-by-Play106.sxm | SXM - Sports Play-by-Play 106
-SportsPlay-by-Play117.sxm | SXM - Sports Play-by-Play 117
-SportsPlay-by-Play137.sxm | SXM - Sports Play-by-Play 137
-SportsPlay-by-Play138.sxm | SXM - Sports Play-by-Play 138
-SportsPlay-by-Play139.sxm | SXM - Sports Play-by-Play 139
-SportsPlay-by-Play160.sxm | SXM - Sports Play-by-Play 160
-SportsPlay-by-Play161.sxm | SXM - Sports Play-by-Play 161
-SportsPlay-by-Play162.sxm | SXM - Sports Play-by-Play 162
-SportsPlay-by-Play201.sxm | SXM - Sports Play-by-Play 201
-SportsPlay-by-Play202.sxm | SXM - Sports Play-by-Play 202
-SportsPlay-by-Play203.sxm | SXM - Sports Play-by-Play 203
-SportsPlay-by-Play204.sxm | SXM - Sports Play-by-Play 204
-SportsPlay-by-Play205.sxm | SXM - Sports Play-by-Play 205
-SportsPlay-by-Play206.sxm | SXM - Sports Play-by-Play 206
-SportsPlay-by-Play207.sxm | SXM - Sports Play-by-Play 207
-SportsPlay-by-Play380.sxm | SXM - Sports Play-by-Play 380
-SportsPlay-by-Play381.sxm | SXM - Sports Play-by-Play 381
-SportsPlay-by-Play382.sxm | SXM - Sports Play-by-Play 382
-SportsPlay-by-Play383.sxm | SXM - Sports Play-by-Play 383
-SportsPlay-by-Play384.sxm | SXM - Sports Play-by-Play 384
-SportsPlay-by-Play385.sxm | SXM - Sports Play-by-Play 385
-SportsPlay-by-Play386.sxm | SXM - Sports Play-by-Play 386
-SportsPlay-by-Play387.sxm | SXM - Sports Play-by-Play 387
-SportsPlay-by-Play388.sxm | SXM - Sports Play-by-Play 388
-SportsPlay-by-Play389.sxm | SXM - Sports Play-by-Play 389
-SportsPlay-by-Play390.sxm | SXM - Sports Play-by-Play 390
-SportsPlay-by-Play391.sxm | SXM - Sports Play-by-Play 391
-SportsPlay-by-Play392.sxm | SXM - Sports Play-by-Play 392
-SportsPlay-by-Play393.sxm | SXM - Sports Play-by-Play 393
-SportsPlay-by-Play394.sxm | SXM - Sports Play-by-Play 394
-SportsPlay-by-Play963.sxm | SXM - Sports Play-by-Play 963
-SportsPlay-by-Play964.sxm | SXM - Sports Play-by-Play 964
-SportsPlay-by-Play965.sxm | SXM - Sports Play-by-Play 965
-SportsPlay-by-Play966.sxm | SXM - Sports Play-by-Play 966
-SportsPlay-by-Play967.sxm | SXM - Sports Play-by-Play 967
-SportsPlay-by-Play968.sxm | SXM - Sports Play-by-Play 968
-SportsPlay-by-Play969.sxm | SXM - Sports Play-by-Play 969
-SportsPlay-by-Play970.sxm | SXM - Sports Play-by-Play 970
-SportsPlay-by-Play971.sxm | SXM - Sports Play-by-Play 971
-SportsPlay-by-Play972.sxm | SXM - Sports Play-by-Play 972
-SportsPlay-by-Play973.sxm | SXM - Sports Play-by-Play 973
-SportsPlay-by-Play974.sxm | SXM - Sports Play-by-Play 974
-SportsPlay-by-Play975.sxm | SXM - Sports Play-by-Play 975
-SportsPlay-by-Play976.sxm | SXM - Sports Play-by-Play 976
-SportsPlay-by-Play977.sxm | SXM - Sports Play-by-Play 977
-SportsPlay-by-Play978.sxm | SXM - Sports Play-by-Play 978
-SportsPlay-by-Play979.sxm | SXM - Sports Play-by-Play 979
-SportsPlay-by-Play980.sxm | SXM - Sports Play-by-Play 980
-SportsPlay-by-Play981.sxm | SXM - Sports Play-by-Play 981
-SportsPlay-by-Play982.sxm | SXM - Sports Play-by-Play 982
-SportsPlay-by-Play983.sxm | SXM - Sports Play-by-Play 983
-SportsPlay-by-Play984.sxm | SXM - Sports Play-by-Play 984
-SportsPlay-by-Play985.sxm | SXM - Sports Play-by-Play 985
-SportsPlay-by-Play986.sxm | SXM - Sports Play-by-Play 986
-SportsPlay-by-Play987.sxm | SXM - Sports Play-by-Play 987
-SportsPlay-by-Play988.sxm | SXM - Sports Play-by-Play 988
-SportsPlay-by-Play989.sxm | SXM - Sports Play-by-Play 989
-SportsPlay-by-Play990.sxm | SXM - Sports Play-by-Play 990
-SportsPlay-by-Play991.sxm | SXM - Sports Play-by-Play 991
-SportsPlay-by-Play992.sxm | SXM - Sports Play-by-Play 992
-SportsPlay-by-Play993.sxm | SXM - Sports Play-by-Play 993
-SportsPlay-by-Play994.sxm | SXM - Sports Play-by-Play 994
-SportsPlay-by-Play995.sxm | SXM - Sports Play-by-Play 995
-SportsPlay-by-Play996.sxm | SXM - Sports Play-by-Play 996
-SportsPlay-by-Play997.sxm | SXM - Sports Play-by-Play 997
-SportsPlay-by-Play998.sxm | SXM - Sports Play-by-Play 998
-SportsPlay-by-Play999.sxm | SXM - Sports Play-by-Play 999
 SportsmanChannel.ca | CA - SPORTSMAN CANADA
 SportsmanChannel.us | US - SPORTSMAN CHANNEL
 Sportsnet360.ca | CA - SPORTSNET 360
@@ -11569,7 +11415,6 @@ TheBeatlesChannel.sxm | SXM - The Beatles Channel
 TheBigDish.us | US - The Big Dish
 TheBigEasy.sxm | SXM - The Big Easy
 TheBillyGrahamChannel.sxm | SXM - The Billy Graham Channel
-TheBillyJoelChannel.sxm | SXM - The Billy Joel Channel
 TheBlend.sxm | SXM - The Blend
 TheBobRossChannel.pluto | PLUTO - The Bob Ross Channel
 TheBobRossChannel.us | US - The Bob Ross Channel
@@ -11743,7 +11588,6 @@ TurboParty.sxm | SXM - Turbo Party
 TurboTop100.sxm | SXM - Turbo Top 100
 TurboWorkout.sxm | SXM - Turbo Workout
 TyCSportsInt.us | US - TyC Sports International
-U2X-Radio.sxm | SXM - U2 X-Radio
 UABBlazers.ncaab | NCAAB - UAB Blazers
 UABBlazers.ncaabb | NCAABB - UAB Blazers
 UABBlazers.ncaaf | NCAAF - UAB Blazers
@@ -12268,7 +12112,6 @@ WesternKentuckyHilltoppers.ncabb | NCABB - Western Kentucky Hilltoppers
 WesternMichiganBroncos.ncaaf | NCAAF - Western Michigan Broncos
 WesternTV.pluto | PLUTO - Western TV
 WesternsPlus.us | US - Westerns Plus
-WestwoodOneSports.sxm | SXM - Westwood One Sports
 WheelofFortune.peacocktv | PEACOCKTV - Wheel of Fortune
 WhistleTV.us | US - Whistle TV
 WholeLottaRedHot.sxm | SXM - Whole Lotta Red Hot
@@ -12309,7 +12152,6 @@ WorldWBIQDT4.us | US - World WBIQ-DT4 Birmingham AL
 WorldWGTVDT3.us | US - World WGTV-DT3 Atlanta GA
 WorldWQEDDT3.us | US - World WQED-DT3 Pittsburgh PA
 WorldWXXIDT2.us | US - World PBS WXXI-DT2 Rochester NY
-WorldWideRebelRadio.sxm | SXM - World Wide Rebel Radio
 WorldofLoveIsland.pluto | PLUTO - World of Love Island
 WrightStateRaiders.ncaab | NCAAB - Wright State Raiders
 WrightStateRaiders.ncaabb | NCAABB - Wright State Raiders
@@ -12331,7 +12173,6 @@ XITEReggaeVibes.us | US - XITE Reggae Vibes
 XITERockxMetal.pluto | PLUTO - XITE Rock x Metal
 XITERockxMetal.us | US - XITE Rock x Metal
 XITESiempreLatino.us | US - XITE Siempre Latino
-XMPreview.sxm | SXM - XM Preview
 XavierMusketeers.ncaab | NCAAB - Xavier Musketeers
 XavierMusketeers.ncaabb | NCAABB - Xavier Musketeers
 XavierMusketeers.ncaasb | NCAASB - Xavier Musketeers
