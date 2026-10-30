@@ -12112,6 +12112,7 @@ WesternKentuckyHilltoppers.ncabb | NCABB - Western Kentucky Hilltoppers
 WesternMichiganBroncos.ncaaf | NCAAF - Western Michigan Broncos
 WesternTV.pluto | PLUTO - Western TV
 WesternsPlus.us | US - Westerns Plus
+WestwoodOneSports.sxm | SXM - Westwood One Sports
 WheelofFortune.peacocktv | PEACOCKTV - Wheel of Fortune
 WhistleTV.us | US - Whistle TV
 WholeLottaRedHot.sxm | SXM - Whole Lotta Red Hot
