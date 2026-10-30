@@ -446,7 +446,6 @@ AltRAndB.sxm | SXM - Alt R&B
 AltWorkout.sxm | SXM - Alt Workout
 AltitudeSports.us | US - Altitude Sports
 AltitudeSports2.us | US - Altitude Sports 2
-AltonRiverDragons.ProspectLeague | PROSPECTLEAGUE - Alton River Dragons
 AlwaysChristmas.us | US - Always Christmas
 AlwaysFunny.us | US - Always Funny
 AmazingDiscoveries.ca | CA - Amazing Discoveries
@@ -551,7 +550,6 @@ AmazonUSEvent6.p13 | P13 - Amazon US Event 6
 AmazonUSEvent7.p13 | P13 - Amazon US Event 7
 AmazonUSEvent8.p13 | P13 - Amazon US Event 8
 AmazonUSEvent9.p13 | P13 - Amazon US Event 9
-Amazon_Prime_TNF.us | US - Amazon Prime Thursday Night Football
 AmericanCountryNetwork.us | US - American Country Network
 AmericanCrimes.pluto | PLUTO - American Crimes
 AmericanGladiatorsByMGM.us | US - American Gladiators by MGM
@@ -906,7 +904,6 @@ BuffaloBills.sxm | SXM - Buffalo Bills
 BuffaloBulls.ncaaf | NCAAF - Buffalo Bulls
 BuffaloSabres.nhl | NHL - Buffalo Sabres
 BuffaloSabres.sxm | SXM - Buffalo Sabres
-BurlingtonBees.ProspectLeague | PROSPECTLEAGUE - Burlington Bees
 BusinessRadio.sxm | SXM - Business Radio
 BustedKKPXDT6.us | US - Busted KKPX-DT6 San Francisco CA
 BustedKPXODT5.us | US - Busted KPXO-DT5 Honolulu HI
@@ -1692,7 +1689,6 @@ CanalOnce.us | US - Canal Once
 CanalSur.us | US - Canal Sur
 CanaldeAssembleeNationale.ca | CA - ASSEMBLÉE NATIONALE
 CapeBretonEagles.qmjhl | QMJHL - Cape Breton Eagles
-CapeCatfish.ProspectLeague | PROSPECTLEAGUE - Cape Catfish
 CarChase.pluto | PLUTO - Car Chase
 CarChase.us | US - Car Chase
 CarWash.sxm | SXM - Car Wash
@@ -1719,7 +1715,6 @@ CentralArkansasBears.ncaaf | NCAAF - Central Arkansas Bears
 CentralConnecticutBlueDevils.ncaaf | NCAAF - Central Connecticut Blue Devils
 CentralMichiganChippewas.ncaaf | NCAAF - Central Michigan Chippewas
 CentroamericaTV.us | US - Centroamérica TV
-ChampionCityHalfTrax.ProspectLeague | PROSPECTLEAGUE - Champion City Half Trax
 Channel13.us | US - Channel 13
 Channel4WJXT.us | US - Channel4 WJXT Jacksonville FL
 Charge!.us | US - Charge!
@@ -1761,7 +1756,6 @@ ChicagoWolves.ahl | AHL - Chicago Wolves
 ChicoutimiSagueneens.qmjhl | QMJHL - Chicoutimi Saguenéens
 ChillInstrumental.sxm | SXM - Chill Instrumental
 Chillhop.sxm | SXM - Chillhop
-ChillicothePaints.ProspectLeague | PROSPECTLEAGUE - Chillicothe Paints
 ChimeTV.us | US - Chime TV
 Chip&Jo:FeelsLikeHomebyMagnoliaNetwork.pluto | PLUTO - Chip & Jo: Feels Like Home by Magnolia Network
 Choppertown.us | US - Choppertown
@@ -1859,7 +1853,6 @@ ClevelandMonsters.ahl | AHL - Cleveland Monsters
 ClevelandStateVikings.ncaab | NCAAB - Cleveland State Vikings
 ClevelandStateVikings.ncaabb | NCAABB - Cleveland State Vikings
 ClevelandStateVikings.ncaasb | NCAASB - Cleveland State Vikings
-ClintonLumberKings.ProspectLeague | PROSPECTLEAGUE - Clinton LumberKings
 ClosedCaptionTest3.pluto | PLUTO - Closed Caption Test 3
 ClubMTV.il | IL - Club MTV
 ClubberTV.bossdummy | BOSSDUMMY - Clubber TV
@@ -2247,7 +2240,6 @@ DallasStars.sxm | SXM - Dallas Stars
 DallasWings.wnba | WNBA - Dallas Wings
 DanceMomsByLifetime.us | US - Dance Moms by Lifetime
 DangerTV.us | US - Danger TV
-DanvilleDans.ProspectLeague | PROSPECTLEAGUE - Danville Dans
 DarkShadows.pluto | PLUTO - Dark Shadows
 Dateline24/7.pluto | PLUTO - Dateline 24/7
 Dateline24_7.peacocktv | PEACOCKTV - Dateline 24/7
@@ -2668,7 +2660,6 @@ DealorNoDeal.pluto | PLUTO - Deal or No Deal
 DealorNoDeal.us | US - Deal or No Deal
 DecadesKRIVDT2.us | US - Decades KRIV-DT2 HOUSTON TX
 DecadesWVAH.us | US - Decades WVAH CHARLESTON WV
-DecaturBeanBallers.ProspectLeague | PROSPECTLEAGUE - Decatur Bean Ballers
 Declassified.us | US - Declassified
 DeepTracks.sxm | SXM - Deep Tracks
 DeepTracksJustMusic.sxm | SXM - Deep Tracks Just Music
@@ -2817,7 +2808,6 @@ DrakeBulldogs.ncaasb | NCAASB - Drake Bulldogs
 DriveINWBXZLD9.us | US - DriveIN TV 56.9 Buffalo NY
 Drool.us | US - Drool
 DrummondvilleVoltigeurs.qmjhl | QMJHL - Drummondville Voltigeurs
-DuboisCountyBombers.ProspectLeague | PROSPECTLEAGUE - Dubois County Bombers
 DuckDynasty.us | US - Duck Dynasty
 DudePerfect.us | US - Dude Perfect
 DukeBlueDevils.ncaab | NCAAB - Duke Blue Devils
@@ -4532,7 +4522,6 @@ EastCarolinaPirates.ncaab | NCAAB - East Carolina Pirates
 EastCarolinaPirates.ncaabb | NCAABB - East Carolina Pirates
 EastCarolinaPirates.ncaaf | NCAAF - East Carolina Pirates
 EastCarolinaPirates.ncaasb | NCAASB - East Carolina Pirates
-EasternConference.ProspectLeague | PROSPECTLEAGUE - Eastern Conference
 EasternIllinoisPanthers.ncaaf | NCAAF - Eastern Illinois Panthers
 EasternIllinoisPanthers.ncabb | NCABB - Eastern Illinois Panthers
 EasternKentuckyColonels.ncaaf | NCAAF - Eastern Kentucky Colonels
@@ -4788,7 +4777,6 @@ FLO199.art | ART - FLO 199
 FLO200.art | ART - FLO 200
 FMC.us | US - Family Movie Classics (FMC)
 FOX+9WFTCDT2.us | US - FOX+9 WFTC-DT2 WFTC Minneapolis Saint Paul MN
-FOX4K.us | US - FOX 4K
 FOXBusiness.sxm | SXM - FOX Business
 FOXDeportes.pluto | PLUTO - FOX Deportes
 FOXKABB.us | US - FOX KABB San Antonio TX
@@ -5072,7 +5060,6 @@ FanDuelSportsNetworkSunNorthFlorida.us | US - FanDuel Sports Network Sun North F
 FanDuelSportsNetworkTennessee.us | US - FanDuel Sports Network Tennessee
 FanDuelSportsNetworkTennesseeExtra.us | US - FanDuel Sports Network Tennessee Extra
 FanDuelSportsNetworkWest.us | US - FanDuel Sports Network West
-FanDuelSportsNetworkWestExtra.us | US - FanDuel Sports Network West Extra
 FanDuelSportsNetworkWisconsin.us | US - FanDuel Sports Network Wisconsin
 FanDuelSportsNetworkWisconsinExtra.us | US - FanDuel Sports Network Wisconsin Extra
 FanDuelTV.us | US - FanDuel TV
@@ -6025,7 +6012,6 @@ IllinoisStateRedbirds.ncaabb | NCAABB - Illinois State Redbirds
 IllinoisStateRedbirds.ncaaf | NCAAF - Illinois State Redbirds
 IllinoisStateRedbirds.ncaasb | NCAASB - Illinois State Redbirds
 IllinoisStateRedbirds.ncaaw | NCAAW - Illinois State Redbirds
-IllinoisValleyPistolShrimp.ProspectLeague | PROSPECTLEAGUE - Illinois Valley Pistol Shrimp
 ImpactNetwork.us | US - Impact Network
 ImpossibleQuizShow.us | US - Impossible - Quiz Show
 InUltra.ca | CA - InUltra CA
@@ -6095,7 +6081,6 @@ IowaWild.ahl | AHL - Iowa Wild
 Iron Chef | Iron Chef
 JBS.us | US - Jewish Broadcasting Service
 JLTV.ca | CA - JLTV
-JacksonRockabillys.ProspectLeague | PROSPECTLEAGUE - Jackson Rockabillys
 JacksonStateTigers.ncaaf | NCAAF - Jackson State Tigers
 JacksonvilleJaguars.nfl | NFL - Jacksonville Jaguars
 JacksonvilleJaguars.sxm | SXM - Jacksonville Jaguars
@@ -6115,7 +6100,6 @@ JoelOsteen.us | US - Joel Osteen
 JoelOsteenRadio.sxm | SXM - Joel Osteen Radio
 Jogging.sxm | SXM - Jogging
 JohnnyCarsonTV.us | US - Johnny Carson TV
-JohnstownMillRats.ProspectLeague | PROSPECTLEAGUE - Johnstown Mill Rats
 Journy.us | US - Journy
 JoyTV.ca | CA - JOYTV 10 BRITISH COLUMBIA (CHUN)
 Jubao.us | US - Jubao
@@ -6170,7 +6154,6 @@ KingstonFrontenacs.ohl | OHL - Kingston Frontenacs
 KitchenerRangers.ohl | OHL - Kitchener Rangers
 KnowledgeNetwork.ca | CA - KNOWLEDGE NETWORK
 KnoxvilleIceBears.sphl | SPHL - Knoxville Ice Bears
-KokomoCreekChubs.ProspectLeague | PROSPECTLEAGUE - Kokomo Creek Chubs
 KoreaToday.sxm | SXM - Korea Today
 LAFFKIKUDT3.us | US - LAFF KIKU-DT3 Honolulu HI
 LAGalaxy.mls | MLS - LA Galaxy
@@ -6186,7 +6169,6 @@ LSUTigers.ncaaw | NCAAW - LSU Tigers
 LaFamiliadelBarrio.pluto | PLUTO - La Familia del Barrio
 LaKueva.sxm | SXM - La Kueva
 LacrosseChannel.us | US - Lacrosse Channel
-LafayetteAviators.ProspectLeague | PROSPECTLEAGUE - Lafayette Aviators
 LafayetteLeopards.ncaaf | NCAAF - Lafayette Leopards
 Laff.us | US - LAFF TV
 LaffMore.us | US - Laff More
@@ -8727,7 +8709,6 @@ NoovoGatineau_OttawaCFGS.ca | CA - Noovo CFGS Gatineau/Ottawa
 NoovoRimouskiCFTF.ca | CA - Noovo CFTF Rimouski
 NoovoSherbrookeCFKS.ca | CA - Noovo Sherbrooke CFKS
 NoovoTroisRivieresCFKM.ca | CA - Noovo Trois-Rivières CFKM
-NormalCornBelters.ProspectLeague | PROSPECTLEAGUE - Normal CornBelters
 NorthAlabamaLions.ncaaf | NCAAF - North Alabama Lions
 NorthAmericana.sxm | SXM - North Americana
 NorthBayBattalion.ohl | OHL - North Bay Battalion
@@ -10269,7 +10250,6 @@ QueensofPop.sxm | SXM - Queens of Pop
 QueensofRAndB.sxm | SXM - Queens of R&B
 Quest.us | US - Quest TV
 QuestWFAADT4.us | US - Quest WFAA-DT4 Dallas FORT WORTH TX
-QuincyDoggyPaddlers.ProspectLeague | PROSPECTLEAGUE - Quincy Doggy Paddlers
 QuoVadis.ca | CA - Quo Vadis
 RACE01.art | ART - RACE 01
 RACE01.v | V - RACE 01
@@ -10832,7 +10812,6 @@ SportsnetPremiumPlus8.ca | CA - Sportsnet Premium Plus 8
 SportsnetPremiumPlus9.ca | CA - Sportsnet Premium Plus 9
 SportsnetWest.ca | CA - SPORTSNET WEST
 SportsnetWorld.ca | CA - SPORTSNET WORLD
-SpringfieldLuckyHorseshoes.ProspectLeague | PROSPECTLEAGUE - Springfield Lucky Horseshoes
 SpringfieldThunderbirds.ahl | AHL - Springfield Thunderbirds
 StLouisBlues.nhl | NHL - St. Louis Blues
 StLouisBlues.sxm | SXM - St. Louis Blues
@@ -11377,7 +11356,6 @@ TennisChannelPlus7.us | US - Tennis Channel Plus 7
 TennisChannelPlus8.us | US - Tennis Channel Plus 8
 TennisChannelPlus9.us | US - Tennis Channel Plus 9
 TennisTV247.us | US - Tennis TV 24/7
-TerreHauteRex.ProspectLeague | PROSPECTLEAGUE - Terre Haute Rex
 TexasA&MAggies.ncaab | NCAAB - Texas A&M Aggies
 TexasA&MAggies.ncaaw | NCAAW - Texas A&M Aggies
 TexasA&amp;MAggies.ncaab | NCAAB - Texas A&amp;M Aggies
@@ -11516,7 +11494,6 @@ ThisOldHouse.us | US - This Old House
 ThisOldHouseMakersChannel.us | US - This Old House Makers Channel
 ThisTVKTRKDT3.us | US - ThisTV KTRK-DT3 HOUSTON TX
 ThisTVWBXZD12.us | US - ThisTV 56.12 Buffalo NY
-ThrillvilleThrillbillies.ProspectLeague | PROSPECTLEAGUE - Thrillville Thrillbillies
 ThrowbackTVWBXZLD4.us | US - ThrowbackTV 56.4 Buffalo NY
 TikTokRadio.pluto | PLUTO - TikTok Radio
 TikTokRadio.us | US - TikTok Radio
@@ -12105,7 +12082,6 @@ WestVirginiaMountaineers.ncaaf | NCAAF - West Virginia Mountaineers
 WestVirginiaMountaineers.ncaasb | NCAASB - West Virginia Mountaineers
 WestVirginiaMountaineers.ncaaw | NCAAW - West Virginia Mountaineers
 WesternBound.us | US - Western Bound
-WesternConference.ProspectLeague | PROSPECTLEAGUE - Western Conference
 WesternIllinoisLeathernecks.ncaaf | NCAAF - Western Illinois Leathernecks
 WesternKentuckyHilltoppers.ncaaf | NCAAF - Western Kentucky Hilltoppers
 WesternKentuckyHilltoppers.ncabb | NCABB - Western Kentucky Hilltoppers
