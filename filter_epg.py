@@ -43,8 +43,9 @@ DROP = {"hd", "fhd", "sd", "il", "channel", "tv", "the", "uk", "us", "ca", "cz"}
 
 # Tennis Channel 1 is added by hand (no need to list it in channels.txt): id -> (display name, regex for its name in the extra source, part of the source URL)
 EXTRA_ONLY = {
-    "ch1623": ("US: Tennis Channel 1 HD", r"^(us\s*:\s*)?tennis\s*channel(\s*1)?(\s*hd)?$", "epg-us"),
+    "ch1623": ("US: Tennis Channel 1 HD", r"^(us\s*[:\-]\s*)?tennis\s*channel(\s*1)?(\s*hd)?(\.us)?$", "epg-us"),
 }
+EXTRA_FIRST |= set(EXTRA_ONLY)   # Tennis Channel 1: drop the primary feed, use only the extra source
 # Tennis Channel 1 and 2: put the tournament (first line of the description) in the title
 RETITLE = {"ch1623", "ch1624"}
 GENERIC_TITLES = {"tennis today", "tennis today live", "second serve"}
