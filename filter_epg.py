@@ -50,6 +50,14 @@ EXTRA_ONLY = {
     "2700": ("IL: Channel 98", r"^(il\s*[:\-]\s*)?ערוץ\s*98(\.il)?$", "epg-il"),
     "style_il": ("IL: The Style Channel", r"^(il\s*[:\-]\s*)?ערוץ\s*הסטייל(\.il)?$", "epg-il"),
     "vacation_il": ("IL: The Vacation Channel", r"^(il\s*[:\-]\s*)?ערוץ\s*הנופש(\.il)?$", "epg-il"),
+    # MTV music channels (ids are the ones used in the m3u)
+    "ch3916": ("IL: MTV 80s", r"^(il\s*[:\-]\s*)?mtv\s*80s(\.il)?$", "epg-il"),
+    "ch3896": ("IL: MTV Hits", r"^(il\s*[:\-]\s*)?mtv\s*hits(\.il)?$", "epg-il"),
+    "ch3922": ("US: MTV Classic", r"^(us\s*[:\-]\s*)?mtv\s*classic(\.us)?$", "epg-us"),
+    # Israeli channels that epg-il.xml carries and that had no schedule in the m3u
+    "entertainment-il": ("IL: HOT Entertainment", r"^(il\s*[:\-]\s*)?hot\s*entertainment(\.il)?$", "epg-il"),
+    "game-show-il-hd": ("IL: Game Show Channel", r"^(il\s*[:\-]\s*)?ערוץ\s*השעשועונים(\.il)?$", "epg-il"),
+    "the-design-channel-il-hd": ("IL: Design Channel", r"^(il\s*[:\-]\s*)?ערוץ\s*העיצוב(\.il)?$", "epg-il"),
 }
 EXTRA_FIRST |= set(EXTRA_ONLY)   # Tennis Channel 1: drop the primary feed, use only the extra source
 # Tennis Channel 1 and 2: put the tournament (first line of the description) in the title
