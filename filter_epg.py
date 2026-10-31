@@ -41,6 +41,32 @@ ALIAS_RAW = {
 }
 DROP = {"hd", "fhd", "sd", "il", "channel", "tv", "the", "uk", "us", "ca", "cz"}
 
+# Tennis Channel 1 is added by hand (no need to list it in channels.txt): id -> (display name, regex for its name in the extra source, part of the source URL)
+EXTRA_ONLY = {
+    "ch1623": ("US: Tennis Channel 1 HD", r"^(us\s*:\s*)?tennis\s*channel(\s*1)?(\s*hd)?$", "epg-us"),
+}
+# Tennis Channel 1 and 2: put the tournament (first line of the description) in the title
+RETITLE = {"ch1623", "ch1624"}
+GENERIC_TITLES = {"tennis today", "tennis today live", "second serve"}
+
+def retitle(el):
+    t, d = el.find("title"), el.find("desc")
+    if t is None or d is None or not (d.text or "").strip():
+        return
+    parts = [x.strip() for x in d.text.strip().split("\n", 1)]
+    if len(parts) < 2 or not parts[0]:
+        return
+    first, rest = parts
+    title = (t.text or "").strip()
+    if first.lower() in title.lower():
+        return
+    if title.lower() in GENERIC_TITLES:
+        new_title = f"Live: {first}" if title.lower().endswith("live") and not re.search(r"\blive\b", first, re.I) else first
+    else:
+        new_title = f"{title}: {first}"
+    t.text = new_title
+    d.text = rest if rest and rest.lower() != title.lower() else first
+
 def load_ids(path="channels.txt"):
     return {l.strip() for l in open(path, encoding="utf-8") if l.strip()}
 
@@ -142,13 +168,15 @@ def read_source(path, keep_channel, keep_programme_channel, lo, hi):
 
 def main(src=PRIMARY, out=OUT, ids_file="channels.txt", now=None, report=REPORT, extras=None, extra_list=EXTRA_LIST):
     extras = EXTRAS if extras is None else extras
-    ids = load_ids(ids_file)
+    ids = load_ids(ids_file) | set(EXTRA_ONLY)
     now = now or dt.datetime.now(dt.timezone.utc)
     lo = now - dt.timedelta(hours=KEEP_PAST_HOURS); hi = now + dt.timedelta(days=MAX_DAYS_AHEAD)
     path = to_file(src)
     channels, progs, seen = read_source(path, lambda c, n: c in ids, lambda c: c in ids, lo, hi)
     merged = {cid: merge_programmes(list(progs.get(cid, []))) for cid in ids}
     names = {cid: (channels[cid][0][0] if cid in channels and channels[cid][0] else NAME_FALLBACK.get(cid, "")) for cid in ids}
+    for cid, (nm, _, _) in EXTRA_ONLY.items():
+        names[cid] = names[cid] or nm
     lines = [f"built: {now:%Y-%m-%d %H:%M} UTC | primary programmes seen: {seen}"]
     # ---- extra sources: extend the days ahead
     _build_alias()
@@ -170,6 +198,11 @@ def main(src=PRIMARY, out=OUT, ids_file="channels.txt", now=None, report=REPORT,
                 for kk in [k] + ALIAS.get(k, []):
                     cands += [e for e in by_key.get(kk, []) if e not in cands]
                 if cands: plan[cid] = cands
+            for cid, (_, rx, hint) in EXTRA_ONLY.items():   # Tennis Channel 1: match by name in the chosen source
+                if hint in ex:
+                    hits = [e for e, (en, _) in ech.items() if any(re.match(rx, n.strip(), re.I) for n in en + [e])]
+                    ext_note.append(f"EXTRA_ONLY {cid} <- {ex}: " + (", ".join(hits) if hits else "NO MATCH (look in extra_channels.txt)"))
+                    if hits: plan[cid] = hits
             wanted = {e for c in plan.values() for e in c}
             _, eprog, _ = read_source(epath, lambda c, n: False, lambda c: c in wanted, lo, hi)   # pass 2: only matched channels
         except Exception as e:
@@ -201,9 +234,12 @@ def main(src=PRIMARY, out=OUT, ids_file="channels.txt", now=None, report=REPORT,
         for cid in sorted(ids, key=lambda s: (len(s), s)):
             if cid in channels:
                 f.write(ET.tostring(channels[cid][1], encoding="unicode"))
+            elif cid in EXTRA_ONLY:
+                f.write(f'<channel id="{cid}"><display-name>{EXTRA_ONLY[cid][0]}</display-name></channel>\n')
         for cid in sorted(ids, key=lambda s: (len(s), s)):
             items = merged[cid]; kept += len(progs.get(cid, [])); after += len(items)
             for s, e, el in items:
+                if cid in RETITLE: retitle(el)
                 el.set("start", fmt_time(s)); el.set("stop", fmt_time(e)); el.set("channel", cid)
                 f.write(ET.tostring(el, encoding="unicode"))
             cov = f"{items[0][0]:%m-%d %H:%M} -> {items[-1][1]:%m-%d %H:%M}" if items else "NO PROGRAMMES"
