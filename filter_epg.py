@@ -44,6 +44,9 @@ DROP = {"hd", "fhd", "sd", "il", "channel", "tv", "the", "uk", "us", "ca", "cz"}
 # Tennis Channel 1 is added by hand (no need to list it in channels.txt): id -> (display name, regex for its name in the extra source, part of the source URL)
 EXTRA_ONLY = {
     "ch1623": ("US: Tennis Channel 1 HD", r"^(us\s*[:\-]\s*)?tennis\s*channel(\s*1)?(\s*hd)?(\.us)?$", "epg-us"),
+    # History FHD (the foreign feed, not the Israeli History): use tvg-id="hist_us" or "hist_ca" in the m3u. Names are deliberately unusual so they never match the Israeli History
+    "hist_us": ("US: A+E History FHD", r"^(us\s*[:\-]\s*)?history(\.us)?$", "epg-us"),
+    "hist_ca": ("CA: A+E History FHD", r"^(ca\s*[:\-]\s*)?history(\.ca)?$", "epg-ca"),
 }
 EXTRA_FIRST |= set(EXTRA_ONLY)   # Tennis Channel 1: drop the primary feed, use only the extra source
 # Tennis Channel 1 and 2: put the tournament (first line of the description) in the title
