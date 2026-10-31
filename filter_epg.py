@@ -29,7 +29,7 @@ ALIAS_RAW = {
     "Channel 11": ["כאן 11", "כאן"], "Channel 14": ["ערוץ 14"],
     "Channel 24": ["ערוץ החדשות 24", "חדשות 24"], "Kan Chinuchit 23": ["ערוץ חינוכית 23", "חינוכית 23"],
     "Humor Channel": ["ערוץ ההומור"], "Health Channel": ["ערוץ הבריאות"],
-    "History": ["היסטוריה"], "Travel Channel": ["ערוץ הטיולים"], "Food Channel": ["ערוץ האוכל"],
+    "History": ["ערוץ ההיסטוריה"], "Travel Channel": ["ערוץ הטיולים"], "Food Channel": ["ערוץ האוכל"],
     "Good Life TV": ["החיים הטובים"], "Reality": ["ערוץ הריאליטי"], "Disney Channel": ["דיסני"],
     "Discovery Channel": ["דיסקברי"], "Nick": ["ניקלודיאון"], "Baby TV": ["בייבי"], "Hop": ["הופ!"],
     "Yam Tihoni": ["ים תיכוני"], "Yam Tihoni Plus": ["הערוץ הים תיכוני+"],
@@ -44,12 +44,12 @@ DROP = {"hd", "fhd", "sd", "il", "channel", "tv", "the", "uk", "us", "ca", "cz"}
 # Tennis Channel 1 is added by hand (no need to list it in channels.txt): id -> (display name, regex for its name in the extra source, part of the source URL)
 EXTRA_ONLY = {
     "ch1623": ("US: Tennis Channel 1 HD", r"^(us\s*[:\-]\s*)?tennis\s*channel(\s*1)?(\s*hd)?(\.us)?$", "epg-us"),
-    # Israeli "ערוץ ההיסטוריה" (the one that shows the aliens/UFO programmes): use tvg-id="hist_il" in the m3u
-    "hist_il": ("IL: ערוץ ההיסטוריה", r"^(il\s*[:\-]\s*)?ערוץ\s*ההיסטוריה(\.il)?$", "epg-il"),
+    # Israeli "היסטוריה HD" (separate schedule from "ערוץ ההיסטוריה", which is ch1143): use tvg-id="hist_hd" in the m3u for the History FHD streams
+    "hist_hd": ("IL: היסטוריה HD", r"^(il\s*[:\-]\s*)?היסטוריה\s*hd(\.il)?$", "epg-il"),
 }
 EXTRA_FIRST |= set(EXTRA_ONLY)   # Tennis Channel 1: drop the primary feed, use only the extra source
 # Tennis Channel 1 and 2: put the tournament (first line of the description) in the title
-PEEK = ("ch1143", "hist_il")   # channels whose next 12 hours are listed at the end of report.txt
+PEEK = ("ch1143", "hist_hd")   # channels whose next 12 hours are listed at the end of report.txt
 RETITLE = {"ch1623", "ch1624"}
 GENERIC_TITLES = {"tennis today", "tennis today live", "second serve"}
 
