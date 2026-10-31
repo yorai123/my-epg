@@ -54,6 +54,9 @@ def retitle(el):
     t, d = el.find("title"), el.find("desc")
     if t is None or d is None or not (d.text or "").strip():
         return
+    if re.match(r"^tennis\s*channel(\s+live)?$", (t.text or "").strip(), re.I) and re.search(r"stories of the day", d.text, re.I):
+        t.text = "Tennis Stories of the Day"   # the daily studio show: no tournament, give it a clear name
+        return
     parts = [x.strip() for x in d.text.strip().split("\n", 1)]
     if len(parts) < 2 or not parts[0]:
         return
