@@ -46,6 +46,10 @@ EXTRA_ONLY = {
     "ch1623": ("US: Tennis Channel 1 HD", r"^(us\s*[:\-]\s*)?tennis\s*channel(\s*1)?(\s*hd)?(\.us)?$", "epg-us"),
     # Israeli "היסטוריה HD" (separate schedule from "ערוץ ההיסטוריה", which is ch1143): use tvg-id="hist_hd" in the m3u for the History FHD streams
     "hist_hd": ("IL: היסטוריה HD", r"^(il\s*[:\-]\s*)?היסטוריה\s*hd(\.il)?$", "epg-il"),
+    # Israeli channels that the primary source does not carry but epg-il.xml does
+    "2700": ("IL: Channel 98", r"^(il\s*[:\-]\s*)?ערוץ\s*98(\.il)?$", "epg-il"),
+    "style_il": ("IL: The Style Channel", r"^(il\s*[:\-]\s*)?ערוץ\s*הסטייל(\.il)?$", "epg-il"),
+    "vacation_il": ("IL: The Vacation Channel", r"^(il\s*[:\-]\s*)?ערוץ\s*הנופש(\.il)?$", "epg-il"),
 }
 EXTRA_FIRST |= set(EXTRA_ONLY)   # Tennis Channel 1: drop the primary feed, use only the extra source
 # Tennis Channel 1 and 2: put the tournament (first line of the description) in the title
