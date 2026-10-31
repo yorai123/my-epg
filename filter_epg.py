@@ -148,6 +148,21 @@ def merge_programmes(items):
         out.append((start, stop, el))
     return out
 
+def fill_gaps(base, backup):
+    """keep every programme in base; add the parts of backup that fall where base has nothing"""
+    base = sorted(base, key=lambda x: x[0])
+    out = list(base)
+    for s, e, el in backup:
+        cur = s
+        for bs, be, _ in base:
+            if be <= cur: continue
+            if bs >= e: break
+            if bs > cur: out.append((cur, bs, copy.deepcopy(el)))
+            cur = max(cur, be)
+            if cur >= e: break
+        if cur < e: out.append((cur, e, copy.deepcopy(el)))
+    return out
+
 def read_source(path, keep_channel, keep_programme_channel, lo, hi):
     """one pass: returns (channels{id:[names]}, programmes{id:[(s,e,el)]}, total_seen)"""
     channels, progs, seen = {}, defaultdict(list), 0
@@ -191,6 +206,7 @@ def main(src=PRIMARY, out=OUT, ids_file="channels.txt", now=None, report=REPORT,
     our_keys = {cid: norm_key(names[cid]) for cid in ids if names[cid]}
     ext_note, listing, extended_ids, extra_keys = [], [], set(), set()
     cleared = set()
+    backup = {}     # EXTRA_ONLY channels: the primary feed, used only to fill gaps the extra source leaves
     for ex in extras:
         try:
             epath = to_file(ex)
@@ -220,6 +236,7 @@ def main(src=PRIMARY, out=OUT, ids_file="channels.txt", now=None, report=REPORT,
             cands = [e for e in cands if eprog.get(e)]
             if not cands: continue
             if cid in EXTRA_FIRST and cid not in cleared:
+                if cid in EXTRA_ONLY: backup[cid] = merged[cid]
                 merged[cid] = []; cleared.add(cid)      # drop the primary feed for these channels
             ecid = max(cands, key=lambda e: max(x[1] for x in eprog[e]))   # the candidate that reaches furthest
             last = max((m[1] for m in merged[cid]), default=None)
@@ -234,6 +251,11 @@ def main(src=PRIMARY, out=OUT, ids_file="channels.txt", now=None, report=REPORT,
             if add:
                 merged[cid] = merge_programmes(merged[cid] + add); matched += 1; extended_ids.add(cid)
         ext_note.append(f"extra source ok: {ex} | channels in it: {len(ech)} | my channels extended: {matched}")
+    for cid, old_items in backup.items():       # Tennis Channel 1: extra source first, primary only where the extra has no programme
+        if merged[cid]:
+            before = len(merged[cid])
+            merged[cid] = merge_programmes(fill_gaps(merged[cid], old_items))
+            ext_note.append(f"gap-fill {cid}: {len(merged[cid]) - before} programmes added from the primary source")
     lines += ext_note
     lines.append(f"{'channel':10} {'name':32} {'progs':>5}  coverage")
     kept = after = 0
