@@ -49,6 +49,7 @@ EXTRA_ONLY = {
 }
 EXTRA_FIRST |= set(EXTRA_ONLY)   # Tennis Channel 1: drop the primary feed, use only the extra source
 # Tennis Channel 1 and 2: put the tournament (first line of the description) in the title
+PEEK = ("ch1143", "hist_il")   # channels whose next 12 hours are listed at the end of report.txt
 RETITLE = {"ch1623", "ch1624"}
 GENERIC_TITLES = {"tennis today", "tennis today live", "second serve"}
 
@@ -165,6 +166,41 @@ def fill_gaps(base, backup):
         if cur < e: out.append((cur, e, copy.deepcopy(el)))
     return out
 
+def _il_tz():
+    try:
+        from zoneinfo import ZoneInfo
+        return ZoneInfo("Asia/Jerusalem")
+    except Exception:
+        return dt.timezone(dt.timedelta(hours=2))
+
+SEARCH_SHOW = re.compile(r"great escapes|הבריחות הגדולות|בריחות גדולות", re.I)   # report.txt lists which channel ids carry this show
+
+def find_show(path, label, lo, hi):
+    """scan a whole source for SEARCH_SHOW; returns report lines: which channel ids carry the show and when"""
+    il = _il_tz()
+    names, hits = {}, defaultdict(list)
+    ctx = ET.iterparse(path, events=("start", "end"))
+    _, root = next(ctx)
+    for ev, el in ctx:
+        if ev != "end" or el.tag not in ("channel", "programme"):
+            continue
+        if el.tag == "channel":
+            names[el.get("id")] = " / ".join((d.text or "").strip() for d in el.findall("display-name"))[:40]
+        else:
+            title = text_of(el, "title")
+            if SEARCH_SHOW.search(title) or SEARCH_SHOW.search(text_of(el, "desc")[:300]):
+                try:
+                    st = parse_time(el.get("start"))
+                    if lo <= st <= hi: hits[el.get("channel")].append((st, title))
+                except Exception:
+                    pass
+        root.clear()
+    out = [f"SEARCH [{label}]: " + (f"{len(hits)} channels carry it" if hits else "not found")]
+    for cid, lst in sorted(hits.items(), key=lambda kv: -len(kv[1]))[:12]:
+        lst.sort()
+        out.append(f"  {cid} | {names.get(cid, '')} | x{len(lst)} | {lst[0][0].astimezone(il):%a %d/%m %H:%M} -> {lst[-1][0].astimezone(il):%a %d/%m %H:%M} | {lst[0][1][:40]}")
+    return out
+
 def read_source(path, keep_channel, keep_programme_channel, lo, hi):
     """one pass: returns (channels{id:[names]}, programmes{id:[(s,e,el)]}, total_seen)"""
     channels, progs, seen = {}, defaultdict(list), 0
@@ -198,10 +234,14 @@ def main(src=PRIMARY, out=OUT, ids_file="channels.txt", now=None, report=REPORT,
     lo = now - dt.timedelta(hours=KEEP_PAST_HOURS); hi = now + dt.timedelta(days=MAX_DAYS_AHEAD)
     path = to_file(src)
     channels, progs, seen = read_source(path, lambda c, n: c in ids, lambda c: c in ids, lo, hi)
+    search_lines = []
+    try: search_lines += find_show(path, "primary", now - dt.timedelta(hours=12), hi)
+    except Exception as e: search_lines.append(f"SEARCH primary failed: {e}")
     merged = {cid: merge_programmes(list(progs.get(cid, []))) for cid in ids}
     names = {cid: (channels[cid][0][0] if cid in channels and channels[cid][0] else NAME_FALLBACK.get(cid, "")) for cid in ids}
     for cid, (nm, _, _) in EXTRA_ONLY.items():
         names[cid] = names[cid] or nm
+    origin = {(cid, m[0]): "primary" for cid in ids for m in merged[cid]}   # for the PEEK section of report.txt
     lines = [f"built: {now:%Y-%m-%d %H:%M} UTC | primary programmes seen: {seen}"]
     # ---- extra sources: extend the days ahead
     _build_alias()
@@ -212,6 +252,8 @@ def main(src=PRIMARY, out=OUT, ids_file="channels.txt", now=None, report=REPORT,
     for ex in extras:
         try:
             epath = to_file(ex)
+            try: search_lines += find_show(epath, ex.rsplit('/', 1)[-1], now - dt.timedelta(hours=12), hi)
+            except Exception as e2: search_lines.append(f"SEARCH {ex} failed: {e2}")
             ech, _, _ = read_source(epath, lambda c, n: True, lambda c: False, lo, hi)   # pass 1: channel names only
             by_key = {}
             for ecid, (enames, _) in ech.items():
@@ -250,6 +292,7 @@ def main(src=PRIMARY, out=OUT, ids_file="channels.txt", now=None, report=REPORT,
                     if s < last: s = last
                 if e > s:
                     el.set("channel", cid); add.append((s, e, el))
+                    origin[(cid, s)] = ex.rsplit("/", 1)[-1] + " " + ecid
             if add:
                 merged[cid] = merge_programmes(merged[cid] + add); matched += 1; extended_ids.add(cid)
         ext_note.append(f"extra source ok: {ex} | channels in it: {len(ech)} | my channels extended: {matched}")
@@ -282,6 +325,15 @@ def main(src=PRIMARY, out=OUT, ids_file="channels.txt", now=None, report=REPORT,
     for cid, end in sorted(short, key=lambda x: x[1]):
         hint = difflib.get_close_matches(our_keys.get(cid, ""), list(extra_keys), n=2, cutoff=0.6) if extra_keys else []
         lines.append(f"  short {cid:8} {names[cid][:30]:30} ends {end:%m-%d %H:%M}" + (f" | similar in extras: {hint}" if hint else ""))
+    il = _il_tz()
+    lines.append("PEEK: next 24 hours (Israel time) | title [source]")
+    for cid in PEEK:
+        if cid not in merged: continue
+        lines.append(f"  {cid} {names.get(cid, '')}")
+        for s, e, el in merged[cid]:
+            if e > now and s < now + dt.timedelta(hours=24):
+                lines.append(f"    {s.astimezone(il):%a %H:%M} {text_of(el, 'title')[:45]} [{origin.get((cid, s), 'primary/gap')}]")
+    lines += search_lines
     lines.append(f"total: {kept} kept from primary, {after} after merging/extending")
     open(report, "w", encoding="utf-8").write("\n".join(lines) + "\n")
     if listing:
