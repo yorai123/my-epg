@@ -61,7 +61,11 @@ def retitle(el):
     title = (t.text or "").strip()
     if first.lower() in title.lower():
         return
-    if title.lower() in GENERIC_TITLES:
+    cc = re.match(r"^center\s*court(\s+live)?\s*:?$", title, re.I)
+    if cc:   # "Center Court" / "Center Court Live": drop the name, keep "Live" only when it is live
+        is_live = bool(cc.group(1)) and not re.search(r"\blive\b", first, re.I)
+        new_title = f"Live {first}" if is_live else first
+    elif title.lower() in GENERIC_TITLES:
         new_title = f"Live: {first}" if title.lower().endswith("live") and not re.search(r"\blive\b", first, re.I) else first
     else:
         new_title = f"{title}: {first}"
