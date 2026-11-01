@@ -1569,7 +1569,6 @@ CWKPTMDT3.us | US - CW KPTM-DT3 Omaha NE
 CWKPXJ.us | US - CW KPXJ Shreveport LA
 CWKQCA.us | US - CW KQCA Sacramento CA
 CWKQCW_DTVFeed.us | US - CW KQCW Tulsa OK (DTV Feed)
-CWKQCW_OTAFeed.us | US - CW KQCW Tulsa OK (OTA Feed)
 CWKRCW.us | US - CW KRCW Portland OR
 CWKRON.us | US - CW KRON San Francisco CA
 CWKSCCDT3.us | US - CW KSCC-DT3 Corpus Christi TX
@@ -6559,7 +6558,6 @@ MTVenespañol.pluto | PLUTO - MTV en español
 MUTV.il | IL - MUTV
 MYKCPN.us | US - MY KCPN Amarillo TX
 MYKDFI.us | US - MY MY27 KDFI Dallas FORT WORTH TX
-MYKMYL.us | US - MY KMYL Lubbock TX
 MYKSMO.us | US - MY MY62 KSMO Kansas City MO
 MYKTVD.us | US - MY KTVD Denver CO
 MYKVCWDT2.us | US - MY LVTV MYLVTV Las Vegas NV
@@ -6594,7 +6592,6 @@ MagellanTVWildest.us | US - MagellanTV Wildest
 MagnoliaNetwork.ca | CA - Magnolia Network
 MagnoliaNetwork.us | US - Magnolia Network
 MagnoliaNetworkPacific.us | US - Magnolia Network West
-MainStreetTelevision.us | US - MainStreet Television
 MakefulTV.ca | CA - MAKEFUL
 ManitobaMoose.ahl | AHL - Manitoba Moose
 MarqueeSports.us | US - Marquee Sports Network
@@ -7018,7 +7015,6 @@ MyNetKMYT.us | US - MyNetwork KMYT Tulsa OK
 MyNetKMYU.us | US - MyNet KMYU KUTVDT2 Salt Lake City UT
 MyNetKOZL.us | US - MyNet KOZL Springfield Osage Beach MO
 MyNetKSBI_DTVFeed.us | US - MyNetwork KSBI Oklahoma City OK (DTV Feed)
-MyNetKSBI_OTAFeed.us | US - MyNetwork KSBI Oklahoma City OK (OTA Feed)
 MyNetKTXH.us | US - MyNet KTXH HOUSTON TX
 MyNetKXNW.us | US - MyNet KXNW Fort Smith AR
 MyNetKYLE.us | US - MyNetwork KYLE Waco Bryan TX
