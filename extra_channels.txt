@@ -6227,10 +6227,10 @@ LimitedEdition11.sxm | SXM - Limited Edition 11
 LimitedEdition12.sxm | SXM - Limited Edition 12
 LimitedEdition3.sxm | SXM - Limited Edition 3
 LimitedEdition4.sxm | SXM - Limited Edition 4
+LimitedEdition5.sxm | SXM - Limited Edition 5
 LimitedEdition6.sxm | SXM - Limited Edition 6
 LimitedEdition7.sxm | SXM - Limited Edition 7
 LimitedEdition8.sxm | SXM - Limited Edition 8
-LimitedEdition9.sxm | SXM - Limited Edition 9
 LindenwoodLions.ncaaf | NCAAF - Lindenwood Lions
 LineDance.sxm | SXM - Line Dance
 LionsgateCollection.us | US - Lionsgate Collection
