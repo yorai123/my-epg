@@ -8,7 +8,8 @@ PRIMARY = "https://epg.team/3.1.xml"
 # sources used only to extend the days ahead (a source that fails is skipped and shown in report.txt)
 EXTRAS = ["https://iptv-epg.org/files/epg-il.xml",
           "https://iptv-epg.org/files/epg-us.xml",
-          "https://iptv-epg.org/files/epg-ca.xml"]
+          "https://iptv-epg.org/files/epg-ca.xml",
+          "http://epg.one/epg.xml.gz"]
 OUT, REPORT, EXTRA_LIST = "epg.xml.gz", "report.txt", "extra_channels.txt"
 KEEP_PAST_HOURS = 3
 MAX_DAYS_AHEAD = 7
@@ -58,6 +59,12 @@ EXTRA_ONLY = {
     "entertainment-il": ("IL: HOT Entertainment", r"^(il\s*[:\-]\s*)?hot\s*entertainment(\.il)?$", "epg-il"),
     "game-show-il-hd": ("IL: Game Show Channel", r"^(il\s*[:\-]\s*)?ערוץ\s*השעשועונים(\.il)?$", "epg-il"),
     "the-design-channel-il-hd": ("IL: Design Channel", r"^(il\s*[:\-]\s*)?ערוץ\s*העיצוב(\.il)?$", "epg-il"),
+    # Israeli channels found only in epg.one (matched by the epg.one channel id)
+    "hot_cinema5_il": ("IL: HOT Cinema 5", r"^11987$", "epg.one"),
+    "hot_drama_il": ("IL: HOT Drama", r"^11990$", "epg.one"),
+    "hot_romantic_il": ("IL: HOT Romantic Cinema", r"^11992$", "epg.one"),
+    "love_channel_il": ("IL: Love Channel", r"^11993$", "epg.one"),
+    "classic_comedy_il": ("IL: Classic Comedy Channel", r"^11986$", "epg.one"),
 }
 EXTRA_FIRST |= set(EXTRA_ONLY)   # Tennis Channel 1: drop the primary feed, use only the extra source
 # Tennis Channel 1 and 2: put the tournament (first line of the description) in the title
@@ -273,7 +280,7 @@ def main(src=PRIMARY, out=OUT, ids_file="channels.txt", now=None, report=REPORT,
                 for k in {norm_key(n) for n in enames if n} | {norm_key(ecid.split('.')[0])}:
                     if k: by_key.setdefault(k, []).append(ecid); extra_keys.add(k)
             plan = {}   # our id -> candidate extra ids (best guesses first)
-            for cid, k in our_keys.items():
+            for cid, k in (our_keys.items() if "epg.one" not in ex else []):   # epg.one: only the EXTRA_ONLY channels below
                 cands = []
                 for kk in [k] + ALIAS.get(k, []):
                     cands += [e for e in by_key.get(kk, []) if e not in cands]
