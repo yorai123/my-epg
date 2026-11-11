@@ -6649,6 +6649,7 @@ MediaSetItalia.ca | CA - Mediaset Italia
 Mediaset.il | IL - Mediaset
 MedicineHatTigers.whl | WHL - Medicine Hat Tigers
 MegaCosmos.ca | CA - Mega Cosmos
+MegaCosmos.us | US - Mega Cosmos
 MemphisGrizzlies.nba | NBA - Memphis Grizzlies
 MemphisGrizzlies.sxm | SXM - Memphis Grizzlies
 MemphisTigers.ncaab | NCAAB - Memphis Tigers
