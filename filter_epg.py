@@ -1,6 +1,6 @@
 """Build my small EPG: primary source + extra sources that extend the days ahead.
 Writes epg.xml.gz, report.txt and extra_channels.txt"""
-import copy, difflib, gzip, re, shutil, sys, tempfile, urllib.request, datetime as dt
+import copy, difflib, gzip, json, os, re, shutil, sys, tempfile, time, urllib.parse, urllib.request, datetime as dt
 import xml.etree.ElementTree as ET
 from collections import defaultdict
 
@@ -89,6 +89,65 @@ def retitle(el):
         new_title = f"{title}: {first}"
     t.text = new_title
     d.text = rest if rest and rest.lower() != title.lower() else first
+
+# ---- English translation of the German Sky Sport Tennis schedule (title / sub-title / description)
+# Only the channels listed here are touched. If translating fails the original text is kept, so the EPG is never broken by it.
+TRANSLATE = {"ch1877"}
+TRANSLATE_CACHE = "translation_cache.json"
+_tcache, _tstats = {}, {"new": 0, "cached": 0, "failed": 0, "fails_in_row": 0}
+
+def _load_tcache():
+    try:
+        _tcache.update(json.load(open(TRANSLATE_CACHE, encoding="utf-8")))
+    except Exception:
+        pass
+
+def _save_tcache():
+    if not _tcache:
+        return
+    try:
+        json.dump(_tcache, open(TRANSLATE_CACHE, "w", encoding="utf-8"), ensure_ascii=False)
+    except Exception:
+        pass
+
+def _remote_translate(txt):
+    """free Google endpoint, language auto-detected (English text stays English)"""
+    url = ("https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=en&dt=t&q="
+           + urllib.parse.quote(txt))
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    data = json.loads(urllib.request.urlopen(req, timeout=20).read().decode("utf-8"))
+    return "".join(seg[0] for seg in data[0] if seg and seg[0])
+
+def translate_text(txt):
+    txt = (txt or "").strip()
+    if not txt or len(txt) > 1500:
+        return txt
+    if txt in _tcache:
+        _tstats["cached"] += 1
+        return _tcache[txt]
+    if _tstats["fails_in_row"] >= 5:          # service is down/blocked: stop trying, keep the originals
+        _tstats["failed"] += 1
+        return txt
+    for attempt in range(3):
+        try:
+            out = _remote_translate(txt).strip()
+            if out:
+                _tcache[txt] = out
+                _tstats["new"] += 1; _tstats["fails_in_row"] = 0
+                time.sleep(0.2)
+                return out
+        except Exception:
+            time.sleep(1 + attempt)
+    _tstats["failed"] += 1; _tstats["fails_in_row"] += 1
+    return txt
+
+def translate_el(el):
+    for tag in ("title", "sub-title", "desc"):
+        c = el.find(tag)
+        if c is not None and (c.text or "").strip():
+            c.text = translate_text(c.text)
+            if c.get("lang"):
+                c.set("lang", "en")
 
 def load_ids(path="channels.txt"):
     return {l.strip() for l in open(path, encoding="utf-8") if l.strip()}
@@ -242,6 +301,7 @@ def read_source(path, keep_channel, keep_programme_channel, lo, hi):
 def main(src=PRIMARY, out=OUT, ids_file="channels.txt", now=None, report=REPORT, extras=None, extra_list=EXTRA_LIST):
     extras = EXTRAS if extras is None else extras
     ids = load_ids(ids_file) | set(EXTRA_ONLY)
+    _load_tcache()
     now = now or dt.datetime.now(dt.timezone.utc)
     lo = now - dt.timedelta(hours=KEEP_PAST_HOURS); hi = now + dt.timedelta(days=MAX_DAYS_AHEAD)
     path = to_file(src)
@@ -327,6 +387,7 @@ def main(src=PRIMARY, out=OUT, ids_file="channels.txt", now=None, report=REPORT,
             items = merged[cid]; kept += len(progs.get(cid, [])); after += len(items)
             for s, e, el in items:
                 if cid in RETITLE: retitle(el)
+                if cid in TRANSLATE: translate_el(el)
                 el.set("start", fmt_time(s)); el.set("stop", fmt_time(e)); el.set("channel", cid)
                 f.write(ET.tostring(el, encoding="unicode"))
             cov = f"{items[0][0]:%m-%d %H:%M} -> {items[-1][1]:%m-%d %H:%M}" if items else "NO PROGRAMMES"
@@ -345,6 +406,8 @@ def main(src=PRIMARY, out=OUT, ids_file="channels.txt", now=None, report=REPORT,
         for s, e, el in merged[cid]:
             if e > now and s < now + dt.timedelta(hours=24):
                 lines.append(f"    {s.astimezone(il):%a %H:%M} {text_of(el, 'title')[:45]} [{origin.get((cid, s), 'primary/gap')}]")
+    lines.append(f"TRANSLATE {sorted(TRANSLATE)}: {_tstats['new']} new, {_tstats['cached']} from cache, {_tstats['failed']} failed (kept in original language)")
+    _save_tcache()
     lines += search_lines
     lines.append(f"total: {kept} kept from primary, {after} after merging/extending")
     open(report, "w", encoding="utf-8").write("\n".join(lines) + "\n")
