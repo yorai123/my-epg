@@ -92,9 +92,11 @@ def retitle(el):
 
 # ---- English translation of the German Sky Sport Tennis schedule (title / sub-title / description)
 # Only the channels listed here are touched. If translating fails the original text is kept, so the EPG is never broken by it.
+# Two free services are tried in turn (Google first, then MyMemory); long descriptions are cut into sentences and translated piece by piece.
 TRANSLATE = {"ch1877"}
 TRANSLATE_CACHE = "translation_cache.json"
-_tcache, _tstats = {}, {"new": 0, "cached": 0, "failed": 0, "fails_in_row": 0}
+_tcache = {}
+_tstats = {"new": 0, "cached": 0, "failed": 0, "fails_in_row": 0, "errors": []}
 
 def _load_tcache():
     try:
@@ -110,36 +112,75 @@ def _save_tcache():
     except Exception:
         pass
 
-def _remote_translate(txt):
-    """free Google endpoint, language auto-detected (English text stays English)"""
-    url = ("https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=en&dt=t&q="
-           + urllib.parse.quote(txt))
+def _google(txt):
+    """free Google endpoint (POST, so long texts are fine); language auto-detected, English stays English"""
+    data = urllib.parse.urlencode({"client": "gtx", "sl": "auto", "tl": "en", "dt": "t", "q": txt}).encode("utf-8")
+    req = urllib.request.Request("https://translate.googleapis.com/translate_a/single", data=data,
+                                 headers={"User-Agent": "Mozilla/5.0"})
+    res = json.loads(urllib.request.urlopen(req, timeout=20).read().decode("utf-8"))
+    return "".join(seg[0] for seg in res[0] if seg and seg[0])
+
+def _mymemory(txt):
+    """second service, used when Google refuses (max ~500 characters per request)"""
+    url = "https://api.mymemory.translated.net/get?langpair=de|en&q=" + urllib.parse.quote(txt)
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-    data = json.loads(urllib.request.urlopen(req, timeout=20).read().decode("utf-8"))
-    return "".join(seg[0] for seg in data[0] if seg and seg[0])
+    res = json.loads(urllib.request.urlopen(req, timeout=20).read().decode("utf-8"))
+    out = (res.get("responseData") or {}).get("translatedText") or ""
+    if str(res.get("responseStatus")) != "200" or "MYMEMORY WARNING" in out.upper():
+        raise RuntimeError("mymemory: " + out[:60])
+    return out
+
+PROVIDERS = [_google, _mymemory]
+
+def _chunks(txt, limit=450):
+    """split into pieces of at most `limit` characters, on sentence / line ends where possible"""
+    parts, cur = [], ""
+    for sent in re.split(r"(?<=[.!?\n])\s+", txt):
+        if len(cur) + len(sent) + 1 <= limit:
+            cur = (cur + " " + sent).strip()
+        else:
+            if cur: parts.append(cur)
+            while len(sent) > limit:
+                parts.append(sent[:limit]); sent = sent[limit:]
+            cur = sent
+    if cur: parts.append(cur)
+    return parts
+
+def _translate_piece(piece):
+    for provider in PROVIDERS:
+        for attempt in range(3):
+            try:
+                out = provider(piece).strip()
+                if out:
+                    time.sleep(0.3)
+                    return out
+            except Exception as e:
+                if len(_tstats["errors"]) < 4:
+                    _tstats["errors"].append(f"{provider.__name__}: {type(e).__name__} {str(e)[:60]}")
+                time.sleep(1 + attempt)
+    return None
 
 def translate_text(txt):
     txt = (txt or "").strip()
-    if not txt or len(txt) > 1500:
+    if not txt:
         return txt
     if txt in _tcache:
         _tstats["cached"] += 1
         return _tcache[txt]
-    if _tstats["fails_in_row"] >= 5:          # service is down/blocked: stop trying, keep the originals
+    if _tstats["fails_in_row"] >= 6:          # both services are down/blocked: stop trying, keep the originals
         _tstats["failed"] += 1
         return txt
-    for attempt in range(3):
-        try:
-            out = _remote_translate(txt).strip()
-            if out:
-                _tcache[txt] = out
-                _tstats["new"] += 1; _tstats["fails_in_row"] = 0
-                time.sleep(0.2)
-                return out
-        except Exception:
-            time.sleep(1 + attempt)
-    _tstats["failed"] += 1; _tstats["fails_in_row"] += 1
-    return txt
+    outs = []
+    for piece in _chunks(txt):
+        o = _translate_piece(piece)
+        if o is None:
+            _tstats["failed"] += 1; _tstats["fails_in_row"] += 1
+            return txt                         # not cached: it will be tried again next run
+        outs.append(o)
+    result = " ".join(outs)
+    _tcache[txt] = result
+    _tstats["new"] += 1; _tstats["fails_in_row"] = 0
+    return result
 
 def translate_el(el):
     for tag in ("title", "sub-title", "desc"):
@@ -407,6 +448,7 @@ def main(src=PRIMARY, out=OUT, ids_file="channels.txt", now=None, report=REPORT,
             if e > now and s < now + dt.timedelta(hours=24):
                 lines.append(f"    {s.astimezone(il):%a %H:%M} {text_of(el, 'title')[:45]} [{origin.get((cid, s), 'primary/gap')}]")
     lines.append(f"TRANSLATE {sorted(TRANSLATE)}: {_tstats['new']} new, {_tstats['cached']} from cache, {_tstats['failed']} failed (kept in original language)")
+    if _tstats["errors"]: lines.append("TRANSLATE errors: " + " | ".join(_tstats["errors"]))
     _save_tcache()
     lines += search_lines
     lines.append(f"total: {kept} kept from primary, {after} after merging/extending")
