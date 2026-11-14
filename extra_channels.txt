@@ -311,6 +311,8 @@ ACKTV.us | US - AKC TV
 ACLCornholeTV.us | US - ACL Cornhole TV
 ADDIKTV.ca | CA - ADDIK
 AFCChampionsLeague.paramount+ | PARAMOUNT+ - AFC Champions League
+AFNFamily_AFNPulse.us | US - AFN Family AFN Pulse
+AFNMovie.us | US - AFN Movie
 AFNNews.us | US - AFN News
 AFNPrimeAtlantic.us | US - AFN Prime Atlantic
 AFNPrimePacific.us | US - AFN Prime Pacific
