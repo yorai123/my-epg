@@ -8,7 +8,8 @@ PRIMARY = "https://epg.team/3.1.xml"
 # sources used only to extend the days ahead (a source that fails is skipped and shown in report.txt)
 EXTRAS = ["https://iptv-epg.org/files/epg-il.xml",
           "https://iptv-epg.org/files/epg-us.xml",
-          "https://iptv-epg.org/files/epg-ca.xml"]
+          "https://iptv-epg.org/files/epg-ca.xml",
+          "http://iptv-content.rv77.pw/epg.xml.gz"]
 OUT, REPORT, EXTRA_LIST = "epg.xml.gz", "report.txt", "extra_channels.txt"
 KEEP_PAST_HOURS = 3
 MAX_DAYS_AHEAD = 7
@@ -54,6 +55,8 @@ EXTRA_ONLY = {
     "ch3916": ("IL: MTV 80s", r"^(il\s*[:\-]\s*)?mtv\s*80s(\.il)?$", "epg-il"),
     "ch3896": ("IL: MTV Hits", r"^(il\s*[:\-]\s*)?mtv\s*hits(\.il)?$", "epg-il"),
     "ch3922": ("US: MTV Classic", r"^(us\s*[:\-]\s*)?mtv\s*classic(\.us)?$", "epg-us"),
+    # Israeli music channel "מוזיקה il": its schedule exists only in the rv77 EPG (id 21505, same number as in the m3u stream)
+    "21505": ("Music Channel [IL]", r"^music\s*channel\s*\[il\]$", "rv77"),
     # Israeli channels that epg-il.xml carries and that had no schedule in the m3u
     "entertainment-il": ("IL: HOT Entertainment", r"^(il\s*[:\-]\s*)?hot\s*entertainment(\.il)?$", "epg-il"),
     "game-show-il-hd": ("IL: Game Show Channel", r"^(il\s*[:\-]\s*)?ערוץ\s*השעשועונים(\.il)?$", "epg-il"),
