@@ -95,7 +95,7 @@ def retitle(el):
 # ---- English translation of the German Sky Sport Tennis schedule (title / sub-title / description)
 # Only the channels listed here are touched. If translating fails the original text is kept, so the EPG is never broken by it.
 # Two free services are tried in turn (Google first, then MyMemory); long descriptions are cut into sentences and translated piece by piece.
-TRANSLATE = {"ch1877"}
+TRANSLATE = {"ch1877", "ch492"}   # ch1877 = Sky Sport Tennis (German), ch492 = Bridge TV Classic (Russian)
 TRANSLATE_CACHE = "translation_cache.json"
 _tcache = {}
 _tstats = {"new": 0, "cached": 0, "failed": 0, "fails_in_row": 0, "errors": []}
@@ -124,7 +124,7 @@ def _google(txt):
 
 def _mymemory(txt):
     """second service, used when Google refuses (max ~500 characters per request)"""
-    url = "https://api.mymemory.translated.net/get?langpair=de|en&q=" + urllib.parse.quote(txt)
+    url = "https://api.mymemory.translated.net/get?langpair=Autodetect|en&q=" + urllib.parse.quote(txt)
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
     res = json.loads(urllib.request.urlopen(req, timeout=20).read().decode("utf-8"))
     out = (res.get("responseData") or {}).get("translatedText") or ""
