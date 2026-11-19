@@ -52,7 +52,6 @@ EXTRA_ONLY = {
     "style_il": ("IL: The Style Channel", r"^(il\s*[:\-]\s*)?ערוץ\s*הסטייל(\.il)?$", "epg-il"),
     "vacation_il": ("IL: The Vacation Channel", r"^(il\s*[:\-]\s*)?ערוץ\s*הנופש(\.il)?$", "epg-il"),
     # MTV music channels (ids are the ones used in the m3u)
-    "ch3916": ("IL: MTV 80s", r"^(il\s*[:\-]\s*)?mtv\s*80s(\.il)?$", "epg-il"),
     "ch3896": ("IL: MTV Hits", r"^(il\s*[:\-]\s*)?mtv\s*hits(\.il)?$", "epg-il"),
     "ch3922": ("US: MTV Classic", r"^(us\s*[:\-]\s*)?mtv\s*classic(\.us)?$", "epg-us"),
     # Israeli music channel "מוזיקה il": its schedule exists only in the rv77 EPG (id 21505, same number as in the m3u stream)
@@ -402,6 +401,7 @@ def main(src=PRIMARY, out=OUT, ids_file="channels.txt", now=None, report=REPORT,
             last = max((m[1] for m in merged[cid]), default=None)
             add = []
             for s, e, el in eprog[ecid]:
+                if text_of(el, "title").strip().lower() == "no data": continue   # placeholder programmes of the extra sources
                 el = copy.deepcopy(el)
                 if last is not None:
                     if e <= last: continue
