@@ -207,6 +207,17 @@ def load_previous(ids, lo, hi, local):
             continue
     return {}, None
 
+def history_sources(limit=40):
+    """URLs of the previous versions of epg.xml.gz in this repo's git history (newest first), so that a broken build
+    that was already committed (empty channels) can never poison the carry-over: we walk back to a version that has the data."""
+    repo = os.environ.get("GITHUB_REPOSITORY", "yorai123/my-epg")
+    hdr = {"User-Agent": "epg-builder", "Accept": "application/vnd.github+json"}
+    if os.environ.get("GITHUB_TOKEN"):
+        hdr["Authorization"] = "Bearer " + os.environ["GITHUB_TOKEN"]
+    url = f"https://api.github.com/repos/{repo}/commits?path={OUT}&per_page={limit}"
+    data = json.loads(urllib.request.urlopen(urllib.request.Request(url, headers=hdr), timeout=60).read().decode("utf-8"))
+    return [(c["sha"][:7], f"https://raw.githubusercontent.com/{repo}/{c['sha']}/{OUT}") for c in data]
+
 # ---- Channels whose primary feed sometimes loses the near-term part of the schedule (HOT 8 and HOT Cinema 1 on 23.11:
 # the programmes from "now" until the evening were missing). The holes are filled, in this order, from the listed other ids of the same
 # build (ch2633 is the identical "(ru)" feed of HOT Cinema 1) and then from the extra sources (ids as listed in extra_channels.txt).
@@ -305,7 +316,8 @@ def to_file(src):
     tmp = tempfile.NamedTemporaryFile(delete=False, suffix=".xml")
     if src.startswith("http"):
         hdrs = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
-                "Accept": "application/xml,text/xml,application/gzip,*/*;q=0.8", "Accept-Language": "en-US,en;q=0.9"}
+                "Accept": "application/xml,text/xml,application/gzip,*/*;q=0.8", "Accept-Language": "en-US,en;q=0.9",
+                "Referer": src.split("/files/")[0] + "/"}
         raw, err = None, None
         for attempt in range(3):               # a 403 / 5xx from a busy source is often temporary: wait and try again
             try:
@@ -313,6 +325,7 @@ def to_file(src):
                 break
             except Exception as e:
                 err = e
+                if getattr(e, "code", None) == 403 and attempt >= 1: break   # a real block (GitHub runner IP), waiting longer does not help
                 if attempt < 2: time.sleep(20 * (attempt + 1))
         if raw is None:
             raise err
@@ -531,6 +544,30 @@ def main(src=PRIMARY, out=OUT, ids_file="channels.txt", now=None, report=REPORT,
                     total += len(merged[cid]) - before
                     ext_note.append(f"CARRY-OVER {cid}: {len(merged[cid]) - before} programmes from the previous epg.xml.gz")
             ext_note.append(f"CARRY-OVER done: {total} programmes added from {psrc}" if psrc else "CARRY-OVER: no previous epg.xml.gz could be read")
+            # the previous file may itself be a broken build (empty channels): walk back through the git history until the empty
+            # channels (and the channels that depend on the failed extra sources) are filled, at most 12 downloads, stop after 3 without gain
+            need = {c for c in ids if not merged[c]} | set(EXTRA_ONLY)
+            if need:
+                try:
+                    hist, tries, idle = history_sources(), 0, 0
+                    for sha, url in hist:
+                        if tries >= 12 or idle >= 3: break
+                        tries += 1
+                        try:
+                            hprogs = read_source(to_file(url), lambda c, n: False, lambda c: c in need, lo, hi)[1]
+                        except Exception as e:
+                            ext_note.append(f"HISTORY {sha}: could not read ({type(e).__name__})"); idle += 1; continue
+                        gain = 0
+                        for cid in sorted(need):
+                            old_items = hprogs.get(cid)
+                            if not old_items: continue
+                            before = len(merged[cid])
+                            merged[cid] = merge_programmes(fill_gaps(merged[cid], sorted([(a, b, _setch(el, cid)) for a, b, el in old_items], key=lambda x: x[0])))
+                            gain += max(0, len(merged[cid]) - before)
+                        idle = 0 if gain else idle + 1
+                        if gain: ext_note.append(f"HISTORY {sha}: {gain} programmes added")
+                except Exception as e:
+                    ext_note.append(f"HISTORY FAILED: {type(e).__name__} {str(e)[:80]}")
         except Exception as e:
             ext_note.append(f"CARRY-OVER FAILED: {type(e).__name__} {str(e)[:80]} (current data kept)")
     for cid, gcfg in GAP_FILL.items():
