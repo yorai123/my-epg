@@ -192,10 +192,22 @@ def translate_el(el):
             if c.get("lang"):
                 c.set("lang", "en")
 
+# ---- Channels whose primary feed sometimes loses the near-term part of the schedule (HOT 8 and HOT Cinema 1 on 23.11:
+# the programmes from "now" until the evening were missing). The holes are filled, in this order, from the listed other ids of the same
+# build (ch2633 is the identical "(ru)" feed of HOT Cinema 1) and then from the extra sources (ids as listed in extra_channels.txt).
+# Real data is never overwritten: only the uncovered parts are filled.
+GAP_FILL = {
+    "ch1144": {"same_build": [],         "extra": ["HOT8.il", "20489", "20490"]},
+    "ch1161": {"same_build": ["ch2633"], "extra": ["HOTCinema1.il", "20482"]},
+}
+
 # ---- Music IL (id 21505) runs the same schedule every day, but its source (rv77) often has a day with no data ("No data").
 # For the channels in LOOP_FILL the holes are filled with the same time of day taken from a day that the source does deliver.
 # Real data is never overwritten: only the uncovered parts are filled. Needs one continuous run of >= 24h in the source, else nothing is changed.
 LOOP_FILL = {"21505"}
+
+def _setch(el, cid):
+    el = copy.deepcopy(el); el.set("channel", cid); return el
 
 def loop_fill(items, lo, hi, min_piece=dt.timedelta(minutes=5)):
     """items: sorted [(start, stop, el)]. Returns (items + filled pieces, number of pieces added)"""
@@ -416,6 +428,7 @@ def main(src=PRIMARY, out=OUT, ids_file="channels.txt", now=None, report=REPORT,
     our_keys = {cid: norm_key(names[cid]) for cid in ids if names[cid]}
     ext_note, listing, extended_ids, extra_keys = [], [], set(), set()
     cleared = set()
+    gap_items = defaultdict(list)   # GAP_FILL: [(source label, [(s, e, el)])] per channel
     backup = {}     # EXTRA_ONLY channels: the primary feed, used only to fill gaps the extra source leaves
     for ex in extras:
         try:
@@ -440,7 +453,17 @@ def main(src=PRIMARY, out=OUT, ids_file="channels.txt", now=None, report=REPORT,
                     ext_note.append(f"EXTRA_ONLY {cid} <- {ex}: " + (", ".join(hits) if hits else "NO MATCH (look in extra_channels.txt)"))
                     if hits: plan[cid] = hits
             wanted = {e for c in plan.values() for e in c}
+            gf_wanted = {x for c in GAP_FILL.values() for x in c["extra"] if x in ech}
+            wanted |= gf_wanted
             _, eprog, _ = read_source(epath, lambda c, n: False, lambda c: c in wanted, lo, hi)   # pass 2: only matched channels
+            for gcid, gcfg in GAP_FILL.items():
+                for gx in gcfg["extra"]:
+                    if eprog.get(gx):
+                        gitems = []
+                        for gs, ge, gel in eprog[gx]:
+                            if text_of(gel, "title").strip().lower() == "no data": continue
+                            gel = copy.deepcopy(gel); gel.set("channel", gcid); gitems.append((gs, ge, gel))
+                        gap_items[gcid].append((ex.rsplit("/", 1)[-1] + " " + gx, gitems))
         except Exception as e:
             ext_note.append(f"extra source FAILED: {ex} ({type(e).__name__}: {str(e)[:80]})"); continue
         matched = 0
@@ -470,6 +493,20 @@ def main(src=PRIMARY, out=OUT, ids_file="channels.txt", now=None, report=REPORT,
             before = len(merged[cid])
             merged[cid] = merge_programmes(fill_gaps(merged[cid], old_items))
             ext_note.append(f"gap-fill {cid}: {len(merged[cid]) - before} programmes added from the primary source")
+    for cid, gcfg in GAP_FILL.items():
+        if cid not in merged: continue
+        try:
+            tried = []
+            for sib in gcfg["same_build"]:
+                tried.append((sib, [(a, b, _setch(el, cid)) for a, b, el in merged.get(sib, [])]))
+            tried += gap_items.get(cid, [])
+            for label, pieces in tried:
+                before = len(merged[cid])
+                if pieces:
+                    merged[cid] = merge_programmes(fill_gaps(merged[cid], sorted(pieces, key=lambda x: x[0])))
+                ext_note.append(f"GAP-FILL {cid} <- {label}: {len(merged[cid]) - before} programmes added")
+        except Exception as e:
+            ext_note.append(f"GAP-FILL {cid} FAILED: {type(e).__name__} {str(e)[:80]} (real data kept)")
     for cid in sorted(LOOP_FILL & set(ids)):
         try:
             merged[cid], n_add = loop_fill(merged[cid], lo, hi)
