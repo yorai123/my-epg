@@ -192,6 +192,59 @@ def translate_el(el):
             if c.get("lang"):
                 c.set("lang", "en")
 
+# ---- Music IL (id 21505) runs the same schedule every day, but its source (rv77) often has a day with no data ("No data").
+# For the channels in LOOP_FILL the holes are filled with the same time of day taken from a day that the source does deliver.
+# Real data is never overwritten: only the uncovered parts are filled. Needs one continuous run of >= 24h in the source, else nothing is changed.
+LOOP_FILL = {"21505"}
+
+def loop_fill(items, lo, hi, min_piece=dt.timedelta(minutes=5)):
+    """items: sorted [(start, stop, el)]. Returns (items + filled pieces, number of pieces added)"""
+    if not items:
+        return items, 0
+    runs, cur = [], [items[0]]
+    for it in items[1:]:
+        if it[0] == cur[-1][1]:
+            cur.append(it)
+        else:
+            runs.append(cur); cur = [it]
+    runs.append(cur)
+    day = dt.timedelta(hours=24)
+    good = [r for r in runs if r[-1][1] - r[0][0] >= day]
+    if not good:
+        return items, 0
+    run = max(good, key=lambda r: r[0][0])           # the newest continuous run of at least 24h
+    t0 = run[0][0]
+    tpl = []
+    for s, e, el in run:
+        if s - t0 >= day:
+            break
+        tpl.append((s - t0, min(e - t0, day), el))
+    covered = [(s, e) for s, e, _ in items]
+    added = []
+    k0 = int((lo - t0).total_seconds() // 86400) - 1
+    k1 = int((hi - t0).total_seconds() // 86400) + 1
+    for k in range(k0, k1 + 1):
+        base = t0 + k * day
+        for off_s, off_e, el in tpl:
+            S, E = base + off_s, base + off_e
+            if E <= lo or S >= hi:
+                continue
+            S, E = max(S, lo), min(E, hi)
+            pieces = [(S, E)]
+            for cs, ce in covered:                   # cut away what the source already covers
+                nxt = []
+                for ps, pe in pieces:
+                    if ce <= ps or cs >= pe:
+                        nxt.append((ps, pe))
+                    else:
+                        if ps < cs: nxt.append((ps, cs))
+                        if ce < pe: nxt.append((ce, pe))
+                pieces = nxt
+            for ps, pe in pieces:
+                if pe - ps >= min_piece:
+                    added.append((ps, pe, copy.deepcopy(el)))
+    return merge_programmes(items + added), len(added)
+
 def load_ids(path="channels.txt"):
     return {l.strip() for l in open(path, encoding="utf-8") if l.strip()}
 
@@ -417,6 +470,12 @@ def main(src=PRIMARY, out=OUT, ids_file="channels.txt", now=None, report=REPORT,
             before = len(merged[cid])
             merged[cid] = merge_programmes(fill_gaps(merged[cid], old_items))
             ext_note.append(f"gap-fill {cid}: {len(merged[cid]) - before} programmes added from the primary source")
+    for cid in sorted(LOOP_FILL & set(ids)):
+        try:
+            merged[cid], n_add = loop_fill(merged[cid], lo, hi)
+            ext_note.append(f"LOOP-FILL {cid}: {n_add} programmes added from the daily loop" if n_add else f"LOOP-FILL {cid}: nothing to fill")
+        except Exception as e:
+            ext_note.append(f"LOOP-FILL {cid} FAILED: {type(e).__name__} {str(e)[:80]} (real data kept)")
     lines += ext_note
     lines.append(f"{'channel':10} {'name':32} {'progs':>5}  coverage")
     kept = after = 0
