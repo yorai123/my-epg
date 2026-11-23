@@ -192,6 +192,21 @@ def translate_el(el):
             if c.get("lang"):
                 c.set("lang", "en")
 
+# ---- When an extra source cannot be downloaded (e.g. iptv-epg.org answered 403 to the GitHub runner), the channels that depend on it
+# would end up empty. Then the programmes of the PREVIOUS epg.xml.gz are used for the parts that are now missing (never over real data).
+PREVIOUS = "https://raw.githubusercontent.com/yorai123/my-epg/main/epg.xml.gz"
+
+def load_previous(ids, lo, hi, local):
+    for src in (local, PREVIOUS):
+        try:
+            if src.startswith("http") or os.path.exists(src):
+                pprogs = read_source(to_file(src), lambda c, n: False, lambda c: c in ids, lo, hi)[1]
+                if pprogs:
+                    return pprogs, src
+        except Exception:
+            continue
+    return {}, None
+
 # ---- Channels whose primary feed sometimes loses the near-term part of the schedule (HOT 8 and HOT Cinema 1 on 23.11:
 # the programmes from "now" until the evening were missing). The holes are filled, in this order, from the listed other ids of the same
 # build (ch2633 is the identical "(ru)" feed of HOT Cinema 1) and then from the extra sources (ids as listed in extra_channels.txt).
@@ -289,8 +304,18 @@ def to_file(src):
     """download (or copy) a source into a temp file and return its path (handles .gz)"""
     tmp = tempfile.NamedTemporaryFile(delete=False, suffix=".xml")
     if src.startswith("http"):
-        req = urllib.request.Request(src, headers={"User-Agent": "Mozilla/5.0"})
-        raw = urllib.request.urlopen(req, timeout=300)
+        hdrs = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+                "Accept": "application/xml,text/xml,application/gzip,*/*;q=0.8", "Accept-Language": "en-US,en;q=0.9"}
+        raw, err = None, None
+        for attempt in range(3):               # a 403 / 5xx from a busy source is often temporary: wait and try again
+            try:
+                raw = urllib.request.urlopen(urllib.request.Request(src, headers=hdrs), timeout=300)
+                break
+            except Exception as e:
+                err = e
+                if attempt < 2: time.sleep(20 * (attempt + 1))
+        if raw is None:
+            raise err
     else:
         raw = open(src, "rb")
     head = raw.read(2)
@@ -493,6 +518,21 @@ def main(src=PRIMARY, out=OUT, ids_file="channels.txt", now=None, report=REPORT,
             before = len(merged[cid])
             merged[cid] = merge_programmes(fill_gaps(merged[cid], old_items))
             ext_note.append(f"gap-fill {cid}: {len(merged[cid]) - before} programmes added from the primary source")
+    if any(n.startswith("extra source FAILED") for n in ext_note):
+        try:
+            prev, psrc = load_previous(ids, lo, hi, out)
+            total = 0
+            for cid in sorted(ids):
+                old_items = prev.get(cid)
+                if not old_items: continue
+                before = len(merged[cid])
+                merged[cid] = merge_programmes(fill_gaps(merged[cid], sorted([(a, b, _setch(el, cid)) for a, b, el in old_items], key=lambda x: x[0])))
+                if len(merged[cid]) > before:
+                    total += len(merged[cid]) - before
+                    ext_note.append(f"CARRY-OVER {cid}: {len(merged[cid]) - before} programmes from the previous epg.xml.gz")
+            ext_note.append(f"CARRY-OVER done: {total} programmes added from {psrc}" if psrc else "CARRY-OVER: no previous epg.xml.gz could be read")
+        except Exception as e:
+            ext_note.append(f"CARRY-OVER FAILED: {type(e).__name__} {str(e)[:80]} (current data kept)")
     for cid, gcfg in GAP_FILL.items():
         if cid not in merged: continue
         try:
