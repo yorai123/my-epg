@@ -137,26 +137,22 @@
 14341 | DYN Sport 1 [DE]
 14342 | DYN Sport 2 [DE]
 14343 | DYN Sport 3 [DE]
-14344 | DYN Sport 4 [DE]
 14345 | DYN Sport 5 [DE]
 14346 | DYN Sport 6 [DE]
 14347 | DYN Sport 7 [DE]
 14348 | DYN Sport 8 [DE]
 14349 | DYN Sport 9 [DE]
 14350 | DYN Sport 10 [DE]
-14351 | DYN Sport 11 [DE]
 14352 | DYN Sport 12 [DE]
 14353 | DYN Sport 13 [DE]
 14354 | DYN Sport 14 [DE]
 14355 | DYN Sport 15 [DE]
 14356 | DYN Sport 16 [DE]
-14357 | DYN Sport 17 [DE]
 14358 | DYN Sport 18 [DE]
 14359 | DYN Sport 19 [DE]
+14360 | DYN Sport 20 [DE]
 14361 | DYN Sport 21 [DE]
-14363 | DYN Sport 23 [DE]
 14364 | DYN Sport 24 [DE]
-14365 | DYN Sport 25 [DE]
 144 | Охотник и рыболов HD
 145 | Первый космический
 146 | Тайны Галактики
@@ -286,7 +282,6 @@
 17624 | AGRO TV [MD]
 17630 | 7TV [MD]
 17632 | Moldova 2 [MD]
-17639 | ТСВ [MD]
 1765 | Warner TV [PL]
 1766 | Canal+ Sport 3 HD [PL]
 1767 | Canal+ Sport 4 HD [PL]
@@ -536,7 +531,6 @@
 2036 | Sky Sport 1
 20386 | Зоо ТВ
 204 | Матч! Арена HD
-20447 | QAZAQSTAN [KZ]
 20448 | КТК [KZ]
 20449 | Первый канал Евразия [KZ]
 20450 | Седьмой канал [KZ]
@@ -1339,7 +1333,6 @@
 253 | НТВ HD
 254 | Animal Planet HD
 255 | Матч! HD
-25528 | QAZAQSTAN HD [KZ]
 256 | 1HD
 257 | C Music TV
 258 | Amedia Premium
@@ -1648,7 +1641,6 @@
 6449 | Beinsports 5 HD
 6451 | Beinsports 2 HD
 6452 | Большая Азия
-6657 | БСТ HD
 6658 | Первый Вегетарианский
 6665 | Санкт-Петербург
 6667 | Точка отрыва
@@ -1676,7 +1668,6 @@
 6752 | СуперГерои
 6753 | Соловьев Live
 6754 | Дикий
-6755 | News Front
 6759 | Продвижение
 6760 | ДОН 24
 6787 | NTV HD
