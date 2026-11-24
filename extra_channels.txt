@@ -50,6 +50,7 @@
 11089 | Cartoonito HD [PL]
 11090 | Disney XD [PL]
 11097 | Disney Channel HD [PL]
+11107 | FX HD [PL]
 11120 | AXN Spin HD
 11126 | AXN HD [PL]
 11129 | Filmbox Family HD [PL]
@@ -137,7 +138,6 @@
 14341 | DYN Sport 1 [DE]
 14342 | DYN Sport 2 [DE]
 14343 | DYN Sport 3 [DE]
-14345 | DYN Sport 5 [DE]
 14346 | DYN Sport 6 [DE]
 14347 | DYN Sport 7 [DE]
 14348 | DYN Sport 8 [DE]
@@ -152,6 +152,7 @@
 14359 | DYN Sport 19 [DE]
 14360 | DYN Sport 20 [DE]
 14361 | DYN Sport 21 [DE]
+14362 | DYN Sport 22 [DE]
 14364 | DYN Sport 24 [DE]
 144 | Охотник и рыболов HD
 145 | Первый космический
@@ -397,6 +398,7 @@
 19109 | AMC [PL]
 19118 | Filmbox Arthouse HD [PL]
 19119 | FilmBox Extra HD [PL]
+19122 | FX Comedy HD [PL]
 19123 | Kino Polska HD
 19124 | Kino TV
 19125 | Disco Polo Music
