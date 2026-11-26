@@ -28,7 +28,6 @@
 10326 | 13Th Street HD
 104 | viju+ Premiere
 105 | RT HD
-106 | viju+ Sport
 10600 | History [DE]
 107 | Наш Кинороман
 1071 | Nick / Comedy Central+1 [DE]
@@ -149,11 +148,7 @@
 14352 | DYN Sport 12 [DE]
 14353 | DYN Sport 13 [DE]
 14354 | DYN Sport 14 [DE]
-14355 | DYN Sport 15 [DE]
-14356 | DYN Sport 16 [DE]
-14359 | DYN Sport 19 [DE]
 14360 | DYN Sport 20 [DE]
-14361 | DYN Sport 21 [DE]
 14362 | DYN Sport 22 [DE]
 14364 | DYN Sport 24 [DE]
 144 | Охотник и рыболов HD
@@ -319,7 +314,6 @@
 17881 | Nickelodeon [LV]
 17882 | Nick Jr. [LV]
 17883 | Best4Sport TV [LV]
-17884 | Go3 Sport 4 [LV]
 17885 | Latvijas Slagerkanals [LV]
 17886 | Muzikas Video Kanals [LV]
 17887 | 8TV [LV]
@@ -439,7 +433,6 @@
 19198 | Go3 Sport 3 [LT]
 19199 | Info TV HD [LT]
 192 | NIKI Junior
-19200 | Go3 Sport 4 [LT]
 19201 | Epic Drama [LT]
 19202 | Go3 Sport Open [EE]
 19203 | Go3 Sport 1 [EE]
@@ -456,7 +449,6 @@
 19216 | ETV [EE]
 19217 | ETV2 [EE]
 19218 | ETV+ [EE]
-19219 | Go3 Sport 4 [EE]
 19220 | Marijampoles TV [LT]
 19221 | JPTV [LT]
 19223 | 1+2 [Baltic]
@@ -745,7 +737,6 @@
 20893 | BCU Premiere 2 HDR
 20894 | BCU Premiere 3 HDR
 20895 | MiniMax translation HD
-20896 | MiniMax Микромир HD
 20897 | MiniMax Макромир HD
 20898 | MiniMax Мегамир HD
 209 | КИНОПРЕМЬЕРА HD
@@ -1508,7 +1499,6 @@
 5005 | Первый канал
 5010 | КРЫМ 24
 5027 | Матч ТВ
-5047 | Союз
 5081 | Че! (+7)
 5089 | Комедия
 5097 | НТВ
@@ -1540,7 +1530,6 @@
 5241 | Мяч HD
 5242 | Extreme Sports
 5243 | Хоккей ТВ HD
-5244 | viju+ Sport HD
 5245 | 2x2
 5246 | Старт Триумф HD
 5247 | Шансон ТВ
@@ -1564,7 +1553,6 @@
 5300 | Пятница!
 5315 | O!
 5323 | Телекафе
-5332 | Сарафан
 5341 | Nickelodeon
 5342 | Jim Jam
 5345 | Trt HABER
