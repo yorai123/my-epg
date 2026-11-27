@@ -148,7 +148,6 @@
 14352 | DYN Sport 12 [DE]
 14353 | DYN Sport 13 [DE]
 14354 | DYN Sport 14 [DE]
-14360 | DYN Sport 20 [DE]
 14362 | DYN Sport 22 [DE]
 14364 | DYN Sport 24 [DE]
 144 | Охотник и рыболов HD
@@ -280,6 +279,7 @@
 17624 | AGRO TV [MD]
 17630 | 7TV [MD]
 17632 | Moldova 2 [MD]
+17639 | ТСВ [MD]
 1765 | Warner TV [PL]
 1766 | Canal+ Sport 3 HD [PL]
 1767 | Canal+ Sport 4 HD [PL]
@@ -522,10 +522,12 @@
 20302 | Хузур
 20319 | АТВ Ставрополь
 20321 | Москва Доверие
+20341 | Белгород 24
 20346 | Открытый мир
 2036 | Sky Sport 1
 20386 | Зоо ТВ
 204 | Матч! Арена HD
+20447 | QAZAQSTAN [KZ]
 20448 | КТК [KZ]
 20449 | Первый канал Евразия [KZ]
 20450 | Седьмой канал [KZ]
@@ -737,6 +739,7 @@
 20893 | BCU Premiere 2 HDR
 20894 | BCU Premiere 3 HDR
 20895 | MiniMax translation HD
+20896 | MiniMax Микромир HD
 20897 | MiniMax Макромир HD
 20898 | MiniMax Мегамир HD
 209 | КИНОПРЕМЬЕРА HD
@@ -1327,6 +1330,7 @@
 253 | НТВ HD
 254 | Animal Planet HD
 255 | Матч! HD
+25528 | QAZAQSTAN HD [KZ]
 256 | 1HD
 257 | C Music TV
 258 | Amedia Premium
@@ -1632,6 +1636,7 @@
 6449 | Beinsports 5 HD
 6451 | Beinsports 2 HD
 6452 | Большая Азия
+6657 | БСТ HD
 6658 | Первый Вегетарианский
 6665 | Санкт-Петербург
 6667 | Точка отрыва
@@ -1659,6 +1664,7 @@
 6752 | СуперГерои
 6753 | Соловьев Live
 6754 | Дикий
+6755 | News Front
 6759 | Продвижение
 6760 | ДОН 24
 6787 | NTV HD
