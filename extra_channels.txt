@@ -148,8 +148,6 @@
 14352 | DYN Sport 12 [DE]
 14353 | DYN Sport 13 [DE]
 14354 | DYN Sport 14 [DE]
-14362 | DYN Sport 22 [DE]
-14364 | DYN Sport 24 [DE]
 144 | Охотник и рыболов HD
 145 | Первый космический
 146 | Тайны Галактики
@@ -2346,6 +2344,7 @@ Acadie-BathurstTitan.qmjhl | QMJHL - Acadie-Bathurst Titan
 AcapulcoShore.pluto | PLUTO - Acapulco Shore
 Accuweather.us | US - Accuweather
 AceTVWBXZD10.us | US - AceTV WBXZ-D10 Buffalo NY
+AcousticGuitarInstrumentals.sxm | SXM - Acoustic Guitar Instrumentals
 ActionHollywoodMovies.us | US - Action Hollywood Movies
 ActionPlus.us | US - Action Plus
 AdultAnimation.paramount+ | PARAMOUNT+ - Adult Animation
@@ -3719,6 +3718,7 @@ ClassicMoviesChannel.pluto | PLUTO - Classic Movies Channel
 ClassicPunk.sxm | SXM - Classic Punk
 ClassicRewind.sxm | SXM - Classic Rewind
 ClassicRewindDeepCuts.sxm | SXM - Classic Rewind Deep Cuts
+ClassicRewindJustMusic.sxm | SXM - Classic Rewind Just Music
 ClassicRewindTop100.sxm | SXM - Classic Rewind Top 100
 ClassicRockBBQ.sxm | SXM - Classic Rock BBQ
 ClassicRockParty.sxm | SXM - Classic Rock Party
